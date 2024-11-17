@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square70x70logo src="storage/images/logo/gauravsinghigc-favicon-logo-image.png"/>
+            <square150x150logo src="storage/images/logo/gauravsinghigc-rectangle-logo-image.png"/>
+            <wide310x150logo src="storage/images/logo/gauravsinghigc-rectangle-logo-image.png"/>
+            <square310x310logo src="storage/images/logo/gauravsinghigc-rectangle-logo-image.png"/>
+            <TileColor>#009900</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>
