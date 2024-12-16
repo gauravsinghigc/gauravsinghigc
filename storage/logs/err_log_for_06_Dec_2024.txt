@@ -1,0 +1,51 @@
+[06-Dec-2024 08:29:14 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\gauravsinghigc\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\include\common\TopHeader.php(37): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\gauravsinghigc\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\modules\AuthUserModules.php on line 11
+[06-Dec-2024 08:49:03 Asia/Calcutta] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\gauravsinghigc\app\enquiries\index.php on line 53
+[06-Dec-2024 10:00:27 Asia/Calcutta] PHP Warning:  Undefined array key "cet_status" in C:\xampp\htdocs\gauravsinghigc\handler\ModuleController\EnquiryController.php on line 22
+[06-Dec-2024 10:02:31 Asia/Calcutta] PHP Warning:  Undefined array key "cet_status" in C:\xampp\htdocs\gauravsinghigc\handler\ModuleController\EnquiryController.php on line 22
+[06-Dec-2024 10:24:03 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$cet_name in C:\xampp\htdocs\gauravsinghigc\include\forms\Update-Enquiry-Flow-Chart.php on line 56
+[06-Dec-2024 10:25:08 Asia/Calcutta] PHP Warning:  Undefined array key "cef_id" in C:\xampp\htdocs\gauravsinghigc\handler\ModuleController\EnquiryController.php on line 66
+[06-Dec-2024 10:34:51 Asia/Calcutta] PHP Warning:  Undefined array key "cef_status" in C:\xampp\htdocs\gauravsinghigc\handler\ModuleController\EnquiryController.php on line 70
+[06-Dec-2024 10:35:36 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$cef_status in C:\xampp\htdocs\gauravsinghigc\include\forms\Update-Enquiry-Flow-Chart.php on line 49
+[06-Dec-2024 10:35:36 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$cef_status in C:\xampp\htdocs\gauravsinghigc\include\forms\Update-Enquiry-Flow-Chart.php on line 49
+[06-Dec-2024 10:35:36 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$cef_status in C:\xampp\htdocs\gauravsinghigc\include\forms\Update-Enquiry-Flow-Chart.php on line 49
+[06-Dec-2024 10:35:36 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$cef_status in C:\xampp\htdocs\gauravsinghigc\include\forms\Update-Enquiry-Flow-Chart.php on line 49
+[06-Dec-2024 10:35:36 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$cef_status in C:\xampp\htdocs\gauravsinghigc\include\forms\Update-Enquiry-Flow-Chart.php on line 49
+[06-Dec-2024 10:35:36 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$cef_status in C:\xampp\htdocs\gauravsinghigc\include\forms\Update-Enquiry-Flow-Chart.php on line 49
+[06-Dec-2024 10:35:36 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$cef_status in C:\xampp\htdocs\gauravsinghigc\include\forms\Update-Enquiry-Flow-Chart.php on line 49
+[06-Dec-2024 10:35:36 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$cef_status in C:\xampp\htdocs\gauravsinghigc\include\forms\Update-Enquiry-Flow-Chart.php on line 49
+[06-Dec-2024 10:35:36 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$cef_status in C:\xampp\htdocs\gauravsinghigc\include\forms\Update-Enquiry-Flow-Chart.php on line 49
+[06-Dec-2024 10:35:36 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$cef_status in C:\xampp\htdocs\gauravsinghigc\include\forms\Update-Enquiry-Flow-Chart.php on line 49
+[06-Dec-2024 10:35:36 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$cef_status in C:\xampp\htdocs\gauravsinghigc\include\forms\Update-Enquiry-Flow-Chart.php on line 49
+[06-Dec-2024 10:36:04 Asia/Calcutta] PHP Warning:  Undefined array key "cef_status" in C:\xampp\htdocs\gauravsinghigc\handler\ModuleController\EnquiryController.php on line 70
+[06-Dec-2024 10:42:48 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php:12
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(12): mysqli_query(Object(mysqli), 'SELECT cef_id, ...')
+#1 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(42): SELECT('SELECT cef_id, ...')
+#2 C:\xampp\htdocs\gauravsinghigc\app\enquiries\index.php(43): SET_SQL('SELECT cef_id, ...', false)
+#3 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php on line 12
+[06-Dec-2024 10:43:35 Asia/Calcutta] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\gauravsinghigc\app\enquiries\index.php on line 45
+[06-Dec-2024 10:44:49 Asia/Calcutta] PHP Warning:  Undefined variable $CurrentActiveDir in C:\xampp\htdocs\gauravsinghigc\app\enquiries\index.php on line 80
+[06-Dec-2024 10:44:49 Asia/Calcutta] PHP Warning:  include(C:\xampp\htdocs\gauravsinghigc\app\enquiries\views): Failed to open stream: Permission denied in C:\xampp\htdocs\gauravsinghigc\app\enquiries\index.php on line 80
+[06-Dec-2024 10:44:49 Asia/Calcutta] PHP Warning:  include(): Failed opening 'C:\xampp\htdocs\gauravsinghigc\app\enquiries/views/' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\gauravsinghigc\app\enquiries\index.php on line 80
+[06-Dec-2024 13:11:25 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\enquiries.php on line 9
+[06-Dec-2024 13:11:25 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\enquiries.php on line 12
+[06-Dec-2024 13:11:25 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\enquiries.php on line 20
+[06-Dec-2024 13:11:25 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\enquiries.php on line 24
+[06-Dec-2024 13:11:25 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\enquiries.php on line 33
+[06-Dec-2024 13:11:25 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\enquiries.php on line 37
+[06-Dec-2024 13:11:25 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\enquiries.php on line 46
+[06-Dec-2024 13:11:25 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\enquiries.php on line 50
+[06-Dec-2024 13:11:25 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\enquiries.php on line 59
+[06-Dec-2024 13:11:25 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\enquiries.php on line 63
+[06-Dec-2024 13:11:25 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\enquiries.php on line 72
+[06-Dec-2024 13:11:25 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\enquiries.php on line 76
+[06-Dec-2024 13:11:25 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\enquiries.php on line 85
+[06-Dec-2024 13:11:25 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\enquiries.php on line 89
+[06-Dec-2024 13:11:25 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\enquiries.php on line 98
+[06-Dec-2024 13:11:25 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\enquiries.php on line 102

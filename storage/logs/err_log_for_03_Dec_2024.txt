@@ -1,0 +1,149 @@
+[03-Dec-2024 20:42:44 Asia/Calcutta] PHP Warning:  require(C:\xampp\htdocs\system\acm/SysModules/COMPLAINT_Modules/Complaints.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\system\acm\SystemFileProcessor.php on line 62
+[03-Dec-2024 20:42:44 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\system\acm/SysModules/COMPLAINT_Modules/Complaints.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\system\acm\SystemFileProcessor.php:62
+Stack trace:
+#0 C:\xampp\htdocs\system\acm\SysFileAutoLoader.php(77): require()
+#1 C:\xampp\htdocs\system\app\index.php(3): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\acm\SystemFileProcessor.php on line 62
+[03-Dec-2024 20:48:00 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[03-Dec-2024 21:17:36 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'system.config_url_types' doesn't exist in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php:24
+Stack trace:
+#0 C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php(24): mysqli_query(Object(mysqli), 'SELECT cut_name...')
+#1 C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Suggest.php(6): CHECK('SELECT cut_name...')
+#2 C:\xampp\htdocs\system\app\settings\config-urls\index.php(61): SUGGEST('config_url_type...', 'cut_name', 'ASC')
+#3 {main}
+  thrown in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php on line 24
+[03-Dec-2024 21:18:40 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'system.config_vendor_types' doesn't exist in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php:24
+Stack trace:
+#0 C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php(24): mysqli_query(Object(mysqli), 'SELECT vendor_t...')
+#1 C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Suggest.php(6): CHECK('SELECT vendor_t...')
+#2 C:\xampp\htdocs\system\app\settings\config-vendors\index.php(66): SUGGEST('config_vendor_t...', 'vendor_type_nam...', 'ASC')
+#3 {main}
+  thrown in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php on line 24
+[03-Dec-2024 21:18:51 Asia/Calcutta] PHP Warning:  include(../../../..//assets/app/HeaderFiles.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\system\app\settings\config-vendors\categories\index.php on line 20
+[03-Dec-2024 21:18:51 Asia/Calcutta] PHP Warning:  include(): Failed opening '../../../..//assets/app/HeaderFiles.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\system\app\settings\config-vendors\categories\index.php on line 20
+[03-Dec-2024 21:18:51 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'system.config_vendor_categories' doesn't exist in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php:24
+Stack trace:
+#0 C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php(24): mysqli_query(Object(mysqli), 'SELECT cvc_name...')
+#1 C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Suggest.php(6): CHECK('SELECT cvc_name...')
+#2 C:\xampp\htdocs\system\app\settings\config-vendors\categories\index.php(66): SUGGEST('config_vendor_c...', 'cvc_name', 'ASC')
+#3 {main}
+  thrown in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php on line 24
+[03-Dec-2024 21:18:53 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'system.config_vendor_types' doesn't exist in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php:24
+Stack trace:
+#0 C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php(24): mysqli_query(Object(mysqli), 'SELECT vendor_t...')
+#1 C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Suggest.php(6): CHECK('SELECT vendor_t...')
+#2 C:\xampp\htdocs\system\app\settings\config-vendors\index.php(66): SUGGEST('config_vendor_t...', 'vendor_type_nam...', 'ASC')
+#3 {main}
+  thrown in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php on line 24
+[03-Dec-2024 21:19:21 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'system.config_url_types' doesn't exist in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php:24
+Stack trace:
+#0 C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php(24): mysqli_query(Object(mysqli), 'SELECT cut_name...')
+#1 C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Suggest.php(6): CHECK('SELECT cut_name...')
+#2 C:\xampp\htdocs\system\app\settings\config-urls\index.php(61): SUGGEST('config_url_type...', 'cut_name', 'ASC')
+#3 {main}
+  thrown in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php on line 24
+[03-Dec-2024 21:19:38 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'system.config_url_types' doesn't exist in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php:24
+Stack trace:
+#0 C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php(24): mysqli_query(Object(mysqli), 'SELECT cut_name...')
+#1 C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Suggest.php(6): CHECK('SELECT cut_name...')
+#2 C:\xampp\htdocs\system\app\settings\config-urls\index.php(61): SUGGEST('config_url_type...', 'cut_name', 'ASC')
+#3 {main}
+  thrown in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php on line 24
+[03-Dec-2024 21:19:48 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'system.config_url_types' doesn't exist in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php:24
+Stack trace:
+#0 C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php(24): mysqli_query(Object(mysqli), 'SELECT cut_name...')
+#1 C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Suggest.php(6): CHECK('SELECT cut_name...')
+#2 C:\xampp\htdocs\system\app\settings\config-urls\index.php(61): SUGGEST('config_url_type...', 'cut_name', 'ASC')
+#3 {main}
+  thrown in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php on line 24
+[03-Dec-2024 21:19:52 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'system.config_url_types' doesn't exist in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php:24
+Stack trace:
+#0 C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php(24): mysqli_query(Object(mysqli), 'SELECT cut_name...')
+#1 C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Suggest.php(6): CHECK('SELECT cut_name...')
+#2 C:\xampp\htdocs\system\app\settings\config-urls\index.php(61): SUGGEST('config_url_type...', 'cut_name', 'ASC')
+#3 {main}
+  thrown in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php on line 24
+[03-Dec-2024 21:20:51 Asia/Calcutta] PHP Warning:  include(../../..//include/forms/app/UpdateConfigUrlsForm.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\system\app\settings\config-urls\index.php on line 133
+[03-Dec-2024 21:20:51 Asia/Calcutta] PHP Warning:  include(): Failed opening '../../..//include/forms/app/UpdateConfigUrlsForm.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\system\app\settings\config-urls\index.php on line 133
+[03-Dec-2024 21:20:51 Asia/Calcutta] PHP Warning:  include(../../..//include/forms/app/UpdateConfigUrlsForm.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\system\app\settings\config-urls\index.php on line 133
+[03-Dec-2024 21:20:51 Asia/Calcutta] PHP Warning:  include(): Failed opening '../../..//include/forms/app/UpdateConfigUrlsForm.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\system\app\settings\config-urls\index.php on line 133
+[03-Dec-2024 21:20:51 Asia/Calcutta] PHP Warning:  include(../../..//include/forms/app/UpdateConfigUrlsForm.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\system\app\settings\config-urls\index.php on line 133
+[03-Dec-2024 21:20:51 Asia/Calcutta] PHP Warning:  include(): Failed opening '../../..//include/forms/app/UpdateConfigUrlsForm.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\system\app\settings\config-urls\index.php on line 133
+[03-Dec-2024 21:20:51 Asia/Calcutta] PHP Warning:  include(../../..//include/forms/app/UpdateConfigUrlsForm.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\system\app\settings\config-urls\index.php on line 133
+[03-Dec-2024 21:20:51 Asia/Calcutta] PHP Warning:  include(): Failed opening '../../..//include/forms/app/UpdateConfigUrlsForm.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\system\app\settings\config-urls\index.php on line 133
+[03-Dec-2024 21:20:51 Asia/Calcutta] PHP Warning:  include(../../..//include/forms/app/UpdateConfigUrlsForm.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\system\app\settings\config-urls\index.php on line 133
+[03-Dec-2024 21:20:51 Asia/Calcutta] PHP Warning:  include(): Failed opening '../../..//include/forms/app/UpdateConfigUrlsForm.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\system\app\settings\config-urls\index.php on line 133
+[03-Dec-2024 21:20:51 Asia/Calcutta] PHP Warning:  include(../../..//include/forms/app/CreateNewConfigUrls.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\system\app\settings\config-urls\index.php on line 151
+[03-Dec-2024 21:20:51 Asia/Calcutta] PHP Warning:  include(): Failed opening '../../..//include/forms/app/CreateNewConfigUrls.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\system\app\settings\config-urls\index.php on line 151
+[03-Dec-2024 21:22:52 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "COMMON_STATUS" in C:\xampp\htdocs\system\include\forms\UpdateConfigUrlsForm.php:23
+Stack trace:
+#0 C:\xampp\htdocs\system\app\settings\config-urls\index.php(133): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\forms\UpdateConfigUrlsForm.php on line 23
+[03-Dec-2024 21:22:59 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "COMMON_STATUS" in C:\xampp\htdocs\system\include\forms\UpdateConfigUrlsForm.php:23
+Stack trace:
+#0 C:\xampp\htdocs\system\app\settings\config-urls\index.php(133): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\forms\UpdateConfigUrlsForm.php on line 23
+[03-Dec-2024 21:25:04 Asia/Calcutta] PHP Warning:  include(../../assets/app/HeaderFiles.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\system\app\users\index.php on line 23
+[03-Dec-2024 21:25:04 Asia/Calcutta] PHP Warning:  include(): Failed opening '../../assets/app/HeaderFiles.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\system\app\users\index.php on line 23
+[03-Dec-2024 21:25:04 Asia/Calcutta] PHP Warning:  include(../../assets/app/FooterFiles.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\system\app\users\index.php on line 124
+[03-Dec-2024 21:25:04 Asia/Calcutta] PHP Warning:  include(): Failed opening '../../assets/app/FooterFiles.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\system\app\users\index.php on line 124
+[03-Dec-2024 21:25:32 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'UserUpdatedBy' in 'field list' in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Update.php:10
+Stack trace:
+#0 C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Update.php(10): mysqli_query(Object(mysqli), 'UPDATE users SE...')
+#1 C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Update.php(46): UPDATE_SQL('UPDATE users SE...')
+#2 C:\xampp\htdocs\system\handler\ModuleController\UserController.php(79): UPDATE('users', Array, 'UserId='1'')
+#3 C:\xampp\htdocs\system\handler\ModuleController.php(10): include('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Update.php on line 10
+[03-Dec-2024 22:14:26 Asia/Calcutta] PHP Warning:  Undefined variable $UserStatus in C:\xampp\htdocs\system\app\users\index.php on line 70
+[03-Dec-2024 22:14:26 Asia/Calcutta] PHP Warning:  Undefined variable $UserStatus in C:\xampp\htdocs\system\app\users\index.php on line 71
+[03-Dec-2024 22:14:26 Asia/Calcutta] PHP Warning:  Undefined variable $UserStatus in C:\xampp\htdocs\system\app\users\index.php on line 72
+[03-Dec-2024 22:14:26 Asia/Calcutta] PHP Warning:  Undefined variable $UserMainUserId in C:\xampp\htdocs\system\app\users\index.php on line 109
+[03-Dec-2024 22:14:26 Asia/Calcutta] PHP Warning:  Undefined variable $UserMainUserId in C:\xampp\htdocs\system\app\users\index.php on line 113
+[03-Dec-2024 22:14:26 Asia/Calcutta] PHP Warning:  Undefined variable $UserMainUserId in C:\xampp\htdocs\system\app\users\index.php on line 114
+[03-Dec-2024 22:14:42 Asia/Calcutta] PHP Warning:  Undefined variable $UserMainUserId in C:\xampp\htdocs\system\app\users\index.php on line 109
+[03-Dec-2024 22:14:42 Asia/Calcutta] PHP Warning:  Undefined variable $UserMainUserId in C:\xampp\htdocs\system\app\users\index.php on line 113
+[03-Dec-2024 22:14:42 Asia/Calcutta] PHP Warning:  Undefined variable $UserMainUserId in C:\xampp\htdocs\system\app\users\index.php on line 114
+[03-Dec-2024 22:18:42 Asia/Calcutta] PHP Warning:  Undefined array key "UserStatus" in C:\xampp\htdocs\system\handler\ModuleController\UserController.php on line 99
+[03-Dec-2024 22:18:50 Asia/Calcutta] PHP Warning:  Undefined array key "UserStatus" in C:\xampp\htdocs\system\handler\ModuleController\UserController.php on line 99
+[03-Dec-2024 22:22:32 Asia/Calcutta] PHP Warning:  Undefined array key "UserStatus" in C:\xampp\htdocs\system\handler\ModuleController\UserController.php on line 99
+[03-Dec-2024 22:31:49 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'UserCreatedBy' in 'field list' in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Insert.php:51
+Stack trace:
+#0 C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Insert.php(51): mysqli_query(Object(mysqli), 'INSERT INTO use...')
+#1 C:\xampp\htdocs\system\handler\ModuleController\UserController.php(46): INSERT('users', Array)
+#2 C:\xampp\htdocs\system\handler\ModuleController.php(10): include('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Insert.php on line 51
+[03-Dec-2024 22:35:26 Asia/Calcutta] PHP Warning:  Undefined array key "UserStatus" in C:\xampp\htdocs\system\handler\ModuleController\UserController.php on line 99
+[03-Dec-2024 22:35:30 Asia/Calcutta] PHP Warning:  Undefined array key "UserStatus" in C:\xampp\htdocs\system\handler\ModuleController\UserController.php on line 99
+[03-Dec-2024 22:38:10 Asia/Calcutta] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\system\auth\logout\index.php on line 4
+[03-Dec-2024 23:40:32 Asia/Calcutta] PHP Warning:  mkdir(): No such file or directory in C:\xampp\htdocs\system\acm\SysModules\PHP_Modules\DirHandler.php on line 7
+[03-Dec-2024 23:40:32 Asia/Calcutta] PHP Warning:  mkdir(): No such file or directory in C:\xampp\htdocs\system\acm\SysModules\PHP_Modules\DirHandler.php on line 7
+[03-Dec-2024 23:40:32 Asia/Calcutta] PHP Warning:  mkdir(): No such file or directory in C:\xampp\htdocs\system\acm\SysModules\PHP_Modules\DirHandler.php on line 7
+[03-Dec-2024 23:40:32 Asia/Calcutta] PHP Warning:  mkdir(): No such file or directory in C:\xampp\htdocs\system\acm\SysModules\PHP_Modules\DirHandler.php on line 7
+[03-Dec-2024 23:40:32 Asia/Calcutta] PHP Warning:  mkdir(): No such file or directory in C:\xampp\htdocs\system\acm\SysModules\PHP_Modules\DirHandler.php on line 7
+[03-Dec-2024 23:40:32 Asia/Calcutta] PHP Warning:  mkdir(): No such file or directory in C:\xampp\htdocs\system\acm\SysModules\PHP_Modules\DirHandler.php on line 7
+[03-Dec-2024 23:40:32 Asia/Calcutta] PHP Warning:  mkdir(): No such file or directory in C:\xampp\htdocs\system\acm\SysModules\PHP_Modules\DirHandler.php on line 7
+[03-Dec-2024 23:40:32 Asia/Calcutta] PHP Warning:  mkdir(): No such file or directory in C:\xampp\htdocs\system\acm\SysModules\PHP_Modules\DirHandler.php on line 7
+[03-Dec-2024 23:40:32 Asia/Calcutta] PHP Warning:  mkdir(): No such file or directory in C:\xampp\htdocs\system\acm\SysModules\PHP_Modules\DirHandler.php on line 7
+[03-Dec-2024 23:40:32 Asia/Calcutta] PHP Warning:  mkdir(): No such file or directory in C:\xampp\htdocs\system\acm\SysModules\PHP_Modules\DirHandler.php on line 7
+[03-Dec-2024 23:40:32 Asia/Calcutta] PHP Warning:  mkdir(): No such file or directory in C:\xampp\htdocs\system\acm\SysModules\PHP_Modules\DirHandler.php on line 7
+[03-Dec-2024 23:40:32 Asia/Calcutta] PHP Warning:  mkdir(): No such file or directory in C:\xampp\htdocs\system\acm\SysModules\PHP_Modules\DirHandler.php on line 7
+[03-Dec-2024 23:40:32 Asia/Calcutta] PHP Warning:  mkdir(): No such file or directory in C:\xampp\htdocs\system\acm\SysModules\PHP_Modules\DirHandler.php on line 7
+[03-Dec-2024 23:40:32 Asia/Calcutta] PHP Warning:  mkdir(): No such file or directory in C:\xampp\htdocs\system\acm\SysModules\PHP_Modules\DirHandler.php on line 7
+[03-Dec-2024 23:40:32 Asia/Calcutta] PHP Warning:  mkdir(): No such file or directory in C:\xampp\htdocs\system\acm\SysModules\PHP_Modules\DirHandler.php on line 7
+[03-Dec-2024 23:40:32 Asia/Calcutta] PHP Warning:  mkdir(): No such file or directory in C:\xampp\htdocs\system\acm\SysModules\PHP_Modules\DirHandler.php on line 7
+[03-Dec-2024 23:40:32 Asia/Calcutta] PHP Warning:  mkdir(): No such file or directory in C:\xampp\htdocs\system\acm\SysModules\PHP_Modules\DirHandler.php on line 7
+[03-Dec-2024 23:40:32 Asia/Calcutta] PHP Warning:  mkdir(): No such file or directory in C:\xampp\htdocs\system\acm\SysModules\PHP_Modules\DirHandler.php on line 7
+[03-Dec-2024 23:40:32 Asia/Calcutta] PHP Warning:  mkdir(): No such file or directory in C:\xampp\htdocs\system\acm\SysModules\PHP_Modules\DirHandler.php on line 7
+[03-Dec-2024 23:40:32 Asia/Calcutta] PHP Warning:  mkdir(): No such file or directory in C:\xampp\htdocs\system\acm\SysModules\PHP_Modules\DirHandler.php on line 7
+[03-Dec-2024 23:40:32 Asia/Calcutta] PHP Warning:  mkdir(): No such file or directory in C:\xampp\htdocs\system\acm\SysModules\PHP_Modules\DirHandler.php on line 7
+[03-Dec-2024 23:40:32 Asia/Calcutta] PHP Warning:  mkdir(): No such file or directory in C:\xampp\htdocs\system\acm\SysModules\PHP_Modules\DirHandler.php on line 7

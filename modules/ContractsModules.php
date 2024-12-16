@@ -1,0 +1,55 @@
+<?php
+DEFINE("CONTRACT_STATUS", [
+    "0" => "Fresh Contracts",
+    "1" => "Active Contracts",
+    "2" => "Pauses Contracts",
+    "3" => "Pending Contracts",
+    "4" => "Completed Contracts",
+    "5" => "Cancelled Contracts",
+    "6" => "Overdue Contracts"
+]);
+
+DEFINE(
+    "VENDOR_CONTRACT_TYPES",
+    $vendorContractsType = [
+        "" => "Select Contract Types",
+        "long_term" => "Long Term Contract",
+        "short_term" => "Short Term Contract",
+        "fixed_price" => "Fixed Price Contract",
+        "time_and_materials" => "Time and Materials Contract",
+        "advance_paid_contract" => "Advance Paid Contract",
+        "service_level_agreement" => "Service Level Agreement (SLA)",
+        "framework_agreement" => "Framework Agreement",
+        "pay_per_use" => "Pay Per Use Contract",
+        "pay_per_day" => "Pay Per Day Contract",
+        "outsourcing" => "Outsourcing Contract",
+        "partnership" => "Partnership Contract",
+        "lease" => "Lease Agreement",
+        "consultancy" => "Consultancy Contract",
+        "non_disclosure_agreement" => "Non-Disclosure Agreement (NDA)",
+        "maintenance" => "Maintenance Contract",
+        "subscription" => "Subscription Contract",
+        "commission_based" => "Commission-Based Contract",
+        "distribution" => "Distribution Contract",
+        "supply" => "Supply Agreement",
+        "employment" => "Employment Contract",
+        "freelance" => "Freelance Contract",
+        "joint_venture" => "Joint Venture Agreement",
+        "sales" => "Sales Agreement",
+        "marketing" => "Marketing Contract",
+        "licensing" => "Licensing Agreement",
+        "service" => "Service Agreement",
+        "vendor_management" => "Vendor Management Contract",
+        "contractor" => "Independent Contractor Agreement",
+        "white_label" => "White Label Agreement",
+        "franchise" => "Franchise Agreement",
+        "project_based" => "Project-Based Contract",
+        "performance_based" => "Performance-Based Contract",
+        "consignment" => "Consignment Agreement",
+        "construction" => "Construction Contract",
+        "IT_services" => "IT Services Agreement",
+        "hosting" => "Hosting Contract",
+        "consulting" => "Consulting Agreement",
+        "event_management" => "Event Management Contract"
+    ]
+);

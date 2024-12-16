@@ -1,0 +1,28 @@
+[27-Nov-2024 13:35:23 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[27-Nov-2024 21:48:25 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[27-Nov-2024 23:09:00 Asia/Calcutta] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\system\auth\logout\index.php on line 4
+[27-Nov-2024 23:52:16 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'system.config_url_types' doesn't exist in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php:24
+Stack trace:
+#0 C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php(24): mysqli_query(Object(mysqli), 'SELECT cut_name...')
+#1 C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Suggest.php(6): CHECK('SELECT cut_name...')
+#2 C:\xampp\htdocs\system\app\settings\config-urls\index.php(61): SUGGEST('config_url_type...', 'cut_name', 'ASC')
+#3 {main}
+  thrown in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php on line 24
+[27-Nov-2024 23:52:19 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'system.config_vendor_types' doesn't exist in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php:24
+Stack trace:
+#0 C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php(24): mysqli_query(Object(mysqli), 'SELECT vendor_t...')
+#1 C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Suggest.php(6): CHECK('SELECT vendor_t...')
+#2 C:\xampp\htdocs\system\app\settings\config-vendors\index.php(66): SUGGEST('config_vendor_t...', 'vendor_type_nam...', 'ASC')
+#3 {main}
+  thrown in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php on line 24
+[27-Nov-2024 23:55:38 Asia/Calcutta] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\system\auth\logout\index.php on line 4

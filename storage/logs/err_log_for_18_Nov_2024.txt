@@ -1,0 +1,57 @@
+[18-Nov-2024 08:32:38 Asia/Calcutta] PHP Warning:  Undefined array key "LOGIN_USER_ID" in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[18-Nov-2024 08:32:38 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[18-Nov-2024 08:32:39 Asia/Calcutta] PHP Warning:  include(../../assets/app/HeaderFiles.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\system\auth\login\index.php on line 18
+[18-Nov-2024 08:32:39 Asia/Calcutta] PHP Warning:  include(): Failed opening '../../assets/app/HeaderFiles.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\system\auth\login\index.php on line 18
+[18-Nov-2024 08:32:39 Asia/Calcutta] PHP Warning:  include(../../assets/app/FooterFiles.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\system\auth\login\index.php on line 58
+[18-Nov-2024 08:32:39 Asia/Calcutta] PHP Warning:  include(): Failed opening '../../assets/app/FooterFiles.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\system\auth\login\index.php on line 58
+[18-Nov-2024 08:36:11 Asia/Calcutta] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in C:\xampp\htdocs\system\acm\SysModules\MAIL_Modules\vendor\phpmailer\phpmailer\src\PHPMailer.php:2212
+Stack trace:
+#0 C:\xampp\htdocs\system\acm\SysModules\MAIL_Modules\vendor\phpmailer\phpmailer\src\PHPMailer.php(2019): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 C:\xampp\htdocs\system\acm\SysModules\MAIL_Modules\vendor\phpmailer\phpmailer\src\PHPMailer.php(1678): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Mon, 18 N...', '\r\n    <body>\r\n ...')
+#2 C:\xampp\htdocs\system\acm\SysModules\MAIL_Modules\vendor\phpmailer\phpmailer\src\PHPMailer.php(1516): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 C:\xampp\htdocs\system\acm\SysModules\MAIL_Modules\Mail.php(74): PHPMailer\PHPMailer\PHPMailer->send()
+#4 C:\xampp\htdocs\system\handler\AuthController\AuthController.php(115): SENDMAILS('Password Reset ...', 'Verify Your Acc...', 'gauravsinghigc@...', 'Your Password R...')
+#5 {main}
+  thrown in C:\xampp\htdocs\system\acm\SysModules\MAIL_Modules\vendor\phpmailer\phpmailer\src\PHPMailer.php on line 2212
+[18-Nov-2024 08:50:48 Asia/Calcutta] PHP Warning:  Undefined array key "LOGIN_USER_ID" in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[18-Nov-2024 08:50:48 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[18-Nov-2024 08:55:51 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'system.config_url_types' doesn't exist in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php:24
+Stack trace:
+#0 C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php(24): mysqli_query(Object(mysqli), 'SELECT cut_name...')
+#1 C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Suggest.php(6): CHECK('SELECT cut_name...')
+#2 C:\xampp\htdocs\system\app\settings\config-urls\index.php(61): SUGGEST('config_url_type...', 'cut_name', 'ASC')
+#3 {main}
+  thrown in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Checker.php on line 24
+[18-Nov-2024 11:00:33 Asia/Calcutta] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\system\auth\logout\index.php on line 4
+[18-Nov-2024 17:33:51 Asia/Calcutta] PHP Warning:  Undefined array key "LOGIN_USER_ID" in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[18-Nov-2024 17:33:51 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[18-Nov-2024 17:34:46 Asia/Calcutta] PHP Warning:  include(../../include/common/login-footer.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\system\auth\views\ForgetForm.php on line 24
+[18-Nov-2024 17:34:46 Asia/Calcutta] PHP Warning:  include(): Failed opening '../../include/common/login-footer.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\system\auth\views\ForgetForm.php on line 24
+[18-Nov-2024 17:34:46 Asia/Calcutta] PHP Warning:  Undefined array key "REQUESTED_EMAIL" in C:\xampp\htdocs\system\auth\views\VerifyAccount.php on line 10
+[18-Nov-2024 17:37:31 Asia/Calcutta] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function ReturnSessionalValues(), 2 passed in C:\xampp\htdocs\system\auth\index.php on line 3 and exactly 3 expected in C:\xampp\htdocs\system\acm\SysModules\PHP_Modules\SessionDataHandler.php:16
+Stack trace:
+#0 C:\xampp\htdocs\system\auth\index.php(3): ReturnSessionalValues('AUTHENTICATION_...', 'LoginForm')
+#1 {main}
+  thrown in C:\xampp\htdocs\system\acm\SysModules\PHP_Modules\SessionDataHandler.php on line 16
+[18-Nov-2024 17:42:27 Asia/Calcutta] PHP Warning:  include(../../include/common/login-footer.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\system\auth\views\ForgetForm.php on line 24
+[18-Nov-2024 17:42:27 Asia/Calcutta] PHP Warning:  include(): Failed opening '../../include/common/login-footer.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\system\auth\views\ForgetForm.php on line 24
+[18-Nov-2024 18:15:44 Asia/Calcutta] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\system\auth\logout\index.php on line 4
+[18-Nov-2024 18:30:10 Asia/Calcutta] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\system\auth\logout\index.php on line 4
+[18-Nov-2024 18:32:08 Asia/Calcutta] PHP Warning:  Undefined array key "LOGIN_USER_ID" in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[18-Nov-2024 18:32:08 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22

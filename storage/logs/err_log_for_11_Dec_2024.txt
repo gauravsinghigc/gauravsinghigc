@@ -1,0 +1,6 @@
+[11-Dec-2024 10:12:23 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\gauravsinghigc\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\include\common\TopHeader.php(37): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\gauravsinghigc\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\modules\AuthUserModules.php on line 11

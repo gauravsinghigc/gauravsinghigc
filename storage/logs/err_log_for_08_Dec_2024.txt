@@ -1,0 +1,81 @@
+[08-Dec-2024 08:41:51 Asia/Calcutta] PHP Warning:  require(../../app/enquiries/HeaderRequest/HeaderRequest.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\gauravsinghigc\app\customers\index.php on line 5
+[08-Dec-2024 08:41:51 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Failed opening required '../../app/enquiries/HeaderRequest/HeaderRequest.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\gauravsinghigc\app\customers\index.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\app\customers\index.php on line 5
+[08-Dec-2024 08:58:54 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "VENDOR_MENUS" in C:\xampp\htdocs\gauravsinghigc\app\vendors\details\Handler\HeaderRequest.php:34
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\app\vendors\details\index.php(5): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\app\vendors\details\Handler\HeaderRequest.php on line 34
+[08-Dec-2024 09:12:28 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:12:28 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:12:28 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:12:28 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:12:28 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:12:28 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:12:28 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:12:28 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:12:28 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:12:28 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:13:03 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:13:03 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:13:03 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:13:03 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:13:03 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:13:03 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:13:03 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:13:03 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:13:03 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:13:03 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:13:57 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:13:57 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:13:57 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:13:57 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:13:57 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:13:57 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:13:57 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:13:57 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:13:57 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:13:57 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:07 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:07 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:07 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:07 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:07 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:07 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:07 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:07 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:07 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:07 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:25 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:25 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:25 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:25 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:25 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:25 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:25 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:25 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:25 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:25 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:32 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:32 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:32 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:32 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:32 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:32 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:32 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:32 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:32 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:14:32 Asia/Calcutta] PHP Warning:  Undefined variable $ActiveRecord in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 50
+[08-Dec-2024 09:16:15 Asia/Calcutta] PHP Warning:  require(../../../app/enquiries/HeaderRequest/HeaderRequest): Failed to open stream: No such file or directory in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 5
+[08-Dec-2024 09:16:15 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Failed opening required '../../../app/enquiries/HeaderRequest/HeaderRequest' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\app\enquiries\add\index.php on line 5
+[08-Dec-2024 18:15:00 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\gauravsinghigc\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\include\common\TopHeader.php(37): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\gauravsinghigc\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\modules\AuthUserModules.php on line 11

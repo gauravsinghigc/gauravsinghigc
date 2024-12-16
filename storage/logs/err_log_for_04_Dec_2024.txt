@@ -1,0 +1,179 @@
+[04-Dec-2024 11:29:19 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(32): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[04-Dec-2024 11:30:46 Asia/Calcutta] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\system\auth\logout\index.php on line 4
+[04-Dec-2024 17:51:10 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'gauravsinghigc' in C:\xampp\htdocs\gauravsinghigc\acm\SystemDBConnector.php:5
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SystemDBConnector.php(5): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'gauravsinghigc')
+#1 C:\xampp\htdocs\gauravsinghigc\acm\SysFileAutoLoader.php(71): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\gauravsinghigc\app\index.php(3): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SystemDBConnector.php on line 5
+[04-Dec-2024 17:53:56 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\gauravsinghigc\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\include\common\TopHeader.php(32): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\gauravsinghigc\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\modules\AuthUserModules.php on line 11
+[04-Dec-2024 19:07:41 Asia/Calcutta] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\gauravsinghigc\include\forms\Add-Record-Window.php on line 11
+[04-Dec-2024 19:07:41 Asia/Calcutta] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\gauravsinghigc\include\forms\Add-Record-Window.php on line 11
+[04-Dec-2024 19:07:41 Asia/Calcutta] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\gauravsinghigc\include\forms\Add-Record-Window.php on line 11
+[04-Dec-2024 19:07:41 Asia/Calcutta] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\gauravsinghigc\include\forms\Add-Record-Window.php on line 11
+[04-Dec-2024 19:07:41 Asia/Calcutta] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\gauravsinghigc\include\forms\Add-Record-Window.php on line 11
+[04-Dec-2024 19:07:41 Asia/Calcutta] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\gauravsinghigc\include\forms\Add-Record-Window.php on line 11
+[04-Dec-2024 19:07:41 Asia/Calcutta] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\gauravsinghigc\include\forms\Add-Record-Window.php on line 11
+[04-Dec-2024 19:07:41 Asia/Calcutta] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\gauravsinghigc\include\forms\Add-Record-Window.php on line 11
+[04-Dec-2024 19:07:41 Asia/Calcutta] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\gauravsinghigc\include\forms\Add-Record-Window.php on line 11
+[04-Dec-2024 19:07:41 Asia/Calcutta] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\gauravsinghigc\include\forms\Add-Record-Window.php on line 11
+[04-Dec-2024 19:07:41 Asia/Calcutta] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\gauravsinghigc\include\forms\Add-Record-Window.php on line 11
+[04-Dec-2024 19:07:41 Asia/Calcutta] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\gauravsinghigc\include\forms\Add-Record-Window.php on line 11
+[04-Dec-2024 19:07:41 Asia/Calcutta] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\gauravsinghigc\include\forms\Add-Record-Window.php on line 11
+[04-Dec-2024 19:07:41 Asia/Calcutta] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\gauravsinghigc\include\forms\Add-Record-Window.php on line 11
+[04-Dec-2024 19:07:41 Asia/Calcutta] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\gauravsinghigc\include\forms\Add-Record-Window.php on line 11
+[04-Dec-2024 19:07:41 Asia/Calcutta] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\gauravsinghigc\include\forms\Add-Record-Window.php on line 11
+[04-Dec-2024 19:07:41 Asia/Calcutta] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\gauravsinghigc\include\forms\Add-Record-Window.php on line 11
+[04-Dec-2024 19:07:41 Asia/Calcutta] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\gauravsinghigc\include\forms\Add-Record-Window.php on line 11
+[04-Dec-2024 19:07:41 Asia/Calcutta] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\gauravsinghigc\include\forms\Add-Record-Window.php on line 11
+[04-Dec-2024 19:07:41 Asia/Calcutta] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\gauravsinghigc\include\forms\Add-Record-Window.php on line 11
+[04-Dec-2024 19:07:41 Asia/Calcutta] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\gauravsinghigc\include\forms\Add-Record-Window.php on line 11
+[04-Dec-2024 19:07:41 Asia/Calcutta] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\gauravsinghigc\include\forms\Add-Record-Window.php on line 11
+[04-Dec-2024 19:07:41 Asia/Calcutta] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\gauravsinghigc\include\forms\Add-Record-Window.php on line 11
+[04-Dec-2024 20:19:10 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "ENQUIRY_MENUS" in C:\xampp\htdocs\gauravsinghigc\app\enquiries\HeaderRequest\HeaderRequest.php:4
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\app\enquiries\index.php(5): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\app\enquiries\HeaderRequest\HeaderRequest.php on line 4
+[04-Dec-2024 20:22:35 Asia/Calcutta] PHP Warning:  include(../../assets/app/HeaderFiles.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\gauravsinghigc\app\enquiries\index.php on line 21
+[04-Dec-2024 20:22:35 Asia/Calcutta] PHP Warning:  include(): Failed opening '../../assets/app/HeaderFiles.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\gauravsinghigc\app\enquiries\index.php on line 21
+[04-Dec-2024 20:22:35 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'gauravsinghigc.vendor' doesn't exist in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php:12
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(12): mysqli_query(Object(mysqli), 'SELECT * FROM v...')
+#1 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(42): SELECT('SELECT * FROM v...')
+#2 C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\website_enquiries.php(39): SET_SQL('SELECT * FROM v...', true)
+#3 C:\xampp\htdocs\gauravsinghigc\app\enquiries\index.php(57): include('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php on line 12
+[04-Dec-2024 20:23:21 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'gauravsinghigc.vendor' doesn't exist in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php:12
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(12): mysqli_query(Object(mysqli), 'SELECT * FROM v...')
+#1 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(42): SELECT('SELECT * FROM v...')
+#2 C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\website_enquiries.php(39): SET_SQL('SELECT * FROM v...', true)
+#3 C:\xampp\htdocs\gauravsinghigc\app\enquiries\index.php(50): include('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php on line 12
+[04-Dec-2024 20:25:26 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'gauravsinghigc.vendor' doesn't exist in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php:12
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(12): mysqli_query(Object(mysqli), 'SELECT * FROM v...')
+#1 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(42): SELECT('SELECT * FROM v...')
+#2 C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\website_enquiries.php(39): SET_SQL('SELECT * FROM v...', true)
+#3 C:\xampp\htdocs\gauravsinghigc\app\enquiries\index.php(50): include('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php on line 12
+[04-Dec-2024 20:25:39 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'gauravsinghigc.vendor' doesn't exist in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Checker.php:24
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Checker.php(24): mysqli_query(Object(mysqli), 'SELECT vendor_n...')
+#1 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Suggest.php(6): CHECK('SELECT vendor_n...')
+#2 C:\xampp\htdocs\gauravsinghigc\app\vendors\index.php(85): SUGGEST('vendor', 'vendor_name', 'ASC')
+#3 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Checker.php on line 24
+[04-Dec-2024 20:25:45 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'gauravsinghigc.vendor' doesn't exist in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php:12
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(12): mysqli_query(Object(mysqli), 'SELECT * FROM v...')
+#1 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(42): SELECT('SELECT * FROM v...')
+#2 C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\website_enquiries.php(39): SET_SQL('SELECT * FROM v...', true)
+#3 C:\xampp\htdocs\gauravsinghigc\app\enquiries\index.php(50): include('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php on line 12
+[04-Dec-2024 20:27:54 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 9
+[04-Dec-2024 20:27:54 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 12
+[04-Dec-2024 20:27:54 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 20
+[04-Dec-2024 20:27:54 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 24
+[04-Dec-2024 20:27:54 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 33
+[04-Dec-2024 20:27:54 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 37
+[04-Dec-2024 20:27:54 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 46
+[04-Dec-2024 20:27:54 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 50
+[04-Dec-2024 20:27:54 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 59
+[04-Dec-2024 20:27:54 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 63
+[04-Dec-2024 20:27:54 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 72
+[04-Dec-2024 20:27:54 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 76
+[04-Dec-2024 20:27:54 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 85
+[04-Dec-2024 20:27:54 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 89
+[04-Dec-2024 20:27:54 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 98
+[04-Dec-2024 20:27:54 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 102
+[04-Dec-2024 20:27:59 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 9
+[04-Dec-2024 20:27:59 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 12
+[04-Dec-2024 20:27:59 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 20
+[04-Dec-2024 20:27:59 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 24
+[04-Dec-2024 20:27:59 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 33
+[04-Dec-2024 20:27:59 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 37
+[04-Dec-2024 20:27:59 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 46
+[04-Dec-2024 20:27:59 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 50
+[04-Dec-2024 20:27:59 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 59
+[04-Dec-2024 20:27:59 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 63
+[04-Dec-2024 20:27:59 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 72
+[04-Dec-2024 20:27:59 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 76
+[04-Dec-2024 20:27:59 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 85
+[04-Dec-2024 20:27:59 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 89
+[04-Dec-2024 20:27:59 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 98
+[04-Dec-2024 20:27:59 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 102
+[04-Dec-2024 20:28:22 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to undefined function VendorTypeDetails() in C:\xampp\htdocs\gauravsinghigc\app\vendors\index.php:133
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\app\vendors\index.php on line 133
+[04-Dec-2024 20:41:52 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 9
+[04-Dec-2024 20:41:52 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 12
+[04-Dec-2024 20:41:52 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 20
+[04-Dec-2024 20:41:52 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 24
+[04-Dec-2024 20:41:52 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 33
+[04-Dec-2024 20:41:52 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 37
+[04-Dec-2024 20:41:52 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 46
+[04-Dec-2024 20:41:52 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 50
+[04-Dec-2024 20:41:52 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 59
+[04-Dec-2024 20:41:52 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 63
+[04-Dec-2024 20:41:52 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 72
+[04-Dec-2024 20:41:52 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 76
+[04-Dec-2024 20:41:52 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 85
+[04-Dec-2024 20:41:52 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 89
+[04-Dec-2024 20:41:52 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 98
+[04-Dec-2024 20:41:52 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 102
+[04-Dec-2024 20:48:39 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "ENQUIRY_MENUS" in C:\xampp\htdocs\gauravsinghigc\app\enquiries\HeaderRequest\HeaderRequest.php:4
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\app\enquiries\index.php(5): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\app\enquiries\HeaderRequest\HeaderRequest.php on line 4
+[04-Dec-2024 20:48:42 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "ENQUIRY_MENUS" in C:\xampp\htdocs\gauravsinghigc\app\enquiries\HeaderRequest\HeaderRequest.php:4
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\app\enquiries\index.php(5): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\app\enquiries\HeaderRequest\HeaderRequest.php on line 4
+[04-Dec-2024 20:48:52 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "ENQUIRY_MENUS" in C:\xampp\htdocs\gauravsinghigc\app\enquiries\HeaderRequest\HeaderRequest.php:4
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\app\enquiries\index.php(5): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\app\enquiries\HeaderRequest\HeaderRequest.php on line 4
+[04-Dec-2024 20:49:10 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 9
+[04-Dec-2024 20:49:10 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 12
+[04-Dec-2024 20:49:10 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 20
+[04-Dec-2024 20:49:10 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 24
+[04-Dec-2024 20:49:10 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 33
+[04-Dec-2024 20:49:10 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 37
+[04-Dec-2024 20:49:10 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 46
+[04-Dec-2024 20:49:10 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 50
+[04-Dec-2024 20:49:10 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 59
+[04-Dec-2024 20:49:10 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 63
+[04-Dec-2024 20:49:10 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 72
+[04-Dec-2024 20:49:10 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 76
+[04-Dec-2024 20:49:10 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 85
+[04-Dec-2024 20:49:10 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 89
+[04-Dec-2024 20:49:10 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 98
+[04-Dec-2024 20:49:10 Asia/Calcutta] PHP Warning:  Undefined variable $REQ_VendorId in C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\contact_us_enquiries.php on line 102
+[04-Dec-2024 21:06:37 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$cut_id in C:\xampp\htdocs\gauravsinghigc\include\forms\Update-Enquiry-Types.php on line 11
+[04-Dec-2024 21:06:37 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$cut_name in C:\xampp\htdocs\gauravsinghigc\include\forms\Update-Enquiry-Types.php on line 17
+[04-Dec-2024 21:06:37 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$cut_status in C:\xampp\htdocs\gauravsinghigc\include\forms\Update-Enquiry-Types.php on line 23
+[04-Dec-2024 21:06:37 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$cut_icon in C:\xampp\htdocs\gauravsinghigc\include\forms\Update-Enquiry-Types.php on line 29
+[04-Dec-2024 21:06:37 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$cut_id in C:\xampp\htdocs\gauravsinghigc\include\forms\Update-Enquiry-Types.php on line 41
+[04-Dec-2024 21:07:33 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$cut_id in C:\xampp\htdocs\gauravsinghigc\include\forms\Update-Enquiry-Types.php on line 11
+[04-Dec-2024 21:36:50 Asia/Calcutta] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\gauravsinghigc\include\forms\Update-Enquiry-Types.php on line 53

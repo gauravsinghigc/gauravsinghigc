@@ -1,0 +1,308 @@
+[22-Nov-2024 07:35:15 Asia/Calcutta] PHP Warning:  Undefined array key "LOGIN_USER_ID" in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 07:35:15 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[22-Nov-2024 07:38:35 Asia/Calcutta] PHP Warning:  Undefined array key "LOGIN_USER_ID" in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 07:38:35 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[22-Nov-2024 07:39:40 Asia/Calcutta] PHP Warning:  Undefined array key "LOGIN_USER_ID" in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 07:39:40 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[22-Nov-2024 07:40:59 Asia/Calcutta] PHP Warning:  Undefined array key "APP_LOGIN_USER_ID" in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 5
+[22-Nov-2024 07:41:59 Asia/Calcutta] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in C:\xampp\htdocs\system\acm\SysFileAutoLoader.php on line 60
+[22-Nov-2024 07:42:20 Asia/Calcutta] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in C:\xampp\htdocs\system\acm\SysFileAutoLoader.php on line 60
+[22-Nov-2024 07:42:21 Asia/Calcutta] PHP Warning:  Undefined array key "LOGIN_USER_ID" in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 07:42:21 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[22-Nov-2024 07:42:21 Asia/Calcutta] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in C:\xampp\htdocs\system\acm\SysFileAutoLoader.php on line 60
+[22-Nov-2024 07:42:28 Asia/Calcutta] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in C:\xampp\htdocs\system\acm\SysFileAutoLoader.php on line 60
+[22-Nov-2024 07:42:30 Asia/Calcutta] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in C:\xampp\htdocs\system\acm\SysFileAutoLoader.php on line 60
+[22-Nov-2024 07:43:43 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "DOMAIN" in C:\xampp\htdocs\system\acm\SysFileAutoLoader.php:42
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(3): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\acm\SysFileAutoLoader.php on line 42
+[22-Nov-2024 07:43:53 Asia/Calcutta] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in C:\xampp\htdocs\system\acm\SysFileAutoLoader.php on line 39
+[22-Nov-2024 07:44:37 Asia/Calcutta] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in C:\xampp\htdocs\system\acm\SysFileAutoLoader.php on line 39
+[22-Nov-2024 07:44:37 Asia/Calcutta] PHP Warning:  Undefined array key "LOGIN_USER_ID" in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 07:44:37 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[22-Nov-2024 07:44:37 Asia/Calcutta] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in C:\xampp\htdocs\system\acm\SysFileAutoLoader.php on line 39
+[22-Nov-2024 07:44:43 Asia/Calcutta] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in C:\xampp\htdocs\system\acm\SysFileAutoLoader.php on line 39
+[22-Nov-2024 07:44:55 Asia/Calcutta] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in C:\xampp\htdocs\system\acm\SysFileAutoLoader.php on line 39
+[22-Nov-2024 07:44:55 Asia/Calcutta] PHP Warning:  Undefined array key "LOGIN_USER_ID" in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 07:44:55 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[22-Nov-2024 07:44:55 Asia/Calcutta] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in C:\xampp\htdocs\system\acm\SysFileAutoLoader.php on line 39
+[22-Nov-2024 07:45:45 Asia/Calcutta] PHP Warning:  Undefined array key "LOGIN_USER_ID" in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 07:46:14 Asia/Calcutta] PHP Warning:  Undefined array key "LOGIN_USER_ID" in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 07:47:05 Asia/Calcutta] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\system\auth\logout\index.php on line 4
+[22-Nov-2024 07:48:01 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 07:50:47 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 07:51:48 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 07:57:56 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 08:03:36 Asia/Calcutta] PHP Warning:  Array to string conversion in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 28
+[22-Nov-2024 08:03:36 Asia/Calcutta] PHP Warning:  Array to string conversion in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 29
+[22-Nov-2024 08:03:36 Asia/Calcutta] PHP Warning:  Array to string conversion in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 30
+[22-Nov-2024 08:03:36 Asia/Calcutta] PHP Warning:  Array to string conversion in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 31
+[22-Nov-2024 08:03:36 Asia/Calcutta] PHP Warning:  Array to string conversion in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 32
+[22-Nov-2024 08:03:36 Asia/Calcutta] PHP Warning:  Array to string conversion in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 33
+[22-Nov-2024 08:03:36 Asia/Calcutta] PHP Warning:  Array to string conversion in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 34
+[22-Nov-2024 08:03:36 Asia/Calcutta] PHP Warning:  Array to string conversion in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 35
+[22-Nov-2024 08:03:36 Asia/Calcutta] PHP Warning:  Array to string conversion in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 36
+[22-Nov-2024 08:06:27 Asia/Calcutta] PHP Warning:  Undefined variable $UserId in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 9
+[22-Nov-2024 08:06:27 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 08:06:36 Asia/Calcutta] PHP Warning:  Undefined variable $UserId in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 9
+[22-Nov-2024 08:06:36 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 08:07:19 Asia/Calcutta] PHP Warning:  Undefined variable $UserId in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 10
+[22-Nov-2024 08:07:19 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 08:09:28 Asia/Calcutta] PHP Warning:  Undefined array key "APP_LOGIN_USER_ID" in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 13
+[22-Nov-2024 08:09:28 Asia/Calcutta] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 13
+[22-Nov-2024 08:09:38 Asia/Calcutta] PHP Warning:  Undefined variable $UserId in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 10
+[22-Nov-2024 08:09:38 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 08:09:38 Asia/Calcutta] PHP Warning:  Undefined array key "APP_LOGIN_USER_ID" in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 13
+[22-Nov-2024 08:09:38 Asia/Calcutta] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 13
+[22-Nov-2024 08:10:48 Asia/Calcutta] PHP Warning:  Undefined array key "APP_LOGIN_USER_ID" in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 13
+[22-Nov-2024 08:10:48 Asia/Calcutta] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 13
+[22-Nov-2024 08:10:58 Asia/Calcutta] PHP Warning:  Undefined variable $UserId in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 10
+[22-Nov-2024 08:10:58 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 08:10:58 Asia/Calcutta] PHP Warning:  Undefined array key "APP_LOGIN_USER_ID" in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 13
+[22-Nov-2024 08:10:58 Asia/Calcutta] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 13
+[22-Nov-2024 08:18:50 Asia/Calcutta] PHP Warning:  Undefined array key "APP_LOGIN_USER_ID" in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 13
+[22-Nov-2024 08:18:58 Asia/Calcutta] PHP Warning:  Undefined variable $UserId in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 8
+[22-Nov-2024 08:18:58 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 08:18:58 Asia/Calcutta] PHP Warning:  Undefined array key "APP_LOGIN_USER_ID" in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 13
+[22-Nov-2024 08:24:11 Asia/Calcutta] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (to):  in C:\xampp\htdocs\system\acm\SysModules\MAIL_Modules\vendor\phpmailer\phpmailer\src\PHPMailer.php:1094
+Stack trace:
+#0 C:\xampp\htdocs\system\acm\SysModules\MAIL_Modules\vendor\phpmailer\phpmailer\src\PHPMailer.php(1014): PHPMailer\PHPMailer\PHPMailer->addOrEnqueueAnAddress('to', NULL, '')
+#1 C:\xampp\htdocs\system\acm\SysModules\MAIL_Modules\Mail.php(37): PHPMailer\PHPMailer\PHPMailer->addAddress(NULL)
+#2 C:\xampp\htdocs\system\handler\AuthController\AuthController.php(34): SENDMAILS('New device logi...', 'Hey <b>Gaurav S...', NULL, 'New device logi...')
+#3 {main}
+  thrown in C:\xampp\htdocs\system\acm\SysModules\MAIL_Modules\vendor\phpmailer\phpmailer\src\PHPMailer.php on line 1094
+[22-Nov-2024 08:24:43 Asia/Calcutta] PHP Warning:  Undefined variable $UserId in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 8
+[22-Nov-2024 08:24:43 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 08:24:43 Asia/Calcutta] PHP Warning:  Undefined array key "APP_LOGIN_USER_ID" in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 13
+[22-Nov-2024 08:25:22 Asia/Calcutta] PHP Warning:  Undefined array key "APP_LOGIN_USER_ID" in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 13
+[22-Nov-2024 08:26:00 Asia/Calcutta] PHP Warning:  Undefined array key "APP_LOGIN_USER_ID" in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 13
+[22-Nov-2024 08:26:00 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 13
+[22-Nov-2024 08:27:18 Asia/Calcutta] PHP Warning:  Undefined array key "APP_LOGIN_USER_ID" in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 13
+[22-Nov-2024 08:27:42 Asia/Calcutta] PHP Warning:  Undefined array key "APP_LOGIN_USER_ID" in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 13
+[22-Nov-2024 08:27:42 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 14
+[22-Nov-2024 08:28:27 Asia/Calcutta] PHP Warning:  Undefined variable $UserId in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 8
+[22-Nov-2024 08:28:27 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 08:28:41 Asia/Calcutta] PHP Warning:  Undefined array key "APP_LOGIN_USER_ID" in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 13
+[22-Nov-2024 08:28:41 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 14
+[22-Nov-2024 08:32:07 Asia/Calcutta] PHP Warning:  Undefined array key "APP_LOGIN_USER_ID" in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 12
+[22-Nov-2024 08:32:07 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 12
+[22-Nov-2024 08:32:18 Asia/Calcutta] PHP Warning:  Undefined variable $UserId in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 8
+[22-Nov-2024 08:32:18 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 08:32:18 Asia/Calcutta] PHP Warning:  Undefined array key "APP_LOGIN_USER_ID" in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 12
+[22-Nov-2024 08:32:18 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 12
+[22-Nov-2024 08:33:44 Asia/Calcutta] PHP Warning:  Undefined array key "APP_LOGIN_KEY" in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 12
+[22-Nov-2024 08:33:50 Asia/Calcutta] PHP Warning:  Undefined variable $UserId in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 8
+[22-Nov-2024 08:33:50 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 08:33:50 Asia/Calcutta] PHP Warning:  Undefined array key "APP_LOGIN_KEY" in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 12
+[22-Nov-2024 08:35:50 Asia/Calcutta] PHP Warning:  Undefined variable $UserId in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 8
+[22-Nov-2024 08:35:50 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 08:37:05 Asia/Calcutta] PHP Warning:  Undefined variable $UserId in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 7
+[22-Nov-2024 08:37:05 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 08:52:01 Asia/Calcutta] PHP Warning:  Undefined variable $UserId in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 7
+[22-Nov-2024 08:52:01 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 08:53:34 Asia/Calcutta] PHP Warning:  Undefined variable $UserId in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 7
+[22-Nov-2024 08:53:34 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 08:54:02 Asia/Calcutta] PHP Warning:  Undefined variable $UserId in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 7
+[22-Nov-2024 08:54:02 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 08:54:07 Asia/Calcutta] PHP Warning:  Undefined variable $UserId in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 7
+[22-Nov-2024 08:54:07 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 08:54:29 Asia/Calcutta] PHP Warning:  Undefined variable $UserId in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 7
+[22-Nov-2024 08:54:29 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 08:54:33 Asia/Calcutta] PHP Warning:  Undefined variable $UserId in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 7
+[22-Nov-2024 08:54:33 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 09:08:54 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 09:09:03 Asia/Calcutta] PHP Warning:  Undefined variable $UserId in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 7
+[22-Nov-2024 09:09:03 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 09:40:42 Asia/Calcutta] PHP Warning:  Undefined variable $UserId in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 7
+[22-Nov-2024 09:40:42 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 09:41:58 Asia/Calcutta] PHP Warning:  Undefined variable $UserId in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 7
+[22-Nov-2024 09:41:58 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 09:42:10 Asia/Calcutta] PHP Warning:  Undefined variable $UserId in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 7
+[22-Nov-2024 09:42:10 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 09:42:37 Asia/Calcutta] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\system\auth\logout\index.php on line 4
+[22-Nov-2024 09:49:13 Asia/Calcutta] PHP Warning:  Array to string conversion in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 7
+[22-Nov-2024 09:49:13 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 09:49:13 Asia/Calcutta] PHP Warning:  Undefined array key "APP_LOGIN_USER_ID" in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 13
+[22-Nov-2024 09:49:13 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 13
+[22-Nov-2024 09:49:13 Asia/Calcutta] PHP Warning:  Undefined array key "APP_LOGIN_USER_ID" in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 14
+[22-Nov-2024 09:49:13 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 14
+[22-Nov-2024 09:49:13 Asia/Calcutta] PHP Warning:  Undefined array key "APP_LOGIN_USER_ID" in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 15
+[22-Nov-2024 09:49:13 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 15
+[22-Nov-2024 09:49:51 Asia/Calcutta] PHP Warning:  Undefined array key "APP_LOGIN_USER_ID" in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 13
+[22-Nov-2024 09:49:59 Asia/Calcutta] PHP Fatal error:  Cannot use [] for reading in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 13
+[22-Nov-2024 09:50:21 Asia/Calcutta] PHP Warning:  Undefined array key "APP_LOGIN_USER_ID" in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 13
+[22-Nov-2024 09:50:26 Asia/Calcutta] PHP Warning:  Array to string conversion in C:\xampp\htdocs\system\handler\AuthController\AuthAccessController.php on line 7
+[22-Nov-2024 09:50:26 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\system\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\system\include\common\TopHeader.php(22): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\system\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[22-Nov-2024 09:50:26 Asia/Calcutta] PHP Warning:  Undefined array key "APP_LOGIN_USER_ID" in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 13
+[22-Nov-2024 10:13:54 Asia/Calcutta] PHP Warning:  Undefined array key "APP_LOGIN_USER_ID" in C:\xampp\htdocs\system\auth\views\LoginForm.php on line 13
+[22-Nov-2024 10:14:14 Asia/Calcutta] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\system\auth\logout\index.php on line 4

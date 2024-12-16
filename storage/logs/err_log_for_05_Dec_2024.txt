@@ -1,0 +1,18 @@
+[05-Dec-2024 14:57:56 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\gauravsinghigc\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\include\common\TopHeader.php(37): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\gauravsinghigc\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\modules\AuthUserModules.php on line 11
+[05-Dec-2024 15:02:55 Asia/Calcutta] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\gauravsinghigc\auth\logout\index.php on line 4
+[05-Dec-2024 23:37:17 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\gauravsinghigc\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\include\common\TopHeader.php(37): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\gauravsinghigc\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\modules\AuthUserModules.php on line 11
+[05-Dec-2024 23:38:14 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "VENDOR_MENUS" in C:\xampp\htdocs\gauravsinghigc\app\vendors\details\Handler\HeaderRequest.php:34
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\app\vendors\details\index.php(5): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\app\vendors\details\Handler\HeaderRequest.php on line 34

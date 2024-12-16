@@ -1,0 +1,320 @@
+[21-Nov-2024 08:58:04 Asia/Calcutta] PHP Warning:  Undefined array key "LOGIN_USER_ID" in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[21-Nov-2024 08:58:04 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 09:08:26 Asia/Calcutta] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\system\auth\logout\index.php on line 4
+[21-Nov-2024 09:08:31 Asia/Calcutta] PHP Warning:  Undefined variable $UserStatusDetails in C:\xampp\htdocs\system\handler\AuthController\AuthController.php on line 48
+[21-Nov-2024 09:08:31 Asia/Calcutta] PHP Warning:  Undefined variable $DeviceDetails in C:\xampp\htdocs\system\handler\AuthController\AuthController.php on line 49
+[21-Nov-2024 09:11:30 Asia/Calcutta] PHP Warning:  Undefined variable $UserStatusDetails in C:\xampp\htdocs\system\handler\AuthController\AuthController.php on line 48
+[21-Nov-2024 09:11:30 Asia/Calcutta] PHP Warning:  Undefined variable $DeviceDetails in C:\xampp\htdocs\system\handler\AuthController\AuthController.php on line 49
+[21-Nov-2024 09:12:08 Asia/Calcutta] PHP Warning:  Undefined variable $UserStatusDetails in C:\xampp\htdocs\system\handler\AuthController\AuthController.php on line 48
+[21-Nov-2024 09:12:08 Asia/Calcutta] PHP Warning:  Undefined variable $DeviceDetails in C:\xampp\htdocs\system\handler\AuthController\AuthController.php on line 49
+[21-Nov-2024 09:12:37 Asia/Calcutta] PHP Warning:  Undefined variable $UserStatusDetails in C:\xampp\htdocs\system\handler\AuthController\AuthController.php on line 48
+[21-Nov-2024 09:12:37 Asia/Calcutta] PHP Warning:  Undefined variable $DeviceDetails in C:\xampp\htdocs\system\handler\AuthController\AuthController.php on line 49
+[21-Nov-2024 09:13:37 Asia/Calcutta] PHP Warning:  Undefined variable $UserStatusDetails in C:\xampp\htdocs\system\handler\AuthController\AuthController.php on line 49
+[21-Nov-2024 09:13:37 Asia/Calcutta] PHP Warning:  Undefined variable $DeviceDetails in C:\xampp\htdocs\system\handler\AuthController\AuthController.php on line 50
+[21-Nov-2024 09:14:30 Asia/Calcutta] PHP Warning:  Undefined variable $UserStatusDetails in C:\xampp\htdocs\system\handler\AuthController\AuthController.php on line 49
+[21-Nov-2024 09:15:39 Asia/Calcutta] PHP Warning:  Undefined variable $UserStatus in C:\xampp\htdocs\system\handler\AuthController\AuthController.php on line 47
+[21-Nov-2024 13:22:17 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:17 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:17 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:18 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:18 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:18 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:18 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:18 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:18 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:18 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:18 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:19 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:19 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:20 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:20 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:20 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:20 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:21 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:21 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:21 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:26 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:26 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:27 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:27 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:27 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:27 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:31 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:32 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:32 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:32 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:32 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:33 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:33 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:34 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:34 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:34 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:34 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:35 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:35 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:35 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:40 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:41 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:41 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:41 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:41 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:22:42 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:23:02 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:23:03 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:23:03 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:23:03 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:23:04 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:23:04 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:23:04 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:24:48 Asia/Calcutta] PHP Warning:  Undefined array key "LOGIN_USER_ID" in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[21-Nov-2024 13:24:48 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:27:24 Asia/Calcutta] PHP Warning:  Undefined array key "LOGIN_USER_ID" in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[21-Nov-2024 13:27:24 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:38:07 Asia/Calcutta] PHP Warning:  Undefined array key "LOGIN_USER_ID" in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[21-Nov-2024 13:38:07 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:40:39 Asia/Calcutta] PHP Warning:  Undefined array key "LOGIN_USER_ID" in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[21-Nov-2024 13:40:39 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:57:16 Asia/Calcutta] PHP Warning:  Undefined array key "LOGIN_USER_ID" in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[21-Nov-2024 13:57:16 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[21-Nov-2024 13:57:25 Asia/Calcutta] PHP Warning:  Undefined array key "LOGIN_USER_ID" in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[21-Nov-2024 13:57:25 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22

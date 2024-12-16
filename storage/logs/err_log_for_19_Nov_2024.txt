@@ -1,0 +1,40 @@
+[19-Nov-2024 09:24:28 Asia/Calcutta] PHP Warning:  Undefined array key "LOGIN_USER_ID" in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[19-Nov-2024 09:24:28 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[19-Nov-2024 09:29:59 Asia/Calcutta] PHP Warning:  Undefined array key "LOGIN_USER_ID" in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[19-Nov-2024 09:29:59 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[19-Nov-2024 20:01:04 Asia/Calcutta] PHP Warning:  Undefined array key "LOGIN_USER_ID" in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[19-Nov-2024 20:01:04 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[19-Nov-2024 20:15:00 Asia/Calcutta] PHP Warning:  Undefined array key "LOGIN_USER_ID" in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[19-Nov-2024 20:15:00 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[19-Nov-2024 20:15:03 Asia/Calcutta] PHP Warning:  Undefined array key "LOGIN_USER_ID" in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[19-Nov-2024 20:15:03 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[19-Nov-2024 20:15:05 Asia/Calcutta] PHP Warning:  Undefined array key "LOGIN_USER_ID" in C:\xampp\htdocs\system\modules\AuthUserModules.php on line 11
+[19-Nov-2024 20:15:05 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserFullName" in C:\xampp\htdocs\system\include\common\TopHeader.php:22
+Stack trace:
+#0 C:\xampp\htdocs\system\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\system\include\common\TopHeader.php on line 22
+[19-Nov-2024 20:19:19 Asia/Calcutta] PHP Warning:  Undefined array key "for" in C:\xampp\htdocs\system\auth\views\ResetPasswordForm.php on line 10
+[19-Nov-2024 20:22:13 Asia/Calcutta] PHP Warning:  Undefined array key "UserIdForPasswordChange" in C:\xampp\htdocs\system\acm\SysModules\CRUD_Modules\Select.php on line 32
+[19-Nov-2024 20:22:13 Asia/Calcutta] PHP Warning:  Undefined variable $for in C:\xampp\htdocs\system\auth\views\ResetPasswordForm.php on line 16
+[19-Nov-2024 20:24:58 Asia/Calcutta] PHP Warning:  Undefined variable $1 in C:\xampp\htdocs\system\auth\views\ResetPasswordForm.php on line 16

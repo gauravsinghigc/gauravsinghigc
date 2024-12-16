@@ -1,0 +1,15 @@
+[30-Nov-2024 18:25:57 Asia/Calcutta] PHP Warning:  require(C:\xampp\htdocs\system\acm/SysModules/FILE_Modules/DocumentDetails.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\system\acm\SystemFileProcessor.php on line 28
+[30-Nov-2024 18:25:57 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\system\acm/SysModules/FILE_Modules/DocumentDetails.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\system\acm\SystemFileProcessor.php:28
+Stack trace:
+#0 C:\xampp\htdocs\system\acm\SysFileAutoLoader.php(77): require()
+#1 C:\xampp\htdocs\system\app\index.php(3): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\acm\SystemFileProcessor.php on line 28
+[30-Nov-2024 18:54:12 Asia/Calcutta] PHP Fatal error:  Cannot redeclare MSG() (previously declared in C:\xampp\htdocs\system\acm\SysModules\PROCESS_Modules\PushAlerts.php:3) in C:\xampp\htdocs\system\acm\SysModules\PROCESS_Modules\Handler.php on line 5
+[30-Nov-2024 18:55:21 Asia/Calcutta] PHP Warning:  require(C:\xampp\htdocs\system\acm/SysModules/COMPLAINT_Modules/Complaints.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\system\acm\SystemFileProcessor.php on line 62
+[30-Nov-2024 18:55:21 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\system\acm/SysModules/COMPLAINT_Modules/Complaints.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\system\acm\SystemFileProcessor.php:62
+Stack trace:
+#0 C:\xampp\htdocs\system\acm\SysFileAutoLoader.php(77): require()
+#1 C:\xampp\htdocs\system\app\index.php(3): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\acm\SystemFileProcessor.php on line 62
