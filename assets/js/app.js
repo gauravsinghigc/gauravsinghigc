@@ -89,3 +89,19 @@ function showTime() {
     "&nbsp;" + currentTime + " ";
 }
 setInterval(showTime, 1000);
+
+//copy content in new div
+function CopyContent(BtnName, CopyFrom, CopyTo) {
+  $(document).ready(function () {
+    $("." + BtnName).on("click", function () {
+      // Clone the domain form
+      let newForm = $("." + CopyFrom)
+        .first()
+        .clone();
+      // Clear input values in the cloned form
+      newForm.find("input").val("");
+      // Append the cloned form to MoreDomain div
+      $("." + CopyTo).append(newForm);
+    });
+  });
+}

@@ -1,0 +1,16 @@
+[21-Dec-2024 12:31:57 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\gauravsinghigc\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\include\common\TopHeader.php(37): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\gauravsinghigc\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\modules\AuthUserModules.php on line 11
+[21-Dec-2024 13:41:53 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\gauravsinghigc\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\include\common\TopHeader.php(37): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\gauravsinghigc\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\modules\AuthUserModules.php on line 11
+[21-Dec-2024 14:44:15 Asia/Calcutta] PHP Warning:  include(../../assets/app/HeaderFiles.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\gauravsinghigc\app\tools\index.php on line 16
+[21-Dec-2024 14:44:15 Asia/Calcutta] PHP Warning:  include(): Failed opening '../../assets/app/HeaderFiles.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\gauravsinghigc\app\tools\index.php on line 16
+[21-Dec-2024 14:44:15 Asia/Calcutta] PHP Warning:  include(../../assets/app/FooterFiles.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\gauravsinghigc\app\tools\index.php on line 61
+[21-Dec-2024 14:44:15 Asia/Calcutta] PHP Warning:  include(): Failed opening '../../assets/app/FooterFiles.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\gauravsinghigc\app\tools\index.php on line 61

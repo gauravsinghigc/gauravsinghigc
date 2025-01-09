@@ -13,7 +13,7 @@
                     </div>
                     <div class="w-pr-5">
                         <div class="Header-Menus">
-                            <a onclick="Databar('AddRecordWindow')" class="btn-danger text-white"><i class="fa fa-plus"></i></a>
+                            <a onclick="Databar('AddRecordWindow')" class="btn-danger text-white pt-2"><i class="fa fa-plus"></i></a>
                         </div>
                     </div>
                     <div class="w-pr-40">

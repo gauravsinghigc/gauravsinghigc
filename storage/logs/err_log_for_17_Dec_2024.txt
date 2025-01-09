@@ -1,0 +1,7 @@
+[17-Dec-2024 17:29:34 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\gauravsinghigc\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\include\common\TopHeader.php(37): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\gauravsinghigc\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\modules\AuthUserModules.php on line 11
+[17-Dec-2024 17:30:09 Asia/Calcutta] PHP Warning:  Undefined array key "cef_status" in C:\xampp\htdocs\gauravsinghigc\handler\ModuleController\EnquiryController.php on line 70

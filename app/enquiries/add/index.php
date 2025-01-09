@@ -265,6 +265,308 @@ $PageDescription = "Manage all customers";
                   <div class="col-md-6">
                     <div class="card p-2 rounded">
                       <h4 class="app-heading">Add More Details</h4>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <h5 class="app-sub-heading" onclick="Databar('AddMeetingDetails')"><i class="fa fa-handshake"></i> Add Meeting Details <i class="fa fa-angle-right pull-right"></i></h5>
+                          <div id='AddMeetingDetails' class='shadow-sm p-2 hidden'>
+                            <div class="form-group">
+                              <label>Meeting title</label>
+                              <input type="text" class="form-control" placeholder="Enter Meeting title" name="meeting_title">
+                            </div>
+                            <div class="form-group">
+                              <label>Meeting Mode</label>
+                              <select class="form-control" name="meeting_mode" required="">
+                                <?php echo InputOptionsWithKey(MEETING_MODE, ""); ?>
+                              </select>
+                            </div>
+                            <div class="flex-s-b">
+                              <div class="form-group w-50 mr-1">
+                                <label>Meeting Date</label>
+                                <input type="date" class="form-control" value='<?php echo DATE("Y-m-d", strtotime("+1 day")); ?>' placeholder="Enter Meeting date" name="meeting_date">
+                              </div>
+                              <div class="form-group w-50 ml-1">
+                                <label>Meeting Time</label>
+                                <input type="time" class="form-control" value="<?php echo DATE("H:m:s"); ?>" placeholder="Enter Meeting time" name="meeting_time">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label>Meeting Location</label>
+                              <input type="text" class="form-control" placeholder="Enter Meeting location" name="meeting_location">
+                            </div>
+                            <div class="form-group">
+                              <label>Meeting Notes/remarks</label>
+                              <textarea class="form-control" rows="3" placeholder="Enter Remarks" name="meeting_description"></textarea>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-12">
+                          <h5 class="app-sub-heading" onclick="Databar('AddProjectAndServices')"><i class="fa fa-table"></i> Add Project/Service Detail <i class="fa fa-angle-right pull-right"></i></h5>
+                          <div id='AddProjectAndServices' class='shadow-sm p-2 hidden'>
+                            <div class="form-group">
+                              <label>Project/Service title</label>
+                              <input type="text" class="form-control" placeholder="Enter Project title" name="project_title">
+                            </div>
+                            <div class="form-group">
+                              <label>Project/Service Type</label>
+                              <input type="text" class="form-control" placeholder="Enter Project Type" name="project_type">
+                            </div>
+                            <div class="flex-s-b">
+                              <div class="form-group w-50 mr-1">
+                                <label>Meeting Date</label>
+                                <input type="date" class="form-control" value='<?php echo DATE("Y-m-d", strtotime("+1 day")); ?>' placeholder="Enter Start date" name="project_start_date">
+                              </div>
+                              <div class="form-group w-50 ml-1">
+                                <label>Start Date</label>
+                                <input type="date" class="form-control" value='<?php echo DATE("Y-m-d", strtotime("+1 month")); ?>' placeholder="Enter End date" name="project_start_end">
+                              </div>
+                            </div>
+                            <div class="flex-s-b">
+                              <div class="form-group w-50 mr-1">
+                                <label>Due Date</label>
+                                <input type="date" class="form-control" value='<?php echo DATE("Y-m-d", strtotime("+1 day")); ?>' placeholder="Enter Due date" name="project_due_date">
+                              </div>
+                              <div class="form-group w-50 ml-1">
+                                <label>End Date</label>
+                                <input type="date" class="form-control" value='<?php echo DATE("Y-m-d", strtotime("+1 month")); ?>' placeholder="Enter End date" name="project_end_date">
+                              </div>
+                            </div>
+                            <div class="flex-s-b">
+                              <div class="form-group w-50 mr-1">
+                                <label>Quotation Amount</label>
+                                <input type="number" class="form-control" value='' placeholder="Rs." name="quotation_amount">
+                              </div>
+                              <div class="form-group w-50 ml-1">
+                                <label>Closing Amount</label>
+                                <input type="number" oninput="ApplyTaxation()" id='ClosingAmount' class="form-control" value='' placeholder="Rs." name="closing_amount">
+                              </div>
+                            </div>
+                            <div class="flex-s-b">
+                              <div class="form-group w-50 mr-1">
+                                <label>Taxation Status</label>
+                                <select class="form-control" onchange="CheckTaxation()" id='ApplicableTax' name="taxation_status" required="">
+                                  <?php echo InputOptionsWithKey(
+                                    [
+                                      "" => "Select Tax Status",
+                                      "NON_TAX" => "Non Taxable",
+                                      "TAXABLE" => "Taxable"
+                                    ],
+                                    ""
+                                  ); ?>
+                                </select>
+                              </div>
+                              <div class="w-50 ml-1">
+                                <div class='hidden' id='taxation_details'>
+                                  <div class="form-group">
+                                    <label>Applicable Tax Percentage</label>
+                                    <select onchange='ApplyTaxation()' id='TaxValues' class="form-control" name="">
+                                      <?php echo InputOptionsWithKey([
+                                        "" => "Select Tax Percentage",
+                                        "0" => "0%",
+                                        "5" => "5%",
+                                        "12" => "12%",
+                                        "18" => "18%",
+                                        "28" => "28%"
+                                      ], ""); ?>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="FinaleAmount" class="hidden">
+                              <div class="form-group">
+                                <label>Finale Amount</label>
+                                <input type="number" id='FinaleAmountValue' class="form-control" value='' placeholder="Rs." disabled>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label>Project Details/Requirement</label>
+                              <textarea class="form-control editor" rows="5" placeholder="Enter Remarks" name="meeting_description"></textarea>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-12">
+                          <h5 class="app-sub-heading" onclick="Databar('AddDomainNames')"><i class="fa fa-globe"></i> Add Domains <i class="fa fa-angle-right pull-right"></i></h5>
+                          <div id='AddDomainNames' class='shadow-sm p-2 hidden'>
+                            <div class="domain">
+                              <div class="form-group">
+                                <label>Domain Name</label>
+                                <input type="text" minlength="4" class="form-control" placeholder="Enter domain name" name="domain_name">
+                              </div>
+                              <div class="flex-s-b">
+                                <div class="form-group w-50 mr-1">
+                                  <label>Domain Purchase Date</label>
+                                  <input type="date" class="form-control" value='' placeholder="Enter Purchase date" name="domain_purchase_date">
+                                </div>
+                                <div class="form-group w-50 ml-1">
+                                  <label>Domain Expire Date</label>
+                                  <input type="date" class="form-control" value="" placeholder="Enter Expire date" name="domain_expire_date">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label>Domain Provider Name</label>
+                                <input type="text" class="form-control" placeholder="Enter Domain Provider" name="domain_provider">
+                              </div>
+                              <hr>
+                            </div>
+                            <div class="MoreDomain"></div>
+                            <button type="button" onclick="CopyContent('add-more-domains', 'domain', 'MoreDomain')" class="btn btn-sm btn-default add-more-domains"><i class="fa fa-plus"></i> Add More</button>
+                          </div>
+                        </div>
+
+                        <div class="col-md-12">
+                          <h5 class="app-sub-heading" onclick="Databar('AddCredentials')"><i class="fa fa-key"></i> Add Credentials <i class="fa fa-angle-right pull-right"></i></h5>
+                          <div id='AddCredentials' class='shadow-sm p-2 hidden'>
+                            <div class="credentials">
+                              <div class="form-group">
+                                <label>Credentials Name</label>
+                                <input type="text" minlength="4" class="form-control" placeholder="Credential name" name="credentials_name">
+                              </div>
+                              <div class="form-group">
+                                <label>Login UserName</label>
+                                <input type="text" minlength="4" class="form-control" placeholder="Username" name="credentials_username">
+                              </div>
+                              <div class="form-group">
+                                <label>Login Password</label>
+                                <input type="text" minlength="4" class="form-control" placeholder="password" name="credentials_password">
+                              </div>
+                              <div class="form-group">
+                                <label>Login Url</label>
+                                <input type="url" class="form-control" placeholder="Login URL" name="credentials_login_url">
+                              </div>
+                              <div class="form-group">
+                                <label>Login Notes</label>
+                                <input type="text" class="form-control" placeholder="login note" name="credentials_notes">
+                              </div>
+                              <hr>
+                            </div>
+                            <div class="MoreCredentials"></div>
+                            <button type="button" onclick="CopyContent('add-more-credentials', 'credentials', 'MoreCredentials')" class="btn btn-sm btn-default add-more-credentials"><i class="fa fa-plus"></i> Add More</button>
+                          </div>
+                        </div>
+
+                        <div class="col-md-12">
+                          <h5 class="app-sub-heading" onclick="Databar('AddReminders')"><i class="fa fa-bell"></i> Add Reminder <i class="fa fa-angle-right pull-right"></i></h5>
+                          <div id='AddReminders' class='shadow-sm p-2 hidden'>
+                            <div class="form-group">
+                              <label>Reminder Name</label>
+                              <input type="text" minlength="4" class="form-control" name="reminder_name">
+                            </div>
+                            <div class="flex-s-b">
+                              <div class="form-group w-50 mr-1">
+                                <label>Reminder Date</label>
+                                <input type="date" class="form-control" value='<?php echo DATE("Y-m-d", strtotime("+1 day")); ?>' name="reminder_date">
+                              </div>
+                              <div class="form-group w-50 ml-1">
+                                <label>Reminder Time</label>
+                                <input type="time" class="form-control" value="<?php echo DATE("H:m:s"); ?>" name="reminder_time">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label>Meeting Notes/remarks</label>
+                              <textarea class="form-control" rows="3" placeholder="Reminging Message" name="reminder_message"></textarea>
+                            </div>
+                            <hr>
+                          </div>
+                        </div>
+
+                        <div class="col-md-12">
+                          <h5 class="app-sub-heading" onclick="Databar('AddReferenceUrls')"><i class="fa fa-bell"></i> Add Reference Urls <i class="fa fa-angle-right pull-right"></i></h5>
+                          <div id='AddReferenceUrls' class='shadow-sm p-2 hidden'>
+                            <div class="ReferenceUrls">
+                              <div class="form-group">
+                                <label>Reference URL Name</label>
+                                <input type="text" minlength="4" class="form-control" name="reference_url_name">
+                              </div>
+                              <div class="form-group">
+                                <label>Reference Url</label>
+                                <textarea class="form-control" rows="3" placeholder="Start with http:// or https://" name="reference_url"></textarea>
+                              </div>
+                              <hr>
+                            </div>
+                            <div class="MoreReferenceUrls"></div>
+                            <button type="button" onclick="CopyContent('add-more-ReferenceUrls', 'ReferenceUrls', 'MoreReferenceUrls')" class="btn btn-sm btn-default add-more-ReferenceUrls"><i class="fa fa-plus"></i> Add More</button>
+                          </div>
+                        </div>
+
+                        <div class="col-md-12">
+                          <h5 class="app-sub-heading" onclick="Databar('AddYoutubeUrls')"><i class="fa fa-youtube"></i> Add Youtube Urls <i class="fa fa-angle-right pull-right"></i></h5>
+                          <div id='AddYoutubeUrls' class='shadow-sm p-2 hidden'>
+                            <div class="YoutubeUrls">
+                              <div class="form-group">
+                                <label>Youtube Vide Name</label>
+                                <input type="text" minlength="4" class="form-control" name="reference_url_name">
+                              </div>
+                              <div class="form-group">
+                                <label>Youtube Link</label>
+                                <input type="text" minlength="4" class="form-control" placeholder="https://youtube.com/watch?v=XXXXXXXXXXX" name="reference_url_name">
+                              </div>
+                              <hr>
+                            </div>
+                            <div class="MoreYoutubeUrls"></div>
+                            <button type="button" onclick="CopyContent('add-more-YoutubeUrls', 'YoutubeUrls', 'MoreYoutubeUrls')" class="btn btn-sm btn-default add-more-YoutubeUrls"><i class="fa fa-plus"></i> Add More</button>
+                          </div>
+                        </div>
+
+                        <div class="col-md-12">
+                          <h5 class="app-sub-heading" onclick="Databar('UploadDocuments')"><i class="fa fa-upload"></i> Upload Documents <i class="fa fa-angle-right pull-right"></i></h5>
+                          <div id='UploadDocuments' class='shadow-sm p-2 hidden'>
+                            <div class="AddDocuments">
+                              <div class="form-group">
+                                <label>Document Name</label>
+                                <input type="text" minlength="4" class="form-control" name="document_name">
+                              </div>
+                              <div class="form-group">
+                                <label>Upload Document</label>
+                                <input type="FILE" class="form-control" name="document_file">
+                              </div>
+                              <hr>
+                            </div>
+                            <div class="MoreDocuments"></div>
+                            <button type="button" onclick="CopyContent('add-more-AddDocuments', 'AddDocuments', 'MoreDocuments')" class="btn btn-sm btn-default add-more-AddDocuments"><i class="fa fa-plus"></i> Add More</button>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <h5 class="app-sub-heading" onclick="Databar('AddNotes')"><i class="fa fa-edit"></i> Add Notes <i class="fa fa-angle-right pull-right"></i></h5>
+                          <div id='AddNotes' class='shadow-sm p-2 hidden'>
+                            <div class="form-group">
+                              <label>Note Title</label>
+                              <input type="text" minlength="4" class="form-control" name="note_name">
+                            </div>
+                            <div class="form-group">
+                              <label>Details</label>
+                              <textarea class="form-control editor" rows="3" name="note_details"></textarea>
+                            </div>
+                            <hr>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <h5 class="app-sub-heading" onclick="Databar('AddTasks')"><i class="fa fa-list"></i> Add Tasks <i class="fa fa-angle-right pull-right"></i></h5>
+                          <div id='AddTasks' class='shadow-sm p-2 hidden'>
+                            <div class="AddTasks">
+                              <div class="form-group">
+                                <input type="text" minlength="4" class="form-control" placeholder="Enter Task" name="note_name">
+                              </div>
+                              <hr>
+                            </div>
+                            <div class="MoreTasks"></div>
+                            <button type="button" onclick="CopyContent('add-more-MoreTasks', 'AddTasks', 'MoreTasks')" class="btn btn-sm btn-default add-more-MoreTasks"><i class="fa fa-plus"></i> Add More</button>
+                          </div>
+                        </div>
+
+                        <div class="col-md-12">
+                          <h5 class="app-sub-heading" onclick="Databar('AddSubscription')"><i class="fa fa-refresh"></i> Add Subscription <i class="fa fa-angle-right pull-right"></i></h5>
+                          <div id='AddSubscription' class='shadow-sm p-2 hidden'>
+                            <div class="form-group">
+                              <label>Subscription Name</label>
+                              <input type="text" minlength="4" class="form-control" placeholder="" name="subscription_name">
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -278,8 +580,29 @@ $PageDescription = "Manage all customers";
   </div>
 
 </body>
+<script>
+  function CheckTaxation() {
+    var taxation = document.getElementById('ApplicableTax');
+    if (taxation.value == "TAXABLE") {
+      document.getElementById('taxation_details').style.display = "block";
+      document.getElementById("FinaleAmount").style.display = "block";
+    } else {
+      document.getElementById('taxation_details').style.display = "none";
+      document.getElementById("FinaleAmount").style.display = "none";
+    }
+  }
+
+  function ApplyTaxation() {
+    var ClosingAmount = document.getElementById('ClosingAmount');
+    var TaxValues = document.getElementById('TaxValues');
+    var FinaleAmountValue = document.getElementById("FinaleAmountValue");
+
+    TaxableAmount = ClosingAmount.value / 100 * TaxValues.value;
+
+    FinaleAmountValue.value = (+TaxableAmount + +ClosingAmount.value).toFixed(2);
+  }
+</script>
 <?php
-include $Dir . "/include/forms/Add-New-Users.php";
 include $Dir . "/include/common/Footer.php";
 include $Dir . "/assets/FooterFiles.php"; ?>
 

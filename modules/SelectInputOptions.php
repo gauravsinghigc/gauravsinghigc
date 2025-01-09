@@ -373,3 +373,12 @@ DEFINE("PHONE_CODES",  $CountyPhone = [
     '263' => 'Zimbabwe (+263)',
     "" => "Select Phone Code"
 ]);
+
+//Meeting Mode
+define("MEETING_MODE", [
+    "" => "Meeting Mode",
+    "GOOGLE_MEET" => "Google Meet",
+    "THEIR_OFFICE_VISIT" => "Their Office",
+    "OUR_OFFICE_VISIT" => "Our Office",
+    "OTHER" => "Other",
+]);

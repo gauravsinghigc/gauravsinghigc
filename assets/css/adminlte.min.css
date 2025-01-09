@@ -2442,7 +2442,7 @@ select.form-control:focus::-ms-value {
 }
 
 .form-control-lg {
-  height: calc(2.6rem + 2px);
+  height: calc(2.8rem + 2px);
   padding: 0.35rem 0.8rem;
   font-size: 1.1rem;
   line-height: 1.5;
@@ -7698,7 +7698,9 @@ button.bg-dark:hover {
 }
 
 .d-block {
-  display: block !important;!i;!;
+  display: block !important;
+  !i;
+  !;
 }
 
 .d-table {
