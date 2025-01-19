@@ -7,3 +7,5 @@ $CurrentActiveIcon = ENQUIRY_MENUS[$CurrentActiveKey]['icon'];
 
 $EnquiryStatusFilter = ReturnSessionalValues("status_view", "ENQUIRY_STATUS_FILTER", "");
 $ActiveRecord = IfRequested("GET", "get_enquiry_from", ReturnSessionalValues("get_enquiry_from", "ACTIVE_ENQUIRY_TYPE_RECORD", ""));
+
+$VendorID = ReturnSessionalValues("viewid", "VENDOR_ID", "");

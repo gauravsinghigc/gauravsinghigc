@@ -8,6 +8,12 @@ DEFINE("NAVIGATION_MENUS",  [
         "title" => "Dashboard",
         "counts" => "0"
     ],
+    "Companies" => [
+        "url" => DOMAIN . "/app/companies",
+        "icon" => "building",
+        "title" => "Companies",
+        "counts" => "0"
+    ],
     "Enquiries" => [
         "url" => DOMAIN . "/app/enquiries",
         "icon" => "info-circle",
@@ -24,6 +30,12 @@ DEFINE("NAVIGATION_MENUS",  [
         "url" => DOMAIN . "/app/projects",
         "icon" => "table",
         "title" => "Projects",
+        "counts" => "0"
+    ],
+    "Items" => [
+        "url" => DOMAIN . "/app/units",
+        "icon" => "table",
+        "title" => "Items",
         "counts" => "0"
     ],
     "Documents" => [
@@ -102,6 +114,18 @@ DEFINE("NAVIGATION_MENUS",  [
         "url" => DOMAIN . "/app/youtube",
         "icon" => "video",
         "title" => "Youtube Links",
+        "counts" => "0"
+    ],
+    "Events" => [
+        "url" => DOMAIN . "/app/events",
+        "icon" => "map-marker",
+        "title" => "Events",
+        "counts" => "0"
+    ],
+    "Audits" => [
+        "url" => DOMAIN . "/app/audits",
+        "icon" => "shield",
+        "title" => "Audits",
         "counts" => "0"
     ],
     "users" => [
@@ -312,6 +336,11 @@ DEFINE("ADD_WINDOW_OPTIONS", [
         "title" => "Add Team",
         "icon" => "users",
         "url" => APP_URL . "/teams/add"
+    ],
+    "Option25" => [
+        "title" => "Add Company",
+        "icon" => "building",
+        "url" => APP_URL . "/companies/add"
     ]
 ]);
 
@@ -777,6 +806,108 @@ DEFINE(
             'name' => 'Vendor Logs',
             'icon' => 'fa fa-tachometer',
             'module' => 'view_logs.php'
+        ]
+    ]
+);
+
+//company configuration menus
+DEFINE(
+    "COMPANY_CONFIGURATION_MENU",
+    [
+        'company_types' => [
+            'name' => 'Company Types',
+            'icon' => 'fa fa-building',
+            'module' => 'company_types.php'
+        ],
+        'work_industries' => [
+            'name' => 'Work Industries',
+            'icon' => 'fa fa-star',
+            'module' => 'work_industries.php'
+        ],
+        'work_types' => [
+            'name' => 'Work Types',
+            'icon' => 'fa fa-table',
+            'module' => 'work_types.php'
+        ],
+        'vendor_categories' => [
+            'name' => 'Vendor Categories',
+            'icon' => 'fa fa-truck',
+            'module' => 'vendor_categories.php'
+        ],
+        'vendor_types' => [
+            'name' => 'Vendor Types',
+            'icon' => 'fa fa-truck',
+            'module' => 'vendor_types.php'
+        ],
+        'departments' => [
+            'name' => 'Departments',
+            'icon' => 'fa fa-briefcase',
+            'module' => 'departments.php'
+        ],
+        'compliance_types' => [
+            'name' => 'Compliance Types',
+            'icon' => 'fa fa-file',
+            'module' => 'compliance_types.php'
+        ],
+        'document_categories' => [
+            'name' => 'Document Categories',
+            'icon' => 'fa fa-list',
+            'module' => 'document_categories.php'
+        ],
+        'account_types' => [
+            'name' => 'Account Types',
+            'icon' => 'fa fa-money',
+            'module' => 'account_types.php'
+        ],
+        'expense_types' => [
+            'name' => 'Expence Types',
+            'icon' => 'fa fa-map-marker',
+            'module' => 'expense_types.php'
+        ],
+        'purchase_types' => [
+            'name' => 'Purchase Types',
+            'icon' => 'fa fa-link',
+            'module' => 'purchase_types.php'
+        ],
+        'assets_types' => [
+            'name' => 'Assets Types',
+            'icon' => 'fa fa-star',
+            'module' => 'assets_types.php'
+        ],
+        'credentials_types' => [
+            'name' => 'Credentials Types',
+            'icon' => 'fa fa-key',
+            'module' => 'credentials_types.php'
+        ],
+        'meeting_types' => [
+            'name' => 'Meeting Types',
+            'icon' => 'fa fa-handshake',
+            'module' => 'meeting_types.php'
+        ],
+        'notes_types' => [
+            'name' => 'Notes Types',
+            'icon' => 'fa fa-edit',
+            'module' => 'notes_types.php'
+        ],
+        'types_of_reminders' => [
+            'name' => 'Types of Reminders',
+            'icon' => 'fa fa-bell',
+            'module' => 'reminder_types.php'
+        ],
+        'enquiries_flow_chart' => [
+            'name' => 'Enquiry Flow Chart',
+            'icon' => 'fa fa-info-circle',
+            'module' => 'enquiry_flow_chart.php'
+        ],
+        'enquiries_types' => [
+            'name' => 'Enquiry Types',
+            'icon' => 'fa fa-info',
+            'module' => 'enquiry_types.php'
+        ],
+        'enquiries_categories' => [
+            'name' => 'Enquiry Categories',
+            'icon' => 'fa fa-info',
+            'module' => 'enquiry_categories.php'
         ]
     ]
 );

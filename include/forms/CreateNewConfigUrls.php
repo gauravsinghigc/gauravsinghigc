@@ -18,7 +18,7 @@
                         <div class="form-group col-md-4">
                             <label>Status</label>
                             <select class="form-control " name='cut_status' required>
-                                <?php echo InputOptionsWithKey([], "1"); ?>
+                                <?php echo InputOptionsWithKey(COMMON_STATUS, "1"); ?>
                             </select>
                         </div>
                         <div class="form-group col-md-4">

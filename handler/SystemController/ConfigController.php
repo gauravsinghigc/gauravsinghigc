@@ -432,4 +432,413 @@ if (isset($_POST['UpdatePrimaryConfigurations'])) {
     "true" => "Config url status updated successfully!",
     "false" => "Unable to update config url status at the moment!"
   ]);
+
+  // Save Company Type Records
+} elseif (isset($_POST['SaveCompanyTypeRecords'])) {
+  $config_company_types = [
+    "cct_name" => $_POST['cct_name'],
+    "cct_registration_act" => $_POST['cct_registration_act'],
+    "cct_legal_structure" => $_POST['cct_legal_structure'],
+    "cct_desc" => $_POST['cct_desc'],
+    "cct_status" => $_POST['cct_status'],
+    "cct_created_at" => CURRENT_DATE_TIME,
+    "cct_updated_at" => CURRENT_DATE_TIME,
+    "cct_created_by" => LOGIN_UserId,
+    "cct_updated_by" => LOGIN_UserId,
+  ];
+  $Check = CHECK("SELECT cct_name FROM config_company_types WHERE cct_name='" . $_POST['cct_name'] . "'");
+  if ($Check == null) {
+    $Response = INSERT("config_company_types", $config_company_types);
+    $Error = "Unable to save company type";
+  } else {
+    $Response = false;
+    $Error = "Company type already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Company type saved successfully!",
+    "false" => $Error
+  ]);
+
+  //update company type records
+} elseif (isset($_POST['UpdateCompanyTypeRecords'])) {
+  $cct_id = SECURE($_POST['cct_id'], "d");
+  $config_company_types = [
+    "cct_name" => $_POST['cct_name'],
+    "cct_registration_act" => $_POST['cct_registration_act'],
+    "cct_legal_structure" => $_POST['cct_legal_structure'],
+    "cct_desc" => $_POST['cct_desc'],
+    "cct_status" => $_POST['cct_status'],
+    "cct_updated_at" => CURRENT_DATE_TIME,
+    "cct_updated_by" => LOGIN_UserId,
+  ];
+  $Check = CHECK("SELECT cct_name FROM config_company_types WHERE cct_name='" . $_POST['cct_name'] . "' AND cct_id!='" . $cct_id . "'");
+  if ($Check == null) {
+    $Response = UPDATE("config_company_types", $config_company_types, "cct_id='$cct_id'");
+    $Error = "Unable to update company type";
+  } else {
+    $Response = false;
+    $Error = "Company type already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Company type updated successfully!",
+    "false" => $Error
+  ]);
+
+  //update company type status
+} elseif (isset($_POST['UpdateCompanyTypeRecordStatus'])) {
+  $cct_id = SECURE($_POST['cct_id'], "d");
+  $cct_status = SECURE($_POST['UpdateCompanyTypeRecordStatus'], "d");
+
+  if ($cct_status == 1) {
+    $status = 2;
+  } else {
+    $status = 1;
+  }
+
+  $Response = UPDATE_SQL("UPDATE config_company_types SET cct_status='$status' WHERE cct_id='$cct_id'");
+  RequestHandler($Response, [
+    "true" => "Company Type status updated successfully!",
+    "false" => "Unable to update company type status at the moment!"
+  ]);
+
+  //save new work industry record
+} elseif (isset($_POST['SaveWorkIndustyRecords'])) {
+  $config_work_industries = [
+    "cwi_name" => $_POST['cwi_name'],
+    "cwi_code" => $_POST['cwi_code'],
+    "cwi_tags" => $_POST['cwi_tags'],
+    "cwi_desc" => $_POST['cwi_desc'],
+    "cwi_status" => $_POST['cwi_status'],
+    "cwi_created_at" => CURRENT_DATE_TIME,
+    "cwi_updated_at" => CURRENT_DATE_TIME,
+    "cwi_created_by" => LOGIN_UserId,
+    "cwi_updated_by" => LOGIN_UserId,
+  ];
+  $Check = CHECK("SELECT cwi_name FROM config_work_industries WHERE cwi_name='" . $_POST['cwi_name'] . "'");
+  if ($Check == null) {
+    $Response = INSERT("config_work_industries", $config_work_industries);
+    $Error = "Unable to save work industry";
+  } else {
+    $Response = false;
+    $Error = "Work industry already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Work industry saved successfully!",
+    "false" => $Error
+  ]);
+
+  //update work industry records
+} elseif (isset($_POST['UpdateWorkIndustyRecords'])) {
+  $cwi_id = SECURE($_POST['cwi_id'], "d");
+  $config_work_industries = [
+    "cwi_name" => $_POST['cwi_name'],
+    "cwi_code" => $_POST['cwi_code'],
+    "cwi_tags" => $_POST['cwi_tags'],
+    "cwi_desc" => $_POST['cwi_desc'],
+    "cwi_status" => $_POST['cwi_status'],
+    "cwi_updated_at" => CURRENT_DATE_TIME,
+    "cwi_updated_by" => LOGIN_UserId,
+  ];
+  $Check = CHECK("SELECT cwi_name FROM config_work_industries WHERE cwi_name='" . $_POST['cwi_name'] . "' AND cwi_id!='$cwi_id'");
+  if ($Check == null) {
+    $Response = UPDATE("config_work_industries", $config_work_industries, "cwi_id='$cwi_id'");
+    $Error = "Unable to update work industry";
+  } else {
+    $Response = false;
+    $Error = "Work industry already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Work industry updated successfully!",
+    "false" => $Error
+  ]);
+
+  //update work industry status
+} elseif (isset($_POST['UpdateWorkIndustryStatus'])) {
+  $cwi_id = SECURE($_POST['cwi_id'], "d");
+  $cwi_status = SECURE($_POST['UpdateWorkIndustryStatus'], "d");
+
+  if ($cwi_status == 1) {
+    $status = 2;
+  } else {
+    $status = 1;
+  }
+  $Response = UPDATE_SQL("UPDATE config_work_industries SET cwi_status='$status' WHERE cwi_id='$cwi_id'");
+  RequestHandler($Response, [
+    "true" => "Work Industry status updated successfully!",
+    "false" => "Unable to update work industry status at the moment!"
+  ]);
+
+  //create work types
+} elseif (isset($_POST['SaveWorkTypeRecords'])) {
+  $config_work_types = [
+    "cwt_name" => $_POST['cwt_name'],
+    "cwt_shortname" => UpperCase(RemoveAllSpecialCharacters($_POST['cwt_name'])),
+    "cwt_desc" => $_POST['cwt_desc'],
+    "cwt_status" => $_POST['cwt_status'],
+    "cwt_created_at" => CURRENT_DATE_TIME,
+    "cwt_updated_at" => CURRENT_DATE_TIME,
+    "cwt_created_by" => LOGIN_UserId,
+    "cwt_updated_by" => LOGIN_UserId,
+  ];
+  $Check = CHECK("SELECT cwt_name FROM config_work_types WHERE cwt_name='" . $_POST['cwt_name'] . "'");
+  if ($Check == null) {
+    $Response = INSERT("config_work_types", $config_work_types);
+    $Error = "Unable to save work type";
+  } else {
+    $Response = false;
+    $Error = "Work type already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Work type saved successfully!",
+    "false" => $Error
+  ]);
+
+  //update work type records
+} elseif (isset($_POST['UpdateWorkTypeRecords'])) {
+  $cwt_id = SECURE($_POST['cwt_id'], "d");
+  $config_work_types = [
+    "cwt_name" => $_POST['cwt_name'],
+    "cwt_shortname" => UpperCase(RemoveAllSpecialCharacters($_POST['cwt_name'])),
+    "cwt_desc" => $_POST['cwt_desc'],
+    "cwt_status" => $_POST['cwt_status'],
+    "cwt_updated_at" => CURRENT_DATE_TIME,
+    "cwt_updated_by" => LOGIN_UserId,
+  ];
+  $Check = CHECK("SELECT cwt_name FROM config_work_types WHERE cwt_name='" . $_POST['cwt_name'] . "' AND cwt_id!='$cwt_id'");
+  if ($Check == null) {
+    $Response = UPDATE("config_work_types", $config_work_types, "cwt_id='$cwt_id'");
+    $Error = "Unable to update work type";
+  } else {
+    $Response = false;
+    $Error = "Work type already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Work type updated successfully!",
+    "false" => $Error
+  ]);
+
+  //update work type status
+} elseif (isset($_POST['UpdateWorkTypeStatusRecords'])) {
+  $cwt_id = SECURE($_POST['cwt_id'], "d");
+  $cwt_status = SECURE($_POST['UpdateWorkTypeStatusRecords'], "d");
+  if ($cwt_status == 1) {
+    $status = 2;
+  } else {
+    $status = 1;
+  }
+  $Response = UPDATE_SQL("UPDATE config_work_types SET cwt_status='$status' WHERE cwt_id='$cwt_id'");
+  RequestHandler($Response, [
+    "true" => "Work Type status updated successfully!",
+    "false" => "Unable to update work type status at the moment!"
+  ]);
+
+  //save company department record
+} elseif (isset($_POST['SaveCompanyDepartmentRecords'])) {
+  $config_company_department = [
+    "ccd_name" => $_POST['ccd_name'],
+    "ccd_short_name" => $_POST['ccd_short_name'],
+    "ccd_code" => $_POST['ccd_code'],
+    "ccd_desc" => $_POST['ccd_desc'],
+    "ccd_status" => $_POST['ccd_status'],
+    "ccd_type" => $_POST['ccd_type'],
+    "ccd_key" => $_POST['ccd_key'],
+    "ccd_goals" => $_POST['ccd_goals'],
+    "ccd_created_at" => CURRENT_DATE_TIME,
+    "ccd_updated_at" => CURRENT_DATE_TIME,
+    "ccd_created_by" => LOGIN_UserId,
+    "ccd_updated_by" => LOGIN_UserId,
+  ];
+  $Check = CHECK("SELECT ccd_name FROM config_company_department WHERE ccd_name='" . $_POST['ccd_name'] . "'");
+  if ($Check == null) {
+    $Response = INSERT("config_company_department", $config_company_department);
+    $Error = "Unable to save company department";
+  } else {
+    $Response = false;
+    $Error = "Company department already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Company department saved successfully!",
+    "false" => $Error
+  ]);
+
+  //update company department record
+} elseif (isset($_POST['UpdateCompanyDepartmentRecords'])) {
+  $ccd_id = SECURE($_POST['ccd_id'], "d");
+  $config_company_department = [
+    "ccd_name" => $_POST['ccd_name'],
+    "ccd_short_name" => $_POST['ccd_short_name'],
+    "ccd_code" => $_POST['ccd_code'],
+    "ccd_desc" => $_POST['ccd_desc'],
+    "ccd_status" => $_POST['ccd_status'],
+    "ccd_type" => $_POST['ccd_type'],
+    "ccd_key" => $_POST['ccd_key'],
+    "ccd_goals" => $_POST['ccd_goals'],
+    "ccd_updated_at" => CURRENT_DATE_TIME,
+    "ccd_updated_by" => LOGIN_UserId,
+  ];
+  $Check = CHECK("SELECT ccd_name FROM config_company_department WHERE ccd_name='" . $_POST['ccd_name'] . "' AND ccd_id!='$ccd_id'");
+  if ($Check == null) {
+    $Response = UPDATE("config_company_department", $config_company_department, "ccd_id='$ccd_id'");
+    $Error = "Unable to update company department";
+  } else {
+    $Response = false;
+    $Error = "Company department already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Company department updated successfully!",
+    "false" => $Error
+  ]);
+
+  //update company department status
+} elseif (isset($_POST['UpdateCompanyDepartmentStatus'])) {
+  $ccd_id = SECURE($_POST['ccd_id'], "d");
+  $ccd_status = SECURE($_POST['UpdateCompanyDepartmentStatus'], "d");
+  if ($ccd_status == 1) {
+    $status = 2;
+  } else {
+    $status = 1;
+  }
+  $Response = UPDATE_SQL("UPDATE config_company_department SET ccd_status='$status' WHERE ccd_id='$ccd_id'");
+  RequestHandler($Response, [
+    "true" => "Company Department status updated successfully!",
+    "false" => "Unable to update company department status at the moment!"
+  ]);
+
+  //save company compliance records
+} elseif (isset($_POST['SaveCompanyComplianceTypeRecords'])) {
+  $config_company_compliance_types = [
+    "ccct_name" => $_POST['ccct_name'],
+    "ccct_short_name" => $_POST['ccct_short_name'],
+    "ccct_code" => $_POST['ccct_code'],
+    "ccct_desc" => $_POST['ccct_desc'],
+    "ccct_key" => $_POST['ccct_key'],
+    "ccct_status" => $_POST['ccct_status'],
+    "ccct_created_at" => CURRENT_DATE_TIME,
+    "ccct_updated_at" => CURRENT_DATE_TIME,
+    "ccct_created_by" => LOGIN_UserId,
+    "ccct_updated_by" => LOGIN_UserId,
+  ];
+  $Check = CHECK("SELECT ccct_name FROM config_company_compliance_types WHERE ccct_name='" . $_POST['ccct_name'] . "'");
+  if ($Check == null) {
+    $Response = INSERT("config_company_compliance_types", $config_company_compliance_types);
+    $Error = "Unable to save company compliance type";
+  } else {
+    $Response = false;
+    $Error = "Company compliance type already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Company compliance type saved successfully!",
+    "false" => $Error
+  ]);
+
+  //update company compliance records $ccct_id
+} elseif (isset($_POST['UpdateCompanyComplianceTypeRecords'])) {
+  $ccct_id = SECURE($_POST['ccct_id'], "d");
+  $config_company_compliance_types = [
+    "ccct_name" => $_POST['ccct_name'],
+    "ccct_short_name" => $_POST['ccct_short_name'],
+    "ccct_code" => $_POST['ccct_code'],
+    "ccct_desc" => $_POST['ccct_desc'],
+    "ccct_key" => $_POST['ccct_key'],
+    "ccct_status" => $_POST['ccct_status'],
+    "ccct_updated_at" => CURRENT_DATE_TIME,
+    "ccct_updated_by" => LOGIN_UserId,
+  ];
+  $Check = CHECK("SELECT ccct_name FROM config_company_compliance_types WHERE ccct_name='" . $_POST['ccct_name'] . "' AND ccct_id!='$ccct_id'");
+  if ($Check == null) {
+    $Response = UPDATE("config_company_compliance_types", $config_company_compliance_types, "ccct_id='$ccct_id'");
+    $Error = "Unable to update company compliance type";
+  } else {
+    $Response = false;
+    $Error = "Company compliance type already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Company compliance type updated successfully!",
+    "false" => $Error
+  ]);
+
+  //update company compliance status
+} elseif (isset($_POST['UpdateCompanyComplianceStatus'])) {
+  $ccct_id = SECURE($_POST['ccct_id'], "d");
+  $ccct_status = SECURE($_POST['UpdateCompanyComplianceStatus'], "d");
+  if ($ccct_status == 1) {
+    $status = 2;
+  } else {
+    $status = 1;
+  }
+  $Response = UPDATE_SQL("UPDATE config_company_compliance_types SET ccct_status='$status' WHERE ccct_id='$ccct_id'");
+  RequestHandler($Response, [
+    "true" => "Company Compliance Type status updated successfully!",
+    "false" => "Unable to update company compliance type status at the moment!"
+  ]);
+
+  //save company document types
+} elseif (isset($_POST['SaveCompanyDocumentTypes'])) {
+  $config_company_document_types = [
+    "ccdt_name" => $_POST['ccdt_name'],
+    "ccdt_shortname" => $_POST['ccdt_shortname'],
+    "ccdt_code" => $_POST['ccdt_code'],
+    "ccdt_tags" => $_POST['ccdt_tags'],
+    "ccdt_desc" => $_POST['ccdt_desc'],
+    "ccdt_status" => $_POST['ccdt_status'],
+    "ccdt_purpose" => $_POST['ccdt_purpose'],
+    "ccdt_created_at" => CURRENT_DATE_TIME,
+    "ccdt_updated_at" => CURRENT_DATE_TIME,
+    "ccdt_created_by" => LOGIN_UserId,
+    "ccdt_updated_by" => LOGIN_UserId
+  ];
+  $Check = CHECK("SELECT ccdt_name FROM config_company_document_types WHERE ccdt_name='" . $_POST['ccdt_name'] . "'");
+  if ($Check == null) {
+    $Response = INSERT("config_company_document_types", $config_company_document_types);
+    $Error = "Unable to save company document type";
+  } else {
+    $Response = false;
+    $Error = "Company document type already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Company document type saved successfully!",
+    "false" => $Error
+  ]);
+
+  //update company document records $ccdt_id
+} elseif (isset($_POST['UpdateCompanyDocumentTypes'])) {
+  $ccdt_id = SECURE($_POST['ccdt_id'], "d");
+  $config_company_document_types = [
+    "ccdt_name" => $_POST['ccdt_name'],
+    "ccdt_shortname" => $_POST['ccdt_shortname'],
+    "ccdt_code" => $_POST['ccdt_code'],
+    "ccdt_tags" => $_POST['ccdt_tags'],
+    "ccdt_desc" => $_POST['ccdt_desc'],
+    "ccdt_status" => $_POST['ccdt_status'],
+    "ccdt_purpose" => $_POST['ccdt_purpose'],
+    "ccdt_updated_at" => CURRENT_DATE_TIME,
+    "ccdt_updated_by" => LOGIN_UserId
+  ];
+  $Check = CHECK("SELECT ccdt_name FROM config_company_document_types WHERE ccdt_name='" . $_POST['ccdt_name'] . "' AND ccdt_id!='$ccdt_id'");
+  if ($Check == null) {
+    $Response = UPDATE("config_company_document_types", $config_company_document_types, "ccdt_id='$ccdt_id'");
+    $Error = "Unable to update company document type";
+  } else {
+    $Response = false;
+    $Error = "Company document type already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Company document type updated successfully!",
+    "false" => $Error
+  ]);
+
+  //update company document status
+} elseif (isset($_POST['UpdateCompanyDocumentTypeStatus'])) {
+  $ccdt_id = SECURE($_POST['ccdt_id'], "d");
+  $ccdt_status = SECURE($_POST['UpdateCompanyDocumentTypeStatus'], "d");
+  if ($ccdt_status == 1) {
+    $status = 2;
+  } else {
+    $status = 1;
+  }
+  $Response = UPDATE_SQL("UPDATE config_company_document_types SET ccdt_status='$status' WHERE ccdt_id='$ccdt_id'");
+  RequestHandler($Response, [
+    "true" => "Company Document Type status updated successfully!",
+    "false" => "Unable to update company document type status at the moment!"
+  ]);
 }

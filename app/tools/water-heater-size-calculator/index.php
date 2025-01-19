@@ -14,7 +14,7 @@ $PageHeading = IfRequested("GET", "v", IfSessionExists("v", TOOLS_MENU["$PageAct
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php echo $PageHeading; ?> @ <?php echo APP_NAME; ?></title>
-  <?php include $Dir . "/assets/app/HeaderFiles.php"; ?>
+  <?php include $Dir . "/assets/HeaderFiles.php"; ?>
   <script type="text/javascript">
     function SidebarActive() {
       document.getElementById("Tools").classList.add("active");
@@ -39,7 +39,7 @@ $PageHeading = IfRequested("GET", "v", IfSessionExists("v", TOOLS_MENU["$PageAct
           </div>
         </div>
         <div class="row">
-          <?php include $Dir . "/include/app/CalculatorMenus.php"; ?>
+          <?php include $Dir . "/include/components/CalculatorMenus.php"; ?>
           <div class="col-md-9 col-lg-9 col-sm-12 col-12">
             <div class="shadow-sm p-3 b-r-1 mt-3">
               <h4 class="app-sub-heading"><i class='fa fa-calculator text-warning'></i> Water Heater Size Calculator</h4>
@@ -116,7 +116,7 @@ $PageHeading = IfRequested("GET", "v", IfSessionExists("v", TOOLS_MENU["$PageAct
 
   <?php
   include $Dir . "/include/common/Footer.php";
-  include $Dir . "/assets/app/FooterFiles.php";
+  include $Dir . "/assets/FooterFiles.php";
   ?>
 </body>
 

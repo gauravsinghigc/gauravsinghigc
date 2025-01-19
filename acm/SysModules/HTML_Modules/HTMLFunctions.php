@@ -300,6 +300,10 @@ function PaginationFooter(int $TotalItems = 0, $RedirectForAll = "index.php")
     $previous_page = 1;
   }
 
+  if ($next_page > $NetPages) {
+    $next_page = $NetPages;
+  }
+
   //prepare url parameter and pass with pagination
   $UrlParameters = "";
   if (!empty($_GET)) {
@@ -316,17 +320,17 @@ function PaginationFooter(int $TotalItems = 0, $RedirectForAll = "index.php")
     </div>
     <div class="flex-s-b">
       <span class="mr-1">
-        <a href="?view_page=<?php echo $previous_page . $UrlParameters; ?>" class="btn btn-xs btn-primary"><i class="fa fa-angle-double-left"></i></a>
+        <a href="?view_page=<?php echo $previous_page . $UrlParameters; ?>" class="btn btn-sm fs-14 btn-primary"><i class="fa fa-angle-double-left"></i></a>
       </span>
       <form>
         <input type="number" name="view_page" onchange="form.submit()" class="form-control mb-0 fs-12" min="1" max="<?php echo $NetPages; ?>" value="<?php echo IfRequested("GET", "view_page", 1, false); ?>">
       </form>
       <span class="ml-1">
-        <a href="?view_page=<?php echo $next_page . $UrlParameters; ?>" class="btn btn-xs btn-primary"><i class="fa fa-angle-double-right"></i></a>
+        <a href="?view_page=<?php echo $next_page . $UrlParameters; ?>" class="btn btn-sm fs-14 btn-primary"><i class="fa fa-angle-double-right"></i></a>
       </span>
       <?php if (isset($_GET['view_page'])) { ?>
         <span class="ml-1">
-          <a href="<?php echo $RedirectForAll; ?>" class="btn btn-xs btn-danger mb-0"><i class="fa fa-times"></i></a>
+          <a href="<?php echo $RedirectForAll; ?>" class="btn btn-sm fs-14 btn-danger mb-0"><i class="fa fa-times"></i></a>
         </span>
       <?php } ?>
     </div>

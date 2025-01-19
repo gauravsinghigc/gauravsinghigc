@@ -216,13 +216,19 @@ $PageDescription = "Manage all customers";
                     <div class="card p-2 rounded d-block">
                       <h4 class="app-heading">Add/Assign Team Members</h4>
 
-                      <form class="p-2 mb-3">
-                        <input type="search" id='SearchUsers' oninput="SearchData('SearchUsers', 'AllAdminUsers')" class="form-control mb-2" placeholder="Search Member...">
-                      </form>
+                      <div class="flex-s-b">
+                        <form class="p-2 mb-3">
+                          <input type="search" id='SearchUsers' oninput="SearchData('SearchUsers', 'AllAdminUsers')" class="form-control mb-2" placeholder="Search Member...">
+                        </form>
+                        <div class="w-pr-35 ml-1">
+                          <a href="#" onclick="Databar('AddNewUsers')" class="btn btn-sm btn-danger"><i class="fa fa-plus"></i> New
+                            Users</a>
+                        </div>
+                      </div>
                       <!-- Assign to users -->
                       <div class="height-15rem">
                         <?php
-                        $GetAllTeamUsers = SET_SQL("SELECT * FROM users where UserCreatedBy='" . LOGIN_UserId . "' and UserStatus='1'", true);
+                        $GetAllTeamUsers = SET_SQL("SELECT * FROM users where UserStatus='1'", true);
                         if ($GetAllTeamUsers != null) {
                           foreach ($GetAllTeamUsers as $Users) { ?>
                             <div class="data-list mb-1 AllAdminUsers">
@@ -248,13 +254,10 @@ $PageDescription = "Manage all customers";
                                 </label>
                               </div>
                             </div>
-                          <?php }
+                        <?php }
                         } else {
                           echo "<p>No team members found.</p>";
-                          ?>
-                          <a href="#" onclick="Databar('AddNewUsers')" class="btn btn-md btn-block btn-danger"><i class="fa fa-plus"></i> New
-                            Users</a>
-                        <?php } ?>
+                        } ?>
                       </div>
                       <div class="form-group mt-3">
                         <label>Assign Notes</label>
@@ -603,6 +606,7 @@ $PageDescription = "Manage all customers";
   }
 </script>
 <?php
+include $Dir . "/include/forms/Add-New-Users.php";
 include $Dir . "/include/common/Footer.php";
 include $Dir . "/assets/FooterFiles.php"; ?>
 

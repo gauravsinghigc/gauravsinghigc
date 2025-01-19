@@ -32,6 +32,12 @@ function SENDMAILS($Subject, $Title, $Sendto, $MAIL_MSG, $ATTACHEMENTS = NULL, $
       $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;          //Enable implicit TLS encryption
       $mail->Port       = SMTP_CONFIGS("PORT");                                 //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
+
+      //Check authentication status
+      if (!$mail->smtpConnect()) {
+        return false;
+      }
+
       //Recipients
       $mail->setFrom(SMTP_CONFIGS("FROM"));
       $mail->addAddress($Sendto);                                 //Add a recipient

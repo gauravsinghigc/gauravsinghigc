@@ -1155,3 +1155,385 @@ label {
 .option-checkbox img {
   margin-top: 0.35rem;
 }
+
+.rsor-heading {
+  font-size: 0.9rem !important;
+}
+
+.filter-block {
+  margin-right: 0rem;
+  margin-left: 0px;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.flex-s-b .btn-block {
+  font-size: 1rem !important;
+  padding-top: 0.35rem;
+}
+
+.flex-end {
+  justify-content: flex-end !important;
+  display: flex !important;
+}
+
+label {
+  color: grey;
+  font-weight: 500 !important;
+  font-size: 0.8rem;
+}
+
+.detail-dashboard {
+  background-color: var(--primary-color) !important;
+  padding: 1rem;
+  text-align: left;
+  box-shadow: 0px 0px 1px var(--primary-color);
+  border-radius: 1rem;
+}
+
+.detail-dashboard img {
+  width: 22%;
+}
+
+.dashboard {
+  font-size: 0.85rem !important;
+  line-height: 1rem !important;
+}
+
+.reminders {
+  list-style-type: none;
+  padding-left: 0px;
+  height: 20rem;
+  overflow-y: scroll;
+  padding-right: 0.5rem;
+}
+
+.reminders li {
+  display: block;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.reminders li:hover {
+  background-color: rgb(255, 243, 243);
+}
+
+.reminders li a {
+  color: var(--primary-color);
+}
+
+.reminders li a h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.reminders li a h2 .d-block {
+  margin-top: 0.4rem !important;
+}
+
+.reminders li a h2 .time {
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-shadow: 0px 0px 0px !important;
+}
+
+.reminders li a span.type {
+  font-size: 0.7rem;
+  background-color: antiquewhite;
+  padding: 0.15rem 0.5rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+}
+
+.reminders li a span.level {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding: 0.15rem 0.5rem;
+  border-radius: 1rem;
+}
+
+.reminders li a span.level.high {
+  background-color: rgb(255, 122, 122);
+}
+
+.reminders li a span.level.low {
+  background-color: rgb(72, 223, 2);
+}
+
+.reminders li a span.level.medium {
+  background-color: rgb(240, 224, 1);
+}
+
+.reminders li a p {
+  font-size: 0.85rem;
+  margin-bottom: 0px;
+  text-align: justify;
+  margin-top: 0.25rem;
+  line-height: 0.95rem;
+}
+
+.reminders li a .difference {
+  font-size: 0.65rem;
+  float: right;
+  color: red;
+}
+
+.session-variables {
+  font-size: 0.6rem !important;
+  line-height: 0.7rem !important;
+  color: black !important;
+}
+
+.footer {
+  line-height: 0.8rem !important;
+  font-size: 0.7rem !important;
+}
+
+.bootstrap-tagsinput {
+  width: 100%;
+  padding: 5px;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  text-transform: uppercase !important;
+}
+
+.bootstrap-tagsinput .tag {
+  margin-right: 2px;
+  color: white;
+  background-color: #007bff;
+  padding: .2em .6em;
+  border-radius: .2rem;
+  text-transform: uppercase !important;
+}
+
+.tox .tox-notification--warn,
+.tox .tox-notification--warning {
+  display: none !important;
+}
+
+.tox .tox-statusbar a,
+.tox .tox-statusbar__path-item,
+.tox .tox-statusbar__wordcount {
+  display: none !important;
+}
+
+.shadow-sm {
+  box-shadow: 0px 0px 1px grey !important;
+  background-color: rgb(247, 254, 255);
+}
+
+.line-height-normal {
+  line-height: normal !important;
+}
+
+.btn-xs {
+  padding: 0.3rem 0.4rem !important;
+  width: max-content !important;
+  font-size: 0.65rem !important;
+}
+
+.neg-mt-0-7 {
+  margin-top: -0.98rem !important;
+}
+
+.multiple-users {
+  display: flow-root;
+  margin-top: -0.3rem;
+}
+
+.multiple-users img {
+  width: 20px;
+  border-radius: 10rem !important;
+  margin-left: -1rem;
+}
+
+.multiple-users img:hover {
+  transform: scale(1.5);
+  box-shadow: 0px 0px 2px grey !important;
+}
+
+.rsor-chat-window {
+  box-shadow: 0px 0px 1px black;
+  border-radius: 0.5rem;
+  display: block;
+  height: 100%;
+  padding-bottom: 0px !important;
+}
+
+.rsor-chat-window .chat-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom-style: groove;
+  border-width: thin;
+}
+
+.rsor-chat-window .chat-header .profile {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.4rem;
+}
+
+.rsor-chat-window .chat-header .profile img {
+  width: 7%;
+  border-radius: 5rem !important;
+  margin-right: 0.25rem;
+  margin-top: -0.5rem !important;
+}
+
+.rsor-chat-window .chat-header .profile h5 {
+  width: 100%;
+  display: block;
+  padding-top: 0.2rem;
+  padding-left: 0.3rem;
+  font-weight: 700;
+}
+
+.rsor-chat-window .chat-header .profile .enqactions {
+  position: absolute;
+  right: 1rem;
+  padding: 1rem;
+}
+
+.rsor-chat-window .chat-header .profile .enqactions a {
+  font-size: 1.2rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 2rem;
+  background-color: white;
+  color: #0a346a;
+  box-shadow: 0px 0px 1px black;
+}
+
+.rsor-chat-window .chat-header .profile .enqactions a:hover {
+  color: white;
+  background-color: #0c386b;
+}
+
+.rsor-chat-window .chat-header .profile .enqactions a i {
+  font-size: 1.5rem;
+}
+
+
+.rsor-chat-window .chat-body {
+  padding: 0.5rem;
+  overflow-y: scroll;
+  height: 32rem;
+  display: block;
+  background-image: repeating-linear-gradient(45deg, #e4f0ff66, #bcf6ff80 1px);
+}
+
+/* Style the scrollbar track (background of the scrollbar) */
+.rsor-chat-window .chat-body::-webkit-scrollbar {
+  width: 6px;
+  /* Make the scrollbar width thin */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+.rsor-chat-window .chat-body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  /* Light grey color */
+  border-radius: 10px;
+  /* Rounded corners for the thumb */
+}
+
+/* Optional: Style the scrollbar when hovered */
+.rsor-chat-window .chat-body::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Darker color on hover */
+}
+
+/* Style the scrollbar corner (if applicable) */
+.rsor-chat-window .chat-body::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+.chat-body p.feedbacks {
+  background-color: rgb(190 253 190);
+  padding: 0.5rem;
+  width: 60%;
+  font-weight: bold;
+  text-align: right;
+  border-radius: 0.45rem;
+  border-bottom-right-radius: 0px;
+  margin-right: 0.35rem;
+  border-style: groove;
+  border-width: thin;
+  box-shadow: 0px 0px 13px #ededed;
+}
+
+.chat-body p.Havereminders {
+  background-color: rgb(247, 201, 197);
+  padding: 0.5rem;
+  width: 70%;
+  text-align: center;
+  border-radius: 0.45rem;
+  margin-right: 0.35rem;
+}
+
+.chat-body p.feedbacks span {
+  color: grey;
+  font-size: 0.7rem;
+  font-weight: 300;
+  float: right;
+  margin-top: 0.25rem;
+}
+
+.chat-body p.Havereminders span {
+  color: rgb(42, 42, 42);
+  font-size: 0.7rem;
+  font-weight: 300;
+  float: right;
+  margin-top: -0.5rem;
+}
+
+.rsor-chat-window .chat-actions {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  border-top-style: groove;
+  border-width: thin;
+  width: 100%;
+  padding: 0.5rem;
+  bottom: 1.2rem;
+  padding-right: 1.5rem;
+  background-color: #ffffff;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.rsor-chat-window .chat-actions .InputArea input {
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  box-shadow: 0px 0px 2px #007bffa1;
+}
+
+.rsor-chat-window .chat-actions .InputArea button {
+  border-radius: 0.5rem;
+}
+
+
+.login-box .card-header {
+  border-bottom: none !important;
+}
+
+.height-control {
+  height: 30rem;
+  overflow-y: scroll;
+}
+
+.data-list .icons {
+  width: 1.2rem !important;
+  height: 1.2rem !important;
+  box-shadow: 0px 0px 1px grey;
+  border-radius: 0.5rem;
+}

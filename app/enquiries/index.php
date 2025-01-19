@@ -67,7 +67,6 @@ $PageDescription = "Manage all customers";
                     $GetEnquiryTypes = SET_SQL("SELECT cet_id, cet_name, cet_icon FROM config_enquiry_types where cet_user_id='" . LOGIN_UserId . "' and cet_status='1' ORDER BY cet_id ASC", true);
                     if ($GetEnquiryTypes != null) {
                       foreach ($GetEnquiryTypes as $Types) {
-
                         $ActiveRecordStatus = GetActiveStatus(SECURE($ActiveRecord, "D"), $Types->cet_id);
                     ?>
                         <a href='?get_enquiry_from=<?php echo SECURE($Types->cet_id, "e"); ?>' class="<?php echo $ActiveRecordStatus; ?> RecordsList">

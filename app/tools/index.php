@@ -13,7 +13,7 @@ $PageHeading = IfRequested("GET", "v", "All Available Calculators", false);
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php echo $PageHeading; ?> @ <?php echo APP_NAME; ?></title>
-  <?php include $Dir . "/assets/app/HeaderFiles.php"; ?>
+  <?php include $Dir . "/assets/HeaderFiles.php"; ?>
   <script type="text/javascript">
     function SidebarActive() {
       document.getElementById("Tools").classList.add("active");
@@ -58,7 +58,7 @@ $PageHeading = IfRequested("GET", "v", "All Available Calculators", false);
 
   <?php
   include $Dir . "/include/common/Footer.php";
-  include $Dir . "/assets/app/FooterFiles.php";
+  include $Dir . "/assets/FooterFiles.php";
   ?>
 </body>
 
