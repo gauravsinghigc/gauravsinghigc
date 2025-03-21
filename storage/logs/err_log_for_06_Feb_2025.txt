@@ -1,0 +1,22 @@
+[06-Feb-2025 15:15:09 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\gauravsinghigc\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\include\common\TopHeader.php(37): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\gauravsinghigc\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\modules\AuthUserModules.php on line 11
+[06-Feb-2025 16:11:22 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[06-Feb-2025 16:11:22 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[06-Feb-2025 16:11:22 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[06-Feb-2025 16:11:22 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[06-Feb-2025 16:11:22 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[06-Feb-2025 16:11:22 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[06-Feb-2025 16:11:22 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[06-Feb-2025 16:11:22 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[06-Feb-2025 16:11:22 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[06-Feb-2025 16:11:22 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[06-Feb-2025 16:11:22 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[06-Feb-2025 16:11:22 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[06-Feb-2025 16:23:30 Asia/Calcutta] PHP Warning:  Undefined array key "cyvt_shortname" in C:\xampp\htdocs\gauravsinghigc\handler\SystemController\ConfigController.php on line 1497
+[06-Feb-2025 16:23:30 Asia/Calcutta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Update.php on line 38
+[06-Feb-2025 16:23:34 Asia/Calcutta] PHP Warning:  include(../../..//app/settings/companies-settings/views/event_types.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 82
+[06-Feb-2025 16:23:34 Asia/Calcutta] PHP Warning:  include(): Failed opening '../../..//app/settings/companies-settings/views/event_types.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 82

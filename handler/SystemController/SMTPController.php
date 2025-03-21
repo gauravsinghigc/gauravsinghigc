@@ -30,4 +30,12 @@ if (isset($_POST['UpdateMailConfigurations'])) {
     );
 
     RESPONSE($MailSender, "Test Mail is sent successfully!", "Unable to send test mail or Maybe <B>SMTP Configuration</B> are not currect.");
+
+    //known request handler
+} else {
+
+    //check development environment
+    if (CONTROL_WORK_ENV == "PROD") {
+        RESPONSE(false, "", "<b>Warning:</b><br> System Received unknown controller request at the moment!<br><br> <b>Device Info: </b>" . SYSTEM_MORE_INFO . "<br><br> <b>IP_ADDRESS :</b> " . IP_ADDRESS . "<br><br> <b>Sent from:</b><br>" . $access_url);
+    }
 }

@@ -1,0 +1,18 @@
+[12-Feb-2025 15:13:13 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "ACTIVE_FINANCIAL_YEAR" in C:\xampp\htdocs\gauravsinghigc\include\common\TopHeader.php:39
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\include\common\TopHeader.php on line 39
+[12-Feb-2025 16:45:09 Asia/Calcutta] PHP Warning:  include(C:\xampp\htdocs\gauravsinghigc\onboarding\organisation/views/branches_address.php.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\gauravsinghigc\onboarding\organisation\index.php on line 54
+[12-Feb-2025 16:45:09 Asia/Calcutta] PHP Warning:  include(): Failed opening 'C:\xampp\htdocs\gauravsinghigc\onboarding\organisation/views/branches_address.php.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\gauravsinghigc\onboarding\organisation\index.php on line 54
+[12-Feb-2025 20:23:42 Asia/Calcutta] PHP Deprecated:  Optional parameter $checkfile declared before required parameter $NewFile is implicitly treated as a required parameter in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\FILE_Modules\UploadHandler.php on line 3
+[12-Feb-2025 20:23:42 Asia/Calcutta] PHP Deprecated:  Optional parameter $method declared before required parameter $default is implicitly treated as a required parameter in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PROCESS_Modules\FormRequestHandler.php on line 4
+[12-Feb-2025 20:23:42 Asia/Calcutta] PHP Deprecated:  Optional parameter $table declared before required parameter $order is implicitly treated as a required parameter in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Suggest.php on line 3
+[12-Feb-2025 20:23:42 Asia/Calcutta] PHP Deprecated:  Optional parameter $table declared before required parameter $column is implicitly treated as a required parameter in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Suggest.php on line 22
+[12-Feb-2025 20:23:42 Asia/Calcutta] PHP Deprecated:  Optional parameter $required declared before required parameter $class is implicitly treated as a required parameter in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\HTML_Modules\Form.php on line 16
+[12-Feb-2025 20:23:42 Asia/Calcutta] PHP Deprecated:  Optional parameter $req declared before required parameter $class is implicitly treated as a required parameter in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\HTML_Modules\Form.php on line 75
+[12-Feb-2025 20:23:43 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "ACTIVE_FINANCIAL_YEAR" in C:\xampp\htdocs\gauravsinghigc\include\common\TopHeader.php:39
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\app\index.php(25): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\include\common\TopHeader.php on line 39

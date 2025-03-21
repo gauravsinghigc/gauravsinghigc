@@ -47,7 +47,7 @@ $PageDescription = "Manage System Profile, address, logo";
                       <?php include "../sections/common.php"; ?>
                     </div>
 
-                    <div class="col-md-10">
+                    <div class="col-md-10 pt-2">
                       <h4 class="app-heading"><?php echo $PageName; ?></h4>
                       <div class="row">
                         <div class="col-md-12">

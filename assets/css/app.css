@@ -14,11 +14,10 @@
   background-image: linear-gradient(45deg, #3598db, transparent);
 }
 
-
 html,
 body {
   font-family: "AR One Sans", sans-serif !important;
-  font-size: 0.85rem !important;
+  font-size: var(--body-font-size, 0.82rem);
   line-height: normal !important;
   text-shadow: 0px 0px 1px lightgrey;
   color: #505050;
@@ -191,7 +190,7 @@ a:hover {
 }
 
 .pop-section .action-window div.form-group {
-  margin-bottom: 0.2em !important;
+  margin-bottom: 0.75rem !important;
 }
 
 .popup-background {
@@ -410,7 +409,7 @@ a:hover {
   padding-top: 0.5rem;
   margin-bottom: 0px;
   padding-bottom: 0.35rem;
-  margin-top: 3rem;
+  margin-top: 3.25rem;
   width: 100%;
   overflow-x: scroll;
   padding-left: 0.2rem;
@@ -968,7 +967,7 @@ label {
 }
 
 .btn {
-  border-radius: 0.5rem !important;
+  border-radius: .6rem !important;
 }
 
 .status-control {
@@ -977,7 +976,7 @@ label {
 
 .Header-Menus {
   padding: 0.15rem 0.5rem;
-  margin-top: 0.28rem;
+  margin-top: 0.45rem;
 }
 
 .Header-Menus a {
@@ -985,9 +984,10 @@ label {
   box-shadow: 0px 0px 1px grey;
   border-radius: 0.5rem;
   display: inline-block;
-  width: fit-content;
-  max-width: fit-content;
+  width: 3rem;
+  max-width: 3rem;
   margin-right: 0.15rem;
+  text-align: center;
 }
 
 .Header-Menus a i {
@@ -1012,10 +1012,10 @@ label {
   color: white;
   background-color: red;
   padding: 0.25rem;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   border-radius: 5rem;
-  margin-left: -0.50rem;
-  margin-top: -0.50rem;
+  margin-left: 0.25rem;
+  margin-top: -2.25rem;
 }
 
 .circle {
@@ -1335,9 +1335,9 @@ label {
 }
 
 .btn-xs {
-  padding: 0.3rem 0.4rem !important;
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem !important;
   width: max-content !important;
-  font-size: 0.65rem !important;
+  font-size: 0.56rem !important;
 }
 
 .neg-mt-0-7 {
@@ -1536,4 +1536,68 @@ label {
   height: 1.2rem !important;
   box-shadow: 0px 0px 1px grey;
   border-radius: 0.5rem;
+}
+
+.InsertRecordBtn {
+  position: fixed;
+  bottom: 0.5rem;
+  right: 1rem;
+  width: max-content;
+  z-index: 9999;
+}
+
+.onboarding {
+  padding-top: 0.5rem;
+}
+
+.gsi-intro {
+  width: min-content;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 0px 0px 3px grey;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  padding-bottom: 0rem;
+}
+
+.gsi-intro img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: -0.2rem;
+}
+
+.gsi-intro h4 {
+  margin-bottom: -1px;
+  font-weight: 500;
+}
+
+.onboarding .highlights span {
+  background-color: #f0f0ee;
+  font-size: 0.8rem;
+  margin: 0rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+}
+
+.onboarding .identity-steps label:hover,
+.onboarding .identity-steps label.active {
+  box-shadow: 0px 0px 2px black;
+  background-color: var(--primary-color) !important;
+}
+
+.onboarding .identity-steps label:hover h1,
+.onboarding .identity-steps label.active h1,
+.onboarding .identity-steps label:hover span,
+.onboarding .identity-steps label.active span {
+  color: white !important;
+}
+
+.onboarding .identity-steps label:hover p,
+.onboarding .identity-steps label.active p {
+  color: rgb(151, 151, 151) !important;
+}
+
+.onboarding .identity-steps label {
+  cursor: pointer !important;
 }

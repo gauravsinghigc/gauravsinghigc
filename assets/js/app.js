@@ -105,3 +105,130 @@ function CopyContent(BtnName, CopyFrom, CopyTo) {
     });
   });
 }
+
+// Default font size (initial value)
+const defaultFontSize = 0.82; // Default font size 0.82rem
+let currentMultiplier = 0; // Tracks the multiplier (starting at 0)
+let currentFontSize = defaultFontSize; // To track the current font size
+
+// Check if font size was previously saved in sessionStorage
+if (sessionStorage.getItem("fontSize")) {
+  currentFontSize = parseFloat(sessionStorage.getItem("fontSize"));
+  currentMultiplier = parseInt(sessionStorage.getItem("fontMultiplier"));
+  document.documentElement.style.setProperty(
+    "font-size",
+    currentFontSize + "rem",
+    "important"
+  );
+  document.body.style.setProperty(
+    "font-size",
+    currentFontSize + "rem",
+    "important"
+  );
+  updateFontSizeMessage();
+}
+
+// Function to adjust font size
+function adjustFontSize(change) {
+  let html = document.documentElement; // For html font size
+  let body = document.body; // For body font size
+
+  // Get current font size in rem (default is 0.82rem)
+  let currentSizeHtml =
+    parseFloat(getComputedStyle(html).fontSize) / 16 || defaultFontSize;
+  let currentSizeBody =
+    parseFloat(getComputedStyle(body).fontSize) / 16 || defaultFontSize;
+
+  // Calculate new size
+  let newSizeHtml = currentSizeHtml + change;
+  let newSizeBody = currentSizeBody + change;
+
+  // Allow font-size change within the range 0.1rem to 1.25rem
+  if (
+    newSizeHtml >= 0.1 &&
+    newSizeHtml <= 1.25 &&
+    newSizeBody >= 0.1 &&
+    newSizeBody <= 1.25
+  ) {
+    html.style.setProperty("font-size", newSizeHtml + "rem", "important");
+    body.style.setProperty("font-size", newSizeBody + "rem", "important");
+
+    // Update the font size and the multiplier
+    currentFontSize = newSizeHtml;
+
+    // Update the multiplier based on the change
+    currentMultiplier += change > 0 ? 1 : -1;
+
+    // Save font size and multiplier to sessionStorage
+    sessionStorage.setItem("fontSize", currentFontSize);
+    sessionStorage.setItem("fontMultiplier", currentMultiplier);
+
+    // Update the font size message
+    updateFontSizeMessage();
+
+    // Show "Restore to Default" button if size is modified
+    document.getElementById("RestoreToDefaultBtn").classList.remove("hidden");
+  }
+}
+
+// Function to display the size update message
+function updateFontSizeMessage() {
+  let sizeMessage = document.getElementById("SizeUpdateMsg");
+
+  // If the font size is at the default size (0.82rem), show 0
+  if (currentFontSize === defaultFontSize) {
+    sizeMessage.innerHTML = "0"; // Default font size is 0x
+  } else if (currentMultiplier > 0) {
+    // If the size increases, show positive multiplier (1x, 2x, 3x, etc.)
+    sizeMessage.innerHTML = `+${currentMultiplier}x`;
+  } else if (currentMultiplier < 0) {
+    // If the size decreases, show negative multiplier (-1x, -2x, etc.)
+    sizeMessage.innerHTML = `${currentMultiplier}x`; // Negative multiplier
+  }
+
+  // If max font size reached
+  if (currentFontSize === 1.25) {
+    sizeMessage.innerHTML = "Max";
+  }
+
+  // If min font size reached
+  if (currentFontSize === 0.1) {
+    sizeMessage.innerHTML = "Min";
+  }
+}
+
+// Function to restore to default font size
+function restoreToDefault() {
+  document.documentElement.style.setProperty(
+    "font-size",
+    defaultFontSize + "rem",
+    "important"
+  );
+  document.body.style.setProperty(
+    "font-size",
+    defaultFontSize + "rem",
+    "important"
+  );
+  currentFontSize = defaultFontSize; // Reset the font size
+  currentMultiplier = 0; // Reset multiplier
+
+  // Remove font size from sessionStorage
+  sessionStorage.removeItem("fontSize");
+  sessionStorage.removeItem("fontMultiplier");
+
+  // Hide the restore button after restoring to default
+  document.getElementById("RestoreToDefaultBtn").classList.add("hidden");
+
+  // Clear the size message
+  document.getElementById("SizeUpdateMsg").innerHTML = "Default";
+}
+
+// Enlarge font size by 0.025rem
+function EnlargeFontSize() {
+  adjustFontSize(0.035);
+}
+
+// Lower font size by 0.025rem
+function LowerFontSize() {
+  adjustFontSize(-0.03);
+}

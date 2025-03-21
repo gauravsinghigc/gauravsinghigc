@@ -29,6 +29,10 @@
                                 <?php echo InputOptions(ALL_FONT_ICONS, $Data->cut_icon); ?>
                             </select>
                         </div>
+                        <div class="form-group col-md-12">
+                            <label>Purpose</label>
+                            <input type="text" required name="cut_purpose" value="<?php echo $Data->cut_purpose; ?>" class="form-control">
+                        </div>
                     </div>
                 </div>
 

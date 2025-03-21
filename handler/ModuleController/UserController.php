@@ -1,5 +1,5 @@
 <?php
-
+require __DIR__ . "/../ModuleController.php";
 
 //update profile image 
 if (isset($_POST['updateprofileimage'])) {

@@ -25,7 +25,9 @@
  */
 
 //Display Errors
+error_reporting(E_ALL);
 ini_set("display_errors", 1);
+
 
 //error log file
 ini_set("log_errors", 1);

@@ -1,0 +1,350 @@
+[10-Feb-2025 13:58:25 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\gauravsinghigc\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\include\common\TopHeader.php(37): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\gauravsinghigc\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\modules\AuthUserModules.php on line 11
+[10-Feb-2025 13:59:45 Asia/Calcutta] PHP Warning:  include(../../..//app/settings/companies-settings/views/event_types.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 82
+[10-Feb-2025 13:59:45 Asia/Calcutta] PHP Warning:  include(): Failed opening '../../..//app/settings/companies-settings/views/event_types.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 82
+[10-Feb-2025 14:33:07 Asia/Calcutta] PHP Warning:  Undefined array key "cent_shortname" in C:\xampp\htdocs\gauravsinghigc\handler\SystemController\ConfigController.php on line 1573
+[10-Feb-2025 14:33:07 Asia/Calcutta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Update.php on line 38
+[10-Feb-2025 14:33:13 Asia/Calcutta] PHP Warning:  Undefined array key "cent_shortname" in C:\xampp\htdocs\gauravsinghigc\handler\SystemController\ConfigController.php on line 1573
+[10-Feb-2025 14:33:13 Asia/Calcutta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Update.php on line 38
+[10-Feb-2025 14:33:18 Asia/Calcutta] PHP Warning:  Undefined array key "cent_shortname" in C:\xampp\htdocs\gauravsinghigc\handler\SystemController\ConfigController.php on line 1573
+[10-Feb-2025 14:33:18 Asia/Calcutta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Update.php on line 38
+[10-Feb-2025 14:42:03 Asia/Calcutta] PHP Warning:  include(../../..//app/settings/companies-settings/views/audit_types.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 82
+[10-Feb-2025 14:42:03 Asia/Calcutta] PHP Warning:  include(): Failed opening '../../..//app/settings/companies-settings/views/audit_types.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 82
+[10-Feb-2025 14:56:02 Asia/Calcutta] PHP Warning:  Undefined array key "cent_id" in C:\xampp\htdocs\gauravsinghigc\handler\SystemController\ConfigController.php on line 1592
+[10-Feb-2025 14:56:02 Asia/Calcutta] PHP Deprecated:  base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\EncDec.php on line 17
+[10-Feb-2025 14:56:05 Asia/Calcutta] PHP Warning:  Undefined array key "cent_id" in C:\xampp\htdocs\gauravsinghigc\handler\SystemController\ConfigController.php on line 1592
+[10-Feb-2025 14:56:05 Asia/Calcutta] PHP Deprecated:  base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\EncDec.php on line 17
+[10-Feb-2025 14:59:32 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM vendor_address WHERE vendor_main_id='' ORDER BY vendor_address_id DESC' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php:12
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(12): mysqli_query(Object(mysqli), 'SELECT  FROM ve...')
+#1 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(26): SELECT('SELECT  FROM ve...')
+#2 C:\xampp\htdocs\gauravsinghigc\modules\VendorModules.php(38): FETCH('SELECT  FROM ve...', '')
+#3 C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\enquiries.php(74): VendorAddressDetails('')
+#4 C:\xampp\htdocs\gauravsinghigc\app\enquiries\index.php(86): include('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php on line 12
+[10-Feb-2025 14:59:45 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM vendor_address WHERE vendor_main_id='' ORDER BY vendor_address_id DESC' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php:12
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(12): mysqli_query(Object(mysqli), 'SELECT  FROM ve...')
+#1 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(26): SELECT('SELECT  FROM ve...')
+#2 C:\xampp\htdocs\gauravsinghigc\modules\VendorModules.php(38): FETCH('SELECT  FROM ve...', '')
+#3 C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\enquiries.php(74): VendorAddressDetails('')
+#4 C:\xampp\htdocs\gauravsinghigc\app\enquiries\index.php(86): include('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php on line 12
+[10-Feb-2025 14:59:48 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM vendor_address WHERE vendor_main_id='' ORDER BY vendor_address_id DESC' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php:12
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(12): mysqli_query(Object(mysqli), 'SELECT  FROM ve...')
+#1 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(26): SELECT('SELECT  FROM ve...')
+#2 C:\xampp\htdocs\gauravsinghigc\modules\VendorModules.php(38): FETCH('SELECT  FROM ve...', '')
+#3 C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\enquiries.php(74): VendorAddressDetails('')
+#4 C:\xampp\htdocs\gauravsinghigc\app\enquiries\index.php(86): include('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php on line 12
+[10-Feb-2025 16:08:26 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:08:26 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(60): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:08:45 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:08:45 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(60): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:08:52 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:08:52 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(60): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:09:09 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:09:09 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:09:28 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:09:28 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:09:35 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:09:35 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:09:43 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:09:43 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:10:03 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:10:03 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:10:10 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:10:10 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:10:16 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:10:16 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:10:22 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:10:22 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:10:26 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:10:26 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:10:31 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:10:31 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:10:41 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:10:41 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:10:45 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:10:45 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:10:54 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:10:54 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:11:10 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:11:10 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:11:21 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:11:21 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:11:32 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'gauravsinghigc.config_departments' doesn't exist in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM c...')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM c...')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:11:44 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:11:44 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:11:55 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:11:55 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:12:04 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'gauravsinghigc.config_document_categories' doesn't exist in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM c...')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM c...')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:12:21 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:12:21 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:12:34 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'gauravsinghigc.config_account_types' doesn't exist in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM c...')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM c...')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:12:54 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'gauravsinghigc.config_expense_types' doesn't exist in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM c...')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM c...')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:13:10 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'gauravsinghigc.config_purchases_types' doesn't exist in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM c...')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM c...')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:13:24 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'gauravsinghigc.config_assets_types' doesn't exist in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM c...')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM c...')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:13:40 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'gauravsinghigc.config_credentials_types' doesn't exist in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM c...')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM c...')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:13:57 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:13:57 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:14:18 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'gauravsinghigc.config_notes_types' doesn't exist in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM c...')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM c...')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:14:31 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:14:31 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:14:44 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:14:44 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:14:53 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'gauravsinghigc.config_urls_types' doesn't exist in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM c...')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM c...')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:15:04 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:15:04 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:15:12 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'gauravsinghigc.config_youtube_types' doesn't exist in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM c...')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM c...')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:15:27 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:15:27 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:15:39 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'gauravsinghigc.config_event_types' doesn't exist in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM c...')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM c...')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:15:55 Asia/Calcutta] PHP Warning:  Undefined array key "db_name" in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php on line 57
+[10-Feb-2025 16:15:55 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php:16
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php(16): mysqli_query(Object(mysqli), 'SELECT * FROM ')
+#1 C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\index.php(61): TOTAL('SELECT * FROM ')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\DBOperations.php on line 16
+[10-Feb-2025 16:41:31 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[10-Feb-2025 16:41:31 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[10-Feb-2025 16:41:31 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[10-Feb-2025 16:41:31 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[10-Feb-2025 16:41:31 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[10-Feb-2025 16:41:31 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[10-Feb-2025 16:41:31 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[10-Feb-2025 16:41:31 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[10-Feb-2025 16:41:31 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[10-Feb-2025 16:41:31 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[10-Feb-2025 16:41:31 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[10-Feb-2025 16:41:31 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[10-Feb-2025 16:41:43 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[10-Feb-2025 16:41:43 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[10-Feb-2025 16:41:43 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[10-Feb-2025 16:41:43 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[10-Feb-2025 16:41:43 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[10-Feb-2025 16:41:43 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[10-Feb-2025 16:41:43 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[10-Feb-2025 16:41:43 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[10-Feb-2025 16:41:43 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[10-Feb-2025 16:41:43 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[10-Feb-2025 16:41:43 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[10-Feb-2025 16:41:43 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[10-Feb-2025 16:44:03 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[10-Feb-2025 16:44:03 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[10-Feb-2025 16:44:03 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[10-Feb-2025 16:44:03 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[10-Feb-2025 16:44:03 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[10-Feb-2025 16:44:03 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[10-Feb-2025 16:44:03 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[10-Feb-2025 16:44:03 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[10-Feb-2025 16:44:03 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[10-Feb-2025 16:44:03 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[10-Feb-2025 16:44:03 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[10-Feb-2025 16:44:03 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[10-Feb-2025 16:44:11 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[10-Feb-2025 16:44:11 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[10-Feb-2025 16:44:11 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[10-Feb-2025 16:44:11 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[10-Feb-2025 16:44:11 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[10-Feb-2025 16:44:11 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[10-Feb-2025 16:44:11 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[10-Feb-2025 16:44:11 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[10-Feb-2025 16:44:11 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[10-Feb-2025 16:44:11 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92
+[10-Feb-2025 16:44:11 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 87
+[10-Feb-2025 16:44:11 Asia/Calcutta] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PHP_Modules\DataActivity.php on line 92

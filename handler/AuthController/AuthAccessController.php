@@ -60,6 +60,9 @@ if (isset($_SESSION['APP_LOGIN_USER_ID']) != null) {
         }
     }
 
+    //Validate Default Header Sessional Requests 
+    include __DIR__ . "/../DefaultHeaderRequests/index.php";
+
     //no login
 } else {
     LOCATION("warning", "Login session expired, please login again!", DOMAIN . "/auth?AuthView=LoginForm");

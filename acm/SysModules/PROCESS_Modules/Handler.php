@@ -16,11 +16,15 @@ function LOCATION($type, $msg, $url)
 function RESPONSE($act, $msg, $msg2)
 {
     global $access_url;
+
     if ($act == true) {
-        LOCATION("success", "$msg", "$access_url");
+        $type = "success";
+        $msg = "$msg";
     } else {
-        LOCATION("danger", "$msg2", "$access_url");
+        $type = "danger";
+        $msg = "$msg2";
     }
+    LOCATION($type, "$msg", "$access_url");
 }
 
 //controller request

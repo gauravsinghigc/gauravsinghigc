@@ -24,6 +24,10 @@ if (CONTROL_NOTIFICATION == "true") {
         setTimeout(function() {
           $("#MsgArea1").fadeOut("slow");
         }, <?php echo CONTROL_MSG_DISPLAY_TIME; ?>);
+
+        document.getElementById("MsgArea1").onclick = function() {
+          $("#MsgArea1").fadeOut("slow");
+        };
       </script>
     </div>
     <?php
@@ -53,6 +57,10 @@ if (CONTROL_NOTIFICATION == "true") {
         setTimeout(function() {
           $("#MsgArea2").fadeOut("slow");
         }, <?php echo CONTROL_MSG_DISPLAY_TIME; ?>);
+
+        document.getElementById("MsgArea2").onclick = function() {
+          $("#MsgArea2").fadeOut("slow");
+        };
       </script>
     </div>
     <?php
@@ -82,6 +90,11 @@ if (CONTROL_NOTIFICATION == "true") {
         setTimeout(function() {
           $("#MsgArea3").fadeOut("slow");
         }, <?php echo CONTROL_MSG_DISPLAY_TIME; ?>);
+
+
+        document.getElementById("MsgArea3").onclick = function() {
+          $("#MsgArea3").fadeOut("slow");
+        };
       </script>
     </div>
     <?php
@@ -111,6 +124,10 @@ if (CONTROL_NOTIFICATION == "true") {
         setTimeout(function() {
           $("#MsgArea4").fadeOut("slow");
         }, <?php echo CONTROL_MSG_DISPLAY_TIME; ?>);
+
+        document.getElementById("MsgArea4").onclick = function() {
+          $("#MsgArea4").fadeOut("slow");
+        };
       </script>
     </div>
 <?php

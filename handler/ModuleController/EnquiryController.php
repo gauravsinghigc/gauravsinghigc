@@ -1,4 +1,6 @@
 <?php
+require __DIR__ . "/../ModuleController.php";
+
 if (isset($_POST['SaveNewEnquiryTypes'])) {
     $config_enquiry_types = [
         "cet_name" => $_POST['cet_name'],

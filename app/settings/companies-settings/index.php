@@ -53,9 +53,12 @@ $PageDescription = "Manage System Profile, address, logo";
                       <div class='app-setting-menus'>
                         <?php
                         foreach (COMPANY_CONFIGURATION_MENU as $Key => $CompanySettingMenus) {
-                          $SelectionStatus = GetActiveStatus($Key, $ViewID, "active"); ?>
+                          $SelectionStatus = GetActiveStatus($Key, $ViewID, "active");
+                          $DbColumnName = $CompanySettingMenus['db_name']; ?>
                           <a href="<?php echo APP_URL; ?>/settings/companies-settings/?view=<?php echo $Key; ?>" class="<?php echo $SelectionStatus; ?>" id='<?php echo $Key; ?>'>
-                            <i class="fa <?php echo $CompanySettingMenus['icon']; ?> text-danger"></i> <?php echo $CompanySettingMenus['name']; ?> <i class="fa fa-angle-right"></i>
+                            <i class="fa <?php echo $CompanySettingMenus['icon']; ?> text-danger"></i> <?php echo $CompanySettingMenus['name']; ?>
+                            <i class="fa fa-angle-right"></i>
+                            <span class='btn-warning btn-xs fs-10 m-t-2 pull-right'><?php echo TOTAL("SELECT * FROM $DbColumnName"); ?></span>
                           </a>
                         <?php } ?>
                       </div>

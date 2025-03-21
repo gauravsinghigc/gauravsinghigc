@@ -1,6 +1,7 @@
 <?php
-if (isset($_POST['SavePrimaryDetailOfVendors'])) {
+require __DIR__ . "/../ModuleController.php";
 
+if (isset($_POST['SavePrimaryDetailOfVendors'])) {
     //vendor details
     $vendor = [
         "vendor_name" => $_POST['vendor_name'],

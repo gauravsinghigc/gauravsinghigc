@@ -1,0 +1,74 @@
+[02-Feb-2025 18:49:08 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Undefined constant "LOGIN_UserId" in C:\xampp\htdocs\gauravsinghigc\modules\AuthUserModules.php:11
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\include\common\TopHeader.php(37): AuthAppUser('UserProfileImag...')
+#1 C:\xampp\htdocs\gauravsinghigc\app\index.php(25): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\modules\AuthUserModules.php on line 11
+[02-Feb-2025 18:56:53 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$ccdt_status in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\views\account_types.php on line 26
+[02-Feb-2025 18:56:53 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$ccdt_status in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\views\account_types.php on line 26
+[02-Feb-2025 18:56:53 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$ccdt_status in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\views\account_types.php on line 26
+[02-Feb-2025 18:56:53 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$ccdt_status in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\views\account_types.php on line 26
+[02-Feb-2025 18:56:53 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$ccdt_status in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\views\account_types.php on line 26
+[02-Feb-2025 18:56:53 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$ccdt_status in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\views\account_types.php on line 26
+[02-Feb-2025 18:56:53 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$ccdt_status in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\views\account_types.php on line 26
+[02-Feb-2025 18:56:53 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$ccdt_status in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\views\account_types.php on line 26
+[02-Feb-2025 18:56:53 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$ccdt_status in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\views\account_types.php on line 26
+[02-Feb-2025 18:56:53 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$ccdt_status in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\views\account_types.php on line 26
+[02-Feb-2025 18:56:53 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$ccdt_status in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\views\account_types.php on line 26
+[02-Feb-2025 18:56:53 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$ccdt_status in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\views\account_types.php on line 26
+[02-Feb-2025 18:56:53 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$ccdt_status in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\views\account_types.php on line 26
+[02-Feb-2025 18:56:53 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$ccdt_status in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\views\account_types.php on line 26
+[02-Feb-2025 18:56:53 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$ccdt_status in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\views\account_types.php on line 26
+[02-Feb-2025 18:56:53 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$ccdt_status in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\views\account_types.php on line 26
+[02-Feb-2025 18:56:53 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$ccdt_status in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\views\account_types.php on line 26
+[02-Feb-2025 18:56:53 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$ccdt_status in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\views\account_types.php on line 26
+[02-Feb-2025 18:56:53 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$ccdt_status in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\views\account_types.php on line 26
+[02-Feb-2025 18:56:53 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$ccdt_status in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\views\account_types.php on line 26
+[02-Feb-2025 18:56:53 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$ccdt_status in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\views\account_types.php on line 26
+[02-Feb-2025 18:56:53 Asia/Calcutta] PHP Warning:  Undefined property: stdClass::$ccdt_status in C:\xampp\htdocs\gauravsinghigc\app\settings\companies-settings\views\account_types.php on line 26
+[02-Feb-2025 19:14:44 Asia/Calcutta] PHP Warning:  Undefined array key "ccdt_name" in C:\xampp\htdocs\gauravsinghigc\handler\SystemController\ConfigController.php on line 850
+[02-Feb-2025 19:27:15 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM vendor_address WHERE vendor_main_id='' ORDER BY vendor_address_id DESC' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php:12
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(12): mysqli_query(Object(mysqli), 'SELECT  FROM ve...')
+#1 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(26): SELECT('SELECT  FROM ve...')
+#2 C:\xampp\htdocs\gauravsinghigc\modules\VendorModules.php(38): FETCH('SELECT  FROM ve...', '')
+#3 C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\enquiries.php(74): VendorAddressDetails('')
+#4 C:\xampp\htdocs\gauravsinghigc\app\enquiries\index.php(86): include('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php on line 12
+[02-Feb-2025 19:27:31 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM vendor_address WHERE vendor_main_id='' ORDER BY vendor_address_id DESC' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php:12
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(12): mysqli_query(Object(mysqli), 'SELECT  FROM ve...')
+#1 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(26): SELECT('SELECT  FROM ve...')
+#2 C:\xampp\htdocs\gauravsinghigc\modules\VendorModules.php(38): FETCH('SELECT  FROM ve...', '')
+#3 C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\enquiries.php(74): VendorAddressDetails('')
+#4 C:\xampp\htdocs\gauravsinghigc\app\enquiries\index.php(86): include('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php on line 12
+[02-Feb-2025 19:27:35 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM vendor_address WHERE vendor_main_id='' ORDER BY vendor_address_id DESC' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php:12
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(12): mysqli_query(Object(mysqli), 'SELECT  FROM ve...')
+#1 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(26): SELECT('SELECT  FROM ve...')
+#2 C:\xampp\htdocs\gauravsinghigc\modules\VendorModules.php(38): FETCH('SELECT  FROM ve...', '')
+#3 C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\enquiries.php(74): VendorAddressDetails('')
+#4 C:\xampp\htdocs\gauravsinghigc\app\enquiries\index.php(86): include('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php on line 12
+[02-Feb-2025 19:27:45 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM vendor_address WHERE vendor_main_id='' ORDER BY vendor_address_id DESC' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php:12
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(12): mysqli_query(Object(mysqli), 'SELECT  FROM ve...')
+#1 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(26): SELECT('SELECT  FROM ve...')
+#2 C:\xampp\htdocs\gauravsinghigc\modules\VendorModules.php(38): FETCH('SELECT  FROM ve...', '')
+#3 C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\enquiries.php(74): VendorAddressDetails('')
+#4 C:\xampp\htdocs\gauravsinghigc\app\enquiries\index.php(86): include('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php on line 12
+[02-Feb-2025 19:27:47 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM vendor_address WHERE vendor_main_id='' ORDER BY vendor_address_id DESC' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php:12
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(12): mysqli_query(Object(mysqli), 'SELECT  FROM ve...')
+#1 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(26): SELECT('SELECT  FROM ve...')
+#2 C:\xampp\htdocs\gauravsinghigc\modules\VendorModules.php(38): FETCH('SELECT  FROM ve...', '')
+#3 C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\enquiries.php(74): VendorAddressDetails('')
+#4 C:\xampp\htdocs\gauravsinghigc\app\enquiries\index.php(86): include('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php on line 12

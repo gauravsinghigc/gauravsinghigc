@@ -295,7 +295,7 @@ DEFINE("ADD_WINDOW_OPTIONS", [
     "Option16" => [
         "title" => "Add Vendor",
         "icon" => "users",
-        "url" => APP_URL . "/vendors/add"
+        "url" => DOMAIN . "/onboarding/vendors"
     ],
     "Option17" => [
         "title" => "Add Account",
@@ -335,12 +335,12 @@ DEFINE("ADD_WINDOW_OPTIONS", [
     "Option24" => [
         "title" => "Add Team",
         "icon" => "users",
-        "url" => APP_URL . "/teams/add"
+        "url" => APP_URL . "/companies/team/add"
     ],
     "Option25" => [
         "title" => "Add Company",
         "icon" => "building",
-        "url" => APP_URL . "/companies/add"
+        "url" => DOMAIN . "/onboarding/organisation/"
     ]
 ]);
 
@@ -817,97 +817,234 @@ DEFINE(
         'company_types' => [
             'name' => 'Company Types',
             'icon' => 'fa fa-building',
-            'module' => 'company_types.php'
+            'module' => 'company_types.php',
+            'db_name' => "config_company_types",
         ],
         'work_industries' => [
             'name' => 'Work Industries',
             'icon' => 'fa fa-star',
-            'module' => 'work_industries.php'
+            'module' => 'work_industries.php',
+            'db_name' => "config_work_industries",
         ],
         'work_types' => [
             'name' => 'Work Types',
             'icon' => 'fa fa-table',
-            'module' => 'work_types.php'
+            'module' => 'work_types.php',
+            'db_name' => "config_work_types",
         ],
         'vendor_categories' => [
             'name' => 'Vendor Categories',
             'icon' => 'fa fa-truck',
-            'module' => 'vendor_categories.php'
+            'module' => 'vendor_categories.php',
+            'db_name' => "config_vendor_categories",
         ],
         'vendor_types' => [
             'name' => 'Vendor Types',
             'icon' => 'fa fa-truck',
-            'module' => 'vendor_types.php'
+            'module' => 'vendor_types.php',
+            'db_name' => "config_vendor_types",
         ],
         'departments' => [
             'name' => 'Departments',
             'icon' => 'fa fa-briefcase',
-            'module' => 'departments.php'
+            'module' => 'departments.php',
+            'db_name' => "config_department",
         ],
         'compliance_types' => [
             'name' => 'Compliance Types',
             'icon' => 'fa fa-file',
-            'module' => 'compliance_types.php'
+            'module' => 'compliance_types.php',
+            'db_name' => "config_compliance_types",
         ],
         'document_categories' => [
-            'name' => 'Document Categories',
+            'name' => 'Document Types',
             'icon' => 'fa fa-list',
-            'module' => 'document_categories.php'
+            'module' => 'document_categories.php',
+            'db_name' => "config_document_types",
         ],
         'account_types' => [
             'name' => 'Account Types',
             'icon' => 'fa fa-money',
-            'module' => 'account_types.php'
+            'module' => 'account_types.php',
+            'db_name' => "config_accounts_types",
         ],
         'expense_types' => [
             'name' => 'Expence Types',
             'icon' => 'fa fa-map-marker',
-            'module' => 'expense_types.php'
+            'module' => 'expense_types.php',
+            'db_name' => "config_expanses_types",
         ],
         'purchase_types' => [
             'name' => 'Purchase Types',
             'icon' => 'fa fa-link',
-            'module' => 'purchase_types.php'
+            'module' => 'purchase_types.php',
+            'db_name' => "config_purchase_types",
         ],
         'assets_types' => [
-            'name' => 'Assets Types',
+            'name' => 'Assets Categories',
             'icon' => 'fa fa-star',
-            'module' => 'assets_types.php'
+            'module' => 'assets_types.php',
+            'db_name' => "config_assets_categories",
         ],
         'credentials_types' => [
             'name' => 'Credentials Types',
             'icon' => 'fa fa-key',
-            'module' => 'credentials_types.php'
+            'module' => 'credentials_types.php',
+            'db_name' => "config_credentials_categories",
         ],
         'meeting_types' => [
             'name' => 'Meeting Types',
             'icon' => 'fa fa-handshake',
-            'module' => 'meeting_types.php'
+            'module' => 'meeting_types.php',
+            'db_name' => "config_meeting_types",
         ],
         'notes_types' => [
             'name' => 'Notes Types',
             'icon' => 'fa fa-edit',
-            'module' => 'notes_types.php'
+            'module' => 'notes_types.php',
+            'db_name' => "config_note_remarks_types",
         ],
         'types_of_reminders' => [
             'name' => 'Types of Reminders',
             'icon' => 'fa fa-bell',
-            'module' => 'reminder_types.php'
+            'module' => 'reminder_types.php',
+            'db_name' => "config_reminder_types",
         ],
-        'enquiries_flow_chart' => [
-            'name' => 'Enquiry Flow Chart',
-            'icon' => 'fa fa-info-circle',
-            'module' => 'enquiry_flow_chart.php'
+        "types_of_urls" => [
+            'name' => 'Types of URLs',
+            'icon' => 'fa fa-link',
+            'module' => 'urls_types.php',
+            'db_name' => "config_url_types"
         ],
-        'enquiries_types' => [
-            'name' => 'Enquiry Types',
-            'icon' => 'fa fa-info',
-            'module' => 'enquiry_types.php'
+        "types_of_youtube_videos" => [
+            'name' => 'Types of YouTube Videos',
+            'icon' => 'fa fa-youtube',
+            'module' => 'youtube_types.php',
+            'db_name' => "config_youtube_video_types"
         ],
-        'enquiries_categories' => [
-            'name' => 'Enquiry Categories',
-            'icon' => 'fa fa-info',
-            'module' => 'enquiry_categories.php'
+        "types_of_events" => [
+            'name' => 'Types of Events',
+            'icon' => 'fa fa-calendar',
+            'module' => 'event_types.php',
+            'db_name' => "config_events_types"
+        ],
+        "types_of_audits" => [
+            'name' => 'Types of Audits',
+            'icon' => 'fa fa-check-square',
+            'module' => 'audit_types.php',
+            'db_name' => "config_audit_types"
         ]
     ]
 );
+
+//individual-organisation onboarding configuration menus
+DEFINE("ORGANIZATION_ONBOARDING_STEPS", [
+    "1" => [
+        "name" => "Identity Selection",
+        "module" => "select_identity.php",
+        "icon" => "fa fa-user",
+        "description" => "Choose whether you are registering as an Individual or an Organization."
+    ],
+    "2" => [
+        "name" => "Profile Information",
+        "module" => "profile_information.php",
+        "icon" => "fa fa-address-card",
+        "description" => "Enter name, primary phone number, sales & support phone numbers, and email details."
+    ],
+    "3" => [
+        "name" => "Branches & Address",
+        "module" => "branches_address.php",
+        "icon" => "fa fa-map-marker",
+        "description" => "Add business branches and their respective addresses."
+    ],
+    "4" => [
+        "name" => "Owners & Directors",
+        "module" => "owners_directors.php",
+        "icon" => "fa fa-users",
+        "description" => "Provide details of owners and directors."
+    ],
+    "5" => [
+        "name" => "Financial Year Setup",
+        "module" => "financial_year_setup.php",
+        "icon" => "fa fa-calendar",
+        "description" => "Set the financial year for managing records, or create past financial years."
+    ],
+    "6" => [
+        "name" => "Financial Accounts Setup",
+        "module" => "financial_accounts_setup.php",
+        "icon" => "fa fa-university",
+        "description" => "Set up company financial accounts and available funds."
+    ],
+    "7" => [
+        "name" => "Taxation & Compliance",
+        "module" => "taxation_compliance.php",
+        "icon" => "fa fa-calculator",
+        "description" => "Set up GST, TDS, income tax details, and other applicable tax structures."
+    ],
+    "8" => [
+        "name" => "Company/Individual Policies",
+        "module" => "company_policies.php",
+        "icon" => "fa fa-file-contract",
+        "description" => "Define policies for company or individual."
+    ],
+    "9" => [
+        "name" => "Products & Services",
+        "module" => "products_services.php",
+        "icon" => "fa fa-shopping-basket",
+        "description" => "List the products and services offered."
+    ],
+    "10" => [
+        "name" => "Vendors & Partners",
+        "module" => "vendors_partners.php",
+        "icon" => "fa fa-handshake",
+        "description" => "Add vendor and partner details."
+    ],
+    "11" => [
+        "name" => "Team Members",
+        "module" => "team_members.php",
+        "icon" => "fa fa-users-cog",
+        "description" => "Register team members and their roles."
+    ],
+    "12" => [
+        "name" => "Team Payroll & Payout",
+        "module" => "team_payroll_payout.php",
+        "icon" => "fa fa-money-bill-wave",
+        "description" => "Setup payroll and payout details for team members."
+    ],
+    "13" => [
+        "name" => "Fixed Expenses & Subscriptions",
+        "module" => "expenses_subscriptions.php",
+        "icon" => "fa fa-credit-card",
+        "description" => "Manage fixed expenses and monthly subscriptions."
+    ],
+    "14" => [
+        "name" => "Documents & Logo Upload",
+        "module" => "document_upload.php",
+        "icon" => "fa fa-file-upload",
+        "description" => "Upload necessary documents, logos, and branding materials."
+    ],
+    "15" => [
+        "name" => "Active Modules Setup",
+        "module" => "active_modules.php",
+        "icon" => "fa fa-cogs",
+        "description" => "Enable or disable the required modules for your account."
+    ],
+    "16" => [
+        "name" => "Asset Management",
+        "module" => "asset_management.php",
+        "icon" => "fa fa-warehouse",
+        "description" => "Add assets like vehicles, laptops, and office spaces."
+    ],
+    "17" => [
+        "name" => "Social Media Accounts & Websites",
+        "module" => "social_media.php",
+        "icon" => "fa fa-link",
+        "description" => "Add social media links, website and online urls",
+    ],
+    "18" => [
+        "name" => "Submit for Verification",
+        "module" => "submit_verification.php",
+        "icon" => "fa fa-check-circle",
+        "description" => "Submit your details for verification."
+    ]
+]);

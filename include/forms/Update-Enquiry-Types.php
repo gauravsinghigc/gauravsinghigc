@@ -12,7 +12,7 @@
                     <h5 class="app-sub-heading">Add New Enquiry Type</h5>
                 </div>
                 <div class="col-md-12">
-                    <form class="row" action="<?php echo CONTROLLER; ?>" method="POST">
+                    <form class="row" action="<?php echo CONTROLLER; ?>/ModuleController/EnquiryController.php" method="POST">
                         <?php echo FormPrimaryInputs(true); ?>
                         <div class="col-md-12">
                             <div class="row">

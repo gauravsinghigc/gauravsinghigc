@@ -48,7 +48,7 @@ $PageDescription = "Manage your application Advance Settings";
                       <?php include "../sections/common.php"; ?>
                     </div>
 
-                    <div class="col-md-10">
+                    <div class="col-md-10 pt-2">
                       <h4 class="app-heading"><?php echo $PageName; ?></h4>
                       <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12 col-12">
@@ -123,7 +123,7 @@ $PageDescription = "Manage your application Advance Settings";
                               </div>
                               <div class="form-group form-group-2 col-md-7">
                                 <label>Alert Display Time (1000x1 = 1sec)</label>
-                                <input type="number" name="CONTROL_MSG_DISPLAY_TIME" class="form-control " required="" value="<?php echo CONTROL_MSG_DISPLAY_TIME; ?>">
+                                <input type="number" name="CONTROL_MSG_DISPLAY_TIME" class="form-control " required="" value="<?php echo CONFIG("CONTROL_MSG_DISPLAY_TIME"); ?>">
                               </div>
                               <div class="form-group form-group-2 col-md-5">
                                 <label>Listing Limit</label>

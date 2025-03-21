@@ -59,7 +59,7 @@ if (isset($_GET['PG_PROVIDER'])) {
                       <?php include "../sections/common.php"; ?>
                     </div>
 
-                    <div class="col-md-10">
+                    <div class="col-md-10 pt-2">
                       <h4 class="app-heading"><?php echo $PageName; ?></h4>
                       <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12 col-12">

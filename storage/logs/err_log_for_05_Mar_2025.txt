@@ -1,0 +1,17 @@
+[05-Mar-2025 21:59:03 Asia/Calcutta] PHP Deprecated:  Optional parameter $checkfile declared before required parameter $NewFile is implicitly treated as a required parameter in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\FILE_Modules\UploadHandler.php on line 3
+[05-Mar-2025 21:59:03 Asia/Calcutta] PHP Deprecated:  Optional parameter $method declared before required parameter $default is implicitly treated as a required parameter in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\PROCESS_Modules\FormRequestHandler.php on line 4
+[05-Mar-2025 21:59:03 Asia/Calcutta] PHP Deprecated:  Optional parameter $table declared before required parameter $order is implicitly treated as a required parameter in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Suggest.php on line 3
+[05-Mar-2025 21:59:03 Asia/Calcutta] PHP Deprecated:  Optional parameter $table declared before required parameter $column is implicitly treated as a required parameter in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Suggest.php on line 22
+[05-Mar-2025 21:59:03 Asia/Calcutta] PHP Deprecated:  Optional parameter $required declared before required parameter $class is implicitly treated as a required parameter in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\HTML_Modules\Form.php on line 16
+[05-Mar-2025 21:59:03 Asia/Calcutta] PHP Deprecated:  Optional parameter $req declared before required parameter $class is implicitly treated as a required parameter in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\HTML_Modules\Form.php on line 75
+[05-Mar-2025 21:59:04 Asia/Calcutta] PHP Warning:  Undefined array key "APP_KEY" in C:\xampp\htdocs\gauravsinghigc\handler\AuthController\AuthAccessController.php on line 5
+[05-Mar-2025 21:59:05 Asia/Calcutta] PHP Warning:  Undefined array key "APP_KEY" in C:\xampp\htdocs\gauravsinghigc\auth\views\handler\LoginChecker.php on line 5
+[05-Mar-2025 21:59:21 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM vendor_address WHERE vendor_main_id='' ORDER BY vendor_address_id DESC' at line 1 in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php:12
+Stack trace:
+#0 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(12): mysqli_query(Object(mysqli), 'SELECT  FROM ve...')
+#1 C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php(26): SELECT('SELECT  FROM ve...')
+#2 C:\xampp\htdocs\gauravsinghigc\modules\VendorModules.php(38): FETCH('SELECT  FROM ve...', '')
+#3 C:\xampp\htdocs\gauravsinghigc\app\enquiries\views\enquiries.php(74): VendorAddressDetails('')
+#4 C:\xampp\htdocs\gauravsinghigc\app\enquiries\index.php(86): include('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\gauravsinghigc\acm\SysModules\CRUD_Modules\Select.php on line 12

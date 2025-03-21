@@ -9,7 +9,7 @@
                     </div>
                 </div>
             </div>
-            <form class="row mt-3" action="<?php echo CONTROLLER; ?>" method="POST">
+            <form class="row mt-3" action="<?php echo CONTROLLER; ?>/ModuleController/UserController.php" method="POST">
                 <?php echo FormPrimaryInputs(true, [
                     "UserId" => $Users->UserId
                 ]); ?>

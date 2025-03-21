@@ -375,6 +375,7 @@ if (isset($_POST['UpdatePrimaryConfigurations'])) {
     "cut_updated_at" => CURRENT_DATE_TIME,
     "cut_created_by" => LOGIN_UserId,
     "cut_updated_by" => LOGIN_UserId,
+    "cut_purpose" => $_POST['cut_purpose'],
   ];
   $Check = CHECK("SELECT cut_name FROM config_url_types WHERE cut_name='" . $_POST['cut_name'] . "'");
   if ($Check == null) {
@@ -398,6 +399,7 @@ if (isset($_POST['UpdatePrimaryConfigurations'])) {
     "cut_status" => $_POST['cut_status'],
     "cut_updated_at" => CURRENT_DATE_TIME,
     "cut_updated_by" => LOGIN_UserId,
+    "cut_purpose" => $_POST['cut_purpose'],
   ];
   $Response = UPDATE("config_url_types", $config_url_types, "cut_id='$cut_id'");
   RequestHandler($Response, [
@@ -634,7 +636,7 @@ if (isset($_POST['UpdatePrimaryConfigurations'])) {
 
   //save company department record
 } elseif (isset($_POST['SaveCompanyDepartmentRecords'])) {
-  $config_company_department = [
+  $config_department = [
     "ccd_name" => $_POST['ccd_name'],
     "ccd_short_name" => $_POST['ccd_short_name'],
     "ccd_code" => $_POST['ccd_code'],
@@ -648,9 +650,9 @@ if (isset($_POST['UpdatePrimaryConfigurations'])) {
     "ccd_created_by" => LOGIN_UserId,
     "ccd_updated_by" => LOGIN_UserId,
   ];
-  $Check = CHECK("SELECT ccd_name FROM config_company_department WHERE ccd_name='" . $_POST['ccd_name'] . "'");
+  $Check = CHECK("SELECT ccd_name FROM config_department WHERE ccd_name='" . $_POST['ccd_name'] . "'");
   if ($Check == null) {
-    $Response = INSERT("config_company_department", $config_company_department);
+    $Response = INSERT("config_department", $config_department);
     $Error = "Unable to save company department";
   } else {
     $Response = false;
@@ -664,7 +666,7 @@ if (isset($_POST['UpdatePrimaryConfigurations'])) {
   //update company department record
 } elseif (isset($_POST['UpdateCompanyDepartmentRecords'])) {
   $ccd_id = SECURE($_POST['ccd_id'], "d");
-  $config_company_department = [
+  $config_department = [
     "ccd_name" => $_POST['ccd_name'],
     "ccd_short_name" => $_POST['ccd_short_name'],
     "ccd_code" => $_POST['ccd_code'],
@@ -676,9 +678,9 @@ if (isset($_POST['UpdatePrimaryConfigurations'])) {
     "ccd_updated_at" => CURRENT_DATE_TIME,
     "ccd_updated_by" => LOGIN_UserId,
   ];
-  $Check = CHECK("SELECT ccd_name FROM config_company_department WHERE ccd_name='" . $_POST['ccd_name'] . "' AND ccd_id!='$ccd_id'");
+  $Check = CHECK("SELECT ccd_name FROM config_department WHERE ccd_name='" . $_POST['ccd_name'] . "' AND ccd_id!='$ccd_id'");
   if ($Check == null) {
-    $Response = UPDATE("config_company_department", $config_company_department, "ccd_id='$ccd_id'");
+    $Response = UPDATE("config_department", $config_department, "ccd_id='$ccd_id'");
     $Error = "Unable to update company department";
   } else {
     $Response = false;
@@ -698,7 +700,7 @@ if (isset($_POST['UpdatePrimaryConfigurations'])) {
   } else {
     $status = 1;
   }
-  $Response = UPDATE_SQL("UPDATE config_company_department SET ccd_status='$status' WHERE ccd_id='$ccd_id'");
+  $Response = UPDATE_SQL("UPDATE config_department SET ccd_status='$status' WHERE ccd_id='$ccd_id'");
   RequestHandler($Response, [
     "true" => "Company Department status updated successfully!",
     "false" => "Unable to update company department status at the moment!"
@@ -706,7 +708,7 @@ if (isset($_POST['UpdatePrimaryConfigurations'])) {
 
   //save company compliance records
 } elseif (isset($_POST['SaveCompanyComplianceTypeRecords'])) {
-  $config_company_compliance_types = [
+  $config_compliance_types = [
     "ccct_name" => $_POST['ccct_name'],
     "ccct_short_name" => $_POST['ccct_short_name'],
     "ccct_code" => $_POST['ccct_code'],
@@ -718,9 +720,9 @@ if (isset($_POST['UpdatePrimaryConfigurations'])) {
     "ccct_created_by" => LOGIN_UserId,
     "ccct_updated_by" => LOGIN_UserId,
   ];
-  $Check = CHECK("SELECT ccct_name FROM config_company_compliance_types WHERE ccct_name='" . $_POST['ccct_name'] . "'");
+  $Check = CHECK("SELECT ccct_name FROM config_compliance_types WHERE ccct_name='" . $_POST['ccct_name'] . "'");
   if ($Check == null) {
-    $Response = INSERT("config_company_compliance_types", $config_company_compliance_types);
+    $Response = INSERT("config_compliance_types", $config_compliance_types);
     $Error = "Unable to save company compliance type";
   } else {
     $Response = false;
@@ -734,7 +736,7 @@ if (isset($_POST['UpdatePrimaryConfigurations'])) {
   //update company compliance records $ccct_id
 } elseif (isset($_POST['UpdateCompanyComplianceTypeRecords'])) {
   $ccct_id = SECURE($_POST['ccct_id'], "d");
-  $config_company_compliance_types = [
+  $config_compliance_types = [
     "ccct_name" => $_POST['ccct_name'],
     "ccct_short_name" => $_POST['ccct_short_name'],
     "ccct_code" => $_POST['ccct_code'],
@@ -744,9 +746,9 @@ if (isset($_POST['UpdatePrimaryConfigurations'])) {
     "ccct_updated_at" => CURRENT_DATE_TIME,
     "ccct_updated_by" => LOGIN_UserId,
   ];
-  $Check = CHECK("SELECT ccct_name FROM config_company_compliance_types WHERE ccct_name='" . $_POST['ccct_name'] . "' AND ccct_id!='$ccct_id'");
+  $Check = CHECK("SELECT ccct_name FROM config_compliance_types WHERE ccct_name='" . $_POST['ccct_name'] . "' AND ccct_id!='$ccct_id'");
   if ($Check == null) {
-    $Response = UPDATE("config_company_compliance_types", $config_company_compliance_types, "ccct_id='$ccct_id'");
+    $Response = UPDATE("config_compliance_types", $config_compliance_types, "ccct_id='$ccct_id'");
     $Error = "Unable to update company compliance type";
   } else {
     $Response = false;
@@ -766,7 +768,7 @@ if (isset($_POST['UpdatePrimaryConfigurations'])) {
   } else {
     $status = 1;
   }
-  $Response = UPDATE_SQL("UPDATE config_company_compliance_types SET ccct_status='$status' WHERE ccct_id='$ccct_id'");
+  $Response = UPDATE_SQL("UPDATE config_compliance_types SET ccct_status='$status' WHERE ccct_id='$ccct_id'");
   RequestHandler($Response, [
     "true" => "Company Compliance Type status updated successfully!",
     "false" => "Unable to update company compliance type status at the moment!"
@@ -774,7 +776,7 @@ if (isset($_POST['UpdatePrimaryConfigurations'])) {
 
   //save company document types
 } elseif (isset($_POST['SaveCompanyDocumentTypes'])) {
-  $config_company_document_types = [
+  $config_document_types = [
     "ccdt_name" => $_POST['ccdt_name'],
     "ccdt_shortname" => $_POST['ccdt_shortname'],
     "ccdt_code" => $_POST['ccdt_code'],
@@ -787,9 +789,9 @@ if (isset($_POST['UpdatePrimaryConfigurations'])) {
     "ccdt_created_by" => LOGIN_UserId,
     "ccdt_updated_by" => LOGIN_UserId
   ];
-  $Check = CHECK("SELECT ccdt_name FROM config_company_document_types WHERE ccdt_name='" . $_POST['ccdt_name'] . "'");
+  $Check = CHECK("SELECT ccdt_name FROM config_document_types WHERE ccdt_name='" . $_POST['ccdt_name'] . "'");
   if ($Check == null) {
-    $Response = INSERT("config_company_document_types", $config_company_document_types);
+    $Response = INSERT("config_document_types", $config_document_types);
     $Error = "Unable to save company document type";
   } else {
     $Response = false;
@@ -803,7 +805,7 @@ if (isset($_POST['UpdatePrimaryConfigurations'])) {
   //update company document records $ccdt_id
 } elseif (isset($_POST['UpdateCompanyDocumentTypes'])) {
   $ccdt_id = SECURE($_POST['ccdt_id'], "d");
-  $config_company_document_types = [
+  $config_document_types = [
     "ccdt_name" => $_POST['ccdt_name'],
     "ccdt_shortname" => $_POST['ccdt_shortname'],
     "ccdt_code" => $_POST['ccdt_code'],
@@ -814,9 +816,9 @@ if (isset($_POST['UpdatePrimaryConfigurations'])) {
     "ccdt_updated_at" => CURRENT_DATE_TIME,
     "ccdt_updated_by" => LOGIN_UserId
   ];
-  $Check = CHECK("SELECT ccdt_name FROM config_company_document_types WHERE ccdt_name='" . $_POST['ccdt_name'] . "' AND ccdt_id!='$ccdt_id'");
+  $Check = CHECK("SELECT ccdt_name FROM config_document_types WHERE ccdt_name='" . $_POST['ccdt_name'] . "' AND ccdt_id!='$ccdt_id'");
   if ($Check == null) {
-    $Response = UPDATE("config_company_document_types", $config_company_document_types, "ccdt_id='$ccdt_id'");
+    $Response = UPDATE("config_document_types", $config_document_types, "ccdt_id='$ccdt_id'");
     $Error = "Unable to update company document type";
   } else {
     $Response = false;
@@ -836,9 +838,935 @@ if (isset($_POST['UpdatePrimaryConfigurations'])) {
   } else {
     $status = 1;
   }
-  $Response = UPDATE_SQL("UPDATE config_company_document_types SET ccdt_status='$status' WHERE ccdt_id='$ccdt_id'");
+
+  //update company document type status in database table 'config_document_types'
+  $Response = UPDATE_SQL("UPDATE config_document_types SET ccdt_status='$status' WHERE ccdt_id='$ccdt_id'");
   RequestHandler($Response, [
     "true" => "Company Document Type status updated successfully!",
     "false" => "Unable to update company document type status at the moment!"
+  ]);
+
+  //save company account types
+} elseif (isset($_POST['SaveCompanyAccountTypes'])) {
+  $config_accounts_types = [
+    "ccat_name" => $_POST['ccat_name'],
+    "ccat_shortname" => $_POST['ccat_shortname'],
+    "ccat_code" => $_POST['ccat_code'],
+    "ccat_key" => $_POST['ccat_key'],
+    "ccat_purpose" => $_POST['ccat_purpose'],
+    "ccat_type" => $_POST['ccat_type'],
+    "ccat_desc" => $_POST['ccat_desc'],
+    "ccat_status" => $_POST['ccat_status'],
+    "ccat_created_at" => CURRENT_DATE_TIME,
+    "ccat_updated_at" => CURRENT_DATE_TIME,
+    "ccat_created_by" => LOGIN_UserId,
+    "ccat_updated_by" => LOGIN_UserId
+  ];
+
+  //check duplicates values
+  $Check = CHECK("SELECT ccat_name FROM config_accounts_types WHERE ccat_name='" . $_POST['ccat_name'] . "'");
+  if ($Check == null) {
+    $Response = INSERT("config_accounts_types", $config_accounts_types);
+    $Error = "Unable to save company account type";
+  } else {
+    $Response = false;
+    $Error = "Company account type already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Company account type saved successfully!",
+    "false" => $Error
+  ]);
+
+  //update company account records $ccat_id
+} elseif (isset($_POST['UpdateCompanyAccountTypes'])) {
+  $ccat_id = SECURE($_POST['ccat_id'], "d");
+  $config_accounts_types = [
+    "ccat_name" => $_POST['ccat_name'],
+    "ccat_shortname" => $_POST['ccat_shortname'],
+    "ccat_code" => $_POST['ccat_code'],
+    "ccat_key" => $_POST['ccat_key'],
+    "ccat_purpose" => $_POST['ccat_purpose'],
+    "ccat_type" => $_POST['ccat_type'],
+    "ccat_desc" => $_POST['ccat_desc'],
+    "ccat_status" => $_POST['ccat_status'],
+    "ccat_updated_at" => CURRENT_DATE_TIME,
+    "ccat_updated_by" => LOGIN_UserId
+  ];
+  //check duplicates values
+  $Check = CHECK("SELECT ccat_name FROM config_accounts_types WHERE ccat_name='" . $_POST['ccat_name'] . "' AND ccat_id!='$ccat_id'");
+  if ($Check == null) {
+    $Response = UPDATE("config_accounts_types", $config_accounts_types, "ccat_id='$ccat_id'");
+    $Error = "Unable to update company account type";
+  } else {
+    $Response = false;
+    $Error = "Company account type already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Company account type updated successfully!",
+    "false" => $Error
+  ]);
+
+  //update company account status
+} elseif (isset($_POST['UpdateCompanyAccountTypeStatus'])) {
+  $ccat_id = SECURE($_POST['ccat_id'], "d");
+  $ccat_status = SECURE($_POST['UpdateCompanyAccountTypeStatus'], "d");
+  if ($ccat_status == 1) {
+    $status = 2;
+  } else {
+    $status = 1;
+  }
+
+  //update company account type status in database table 'config_accounts_types'
+  $Response = UPDATE_SQL("UPDATE config_accounts_types SET ccat_status='$status' WHERE ccat_id='$ccat_id'");
+  RequestHandler($Response, [
+    "true" => "Company Account Type status updated successfully!",
+    "false" => "Unable to update company account type status at the moment!"
+  ]);
+
+  //create company account expanses
+} elseif (isset($_POST['SaveCompanyExpanceTypes'])) {
+
+  $config_expanses_types = [
+    "ccet_name" => $_POST['ccet_name'],
+    "ccet_shortname" => $_POST['ccet_shortname'],
+    "ccet_code" => $_POST['ccet_code'],
+    "ccet_purpose" => $_POST['ccet_purpose'],
+    "ccet_desc" => $_POST['ccet_desc'],
+    "ccet_status" => $_POST['ccet_status'],
+    "ccet_created_at" => CURRENT_DATE_TIME,
+    "ccet_created_by" => LOGIN_UserId,
+    "ccet_updated_at" => CURRENT_DATE_TIME,
+    "ccet_updated_by" => LOGIN_UserId
+  ];
+
+  //check duplicates values
+  $Check = CHECK("SELECT ccet_name FROM config_expanses_types WHERE ccet_name='" . $_POST['ccet_name'] . "'");
+  if ($Check == null) {
+    $Response = INSERT("config_expanses_types", $config_expanses_types);
+    $Error = "Unable to save company expense type";
+  } else {
+    $Response = false;
+    $Error = "Company expense type already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Company expense type saved successfully!",
+    "false" => $Error
+  ]);
+
+  //update company expense records $ccet_id
+} elseif (isset($_POST['UpdateCompanyExpanceTypes'])) {
+  $ccet_id = SECURE($_POST['ccet_id'], "d");
+  $config_expanses_types = [
+    "ccet_name" => $_POST['ccet_name'],
+    "ccet_shortname" => $_POST['ccet_shortname'],
+    "ccet_code" => $_POST['ccet_code'],
+    "ccet_purpose" => $_POST['ccet_purpose'],
+    "ccet_desc" => $_POST['ccet_desc'],
+    "ccet_status" => $_POST['ccet_status'],
+    "ccet_updated_at" => CURRENT_DATE_TIME,
+    "ccet_updated_by" => LOGIN_UserId
+  ];
+  //check duplicates values
+  $Check = CHECK("SELECT ccet_name FROM config_expanses_types WHERE ccet_name='" . $_POST['ccet_name'] . "' AND ccet_id!='$ccet_id'");
+  if ($Check == null) {
+    $Response = UPDATE("config_expanses_types", $config_expanses_types, "ccet_id='$ccet_id'");
+    $Error = "Unable to update company expense type";
+  } else {
+    $Response = false;
+    $Error = "Company expense type already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Company expense type updated successfully!",
+    "false" => $Error
+  ]);
+
+  //update company expense status
+} elseif (isset($_POST['UpdateCompanyExpanseTypesStatus'])) {
+  $ccet_id = SECURE($_POST['ccet_id'], "d");
+  $ccet_status = SECURE($_POST['UpdateCompanyExpanseTypesStatus'], "d");
+
+  //update company expense type status in database table 'config_expanses_types'
+  if ($ccet_status == 1) {
+    $status = 2;
+  } else {
+    $status = 1;
+  }
+
+  //update company expense type status in database table 'config_expanses_types'
+  $Response = UPDATE_SQL("UPDATE config_expanses_types SET ccet_status='$status' WHERE ccet_id='$ccet_id'");
+  RequestHandler($Response, [
+    "true" => "Company Expense Type status updated successfully!",
+    "false" => "Unable to update company expense type status at the moment!"
+  ]);
+
+  //save company purchase type
+} elseif (isset($_POST['SaveCompanyPurchaseTypes'])) {
+  $config_purchase_types = [
+    "ccpt_name" => $_POST['ccpt_name'],
+    "ccpt_shortname" => $_POST["ccpt_shortname"],
+    "ccpt_code" => $_POST["ccpt_code"],
+    "ccpt_purpose" => $_POST["ccpt_purpose"],
+    "ccpt_status" => $_POST["ccpt_status"],
+    "ccpt_created_at" => CURRENT_DATE_TIME,
+    "ccpt_created_by" => LOGIN_UserId,
+    "ccpt_updated_at" => CURRENT_DATE_TIME,
+    "ccpt_updated_by" => LOGIN_UserId
+  ];
+
+  //check duplicates values
+  $Check = CHECK("SELECT ccpt_name FROM config_purchase_types WHERE ccpt_name='" . $_POST['ccpt_name'] . "'");
+  if ($Check == null) {
+    $Response = INSERT("config_purchase_types", $config_purchase_types);
+    $Error = "Unable to save company purchase type";
+  } else {
+    $Response = false;
+    $Error = "Company purchase type already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Company purchase type saved successfully!",
+    "false" => $Error
+  ]);
+
+  //update company purchase records $ccpt_id
+} elseif (isset($_POST["UpdateCompanyPurchaseTypes"])) {
+  $ccpt_id = SECURE($_POST["ccpt_id"], "d");
+  $config_purchase_types = [
+    "ccpt_name" => $_POST["ccpt_name"],
+    "ccpt_shortname" => $_POST["ccpt_shortname"],
+    "ccpt_code" => $_POST["ccpt_code"],
+    "ccpt_purpose" => $_POST["ccpt_purpose"],
+    "ccpt_status" => $_POST["ccpt_status"],
+    "ccpt_updated_at" => CURRENT_DATE_TIME,
+    "ccpt_updated_by" => LOGIN_UserId
+  ];
+
+  //check duplicates values
+  $Check = CHECK("SELECT ccpt_name FROM config_purchase_types WHERE ccpt_name='" . $_POST["ccpt_name"] . "' AND ccpt_id!='$ccpt_id'");
+  if ($Check == null) {
+    $Response = UPDATE("config_purchase_types", $config_purchase_types, "ccpt_id='$ccpt_id'");
+    $Error = "Unable to update company purchase type";
+  } else {
+    $Response = false;
+    $Error = "Company purchase type already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Company purchase type updated successfully!",
+    "false" => $Error
+  ]);
+
+  //update company purchase status
+} elseif (isset($_POST["UpdateCompanyPurchaseTypesStatus"])) {
+  $ccpt_id = SECURE($_POST["ccpt_id"], "d");
+  $ccpt_status = SECURE($_POST["UpdateCompanyPurchaseTypesStatus"], "d");
+
+  //update company purchase type status in database table 'config_purchase_types'
+  if ($ccpt_status == 1) {
+    $status = 2;
+  } else {
+    $status = 1;
+  }
+
+  //update company purchase type status in database table 'config_purchase_types'
+  $Response = UPDATE_SQL("UPDATE config_purchase_types SET ccpt_status='$status' WHERE ccpt_id='$ccpt_id'");
+  RequestHandler($Response, [
+    "true" => "Company Purchase Type status updated successfully!",
+    "false" => "Unable to update company purchase type status at the moment!"
+  ]);
+
+  //save company assets categories
+} elseif (isset($_POST['SaveCompanyAssetCategory'])) {
+  $config_assets_categories = [
+    "ccat_name" => $_POST['ccat_name'],
+    "ccat_shortname" => $_POST['ccat_shortname'],
+    "ccat_status" => $_POST['ccat_status'],
+    "ccat_created_at" => CURRENT_DATE_TIME,
+    "ccat_created_by" => LOGIN_UserId,
+    "ccat_updated_at" => CURRENT_DATE_TIME,
+    "ccat_updated_by" => LOGIN_UserId,
+    "ccat_code" => $_POST["ccat_code"],
+    "ccat_desc" => $_POST["ccat_desc"],
+    "ccat_purpose" => $_POST["ccat_purpose"]
+  ];
+
+  //check duplicates values
+  $Check = CHECK("SELECT ccat_name FROM config_assets_categories WHERE ccat_name='" . $_POST['ccat_name'] . "'");
+  if ($Check == null) {
+    $Response = INSERT("config_assets_categories", $config_assets_categories);
+    $Error = "Unable to save company asset category";
+  } else {
+    $Response = false;
+    $Error = "Company asset category already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Company asset category saved successfully!",
+    "false" => $Error
+  ]);
+
+  //update company assets categories $ccat_id
+} elseif (isset($_POST["UpdateCompanyAssetsCategories"])) {
+  $ccat_id = SECURE($_POST["ccat_id"], "d");
+  $config_assets_categories = [
+    "ccat_name" => $_POST["ccat_name"],
+    "ccat_shortname" => $_POST["ccat_shortname"],
+    "ccat_status" => $_POST["ccat_status"],
+    "ccat_updated_at" => CURRENT_DATE_TIME,
+    "ccat_updated_by" => LOGIN_UserId,
+    "ccat_code" => $_POST["ccat_code"],
+    "ccat_desc" => $_POST["ccat_desc"],
+    "ccat_purpose" => $_POST["ccat_purpose"]
+  ];
+
+  //check duplicates values
+  $Check = CHECK("SELECT ccat_name FROM config_assets_categories WHERE ccat_name='" . $_POST["ccat_name"] . "' AND ccat_id!='$ccat_id'");
+  if ($Check == null) {
+    $Response = UPDATE("config_assets_categories", $config_assets_categories, "ccat_id='$ccat_id'");
+    $Error = "Unable to update company asset category";
+  } else {
+    $Response = false;
+    $Error = "Company asset category already exists";
+  }
+
+  RequestHandler($Response, [
+    "true" => "Company asset category updated successfully!",
+    "false" => $Error
+  ]);
+
+  //update company assets categories status
+} elseif (isset($_POST["UpdateCompanyAssetsCategoryStatus"])) {
+  $ccat_id = SECURE($_POST["ccat_id"], "d");
+  $ccat_status = SECURE($_POST["UpdateCompanyAssetsCategoryStatus"], "d");
+
+  //update company assets categories status in database table 'config_assets_categories'
+  if ($ccat_status == 1) {
+    $status = 2;
+  } else {
+    $status = 1;
+  }
+
+  //update company assets categories status in database table 'config_assets_categories'
+  $Response = UPDATE_SQL("UPDATE config_assets_categories SET ccat_status='$status' WHERE ccat_id='$ccat_id'");
+  RequestHandler($Response, [
+    "true" => "Company Asset Category status updated successfully!",
+    "false" => "Unable to update company asset category status at the moment!"
+  ]);
+
+  //create credentals categories
+} elseif (isset($_POST["SaveCredentialCategories"])) {
+  $config_credentials_categories = [
+    "cccc_name" => $_POST["cccc_name"],
+    "cccc_status" => $_POST["cccc_status"],
+    "cccc_created_at" => CURRENT_DATE_TIME,
+    "cccc_created_by" => LOGIN_UserId,
+    "cccc_updated_at" => CURRENT_DATE_TIME,
+    "cccc_updated_by" => LOGIN_UserId,
+    "cccc_purpose" => $_POST["cccc_purpose"],
+    "cccc_desc" => $_POST["cccc_desc"],
+    "cccc_code" => $_POST["cccc_code"],
+    "cccc_shortname" => $_POST["cccc_shortname"]
+  ];
+
+  //check duplicates values
+  $Check = CHECK("SELECT cccc_name FROM config_credentials_categories WHERE cccc_name='" . $_POST['cccc_name'] . "'");
+  if ($Check == null) {
+    $Response = INSERT("config_credentials_categories", $config_credentials_categories);
+    $Error = "Unable to save credential categories";
+  } else {
+    $Response = false;
+    $Error = "Credential categories already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Credential categories saved successfully!",
+    "false" => $Error
+  ]);
+
+  //update credentals categories $cccc_id
+} elseif (isset($_POST["UpdateCredentialCategories"])) {
+  $cccc_id = SECURE($_POST["cccc_id"], "d");
+  $config_credentials_categories = [
+    "cccc_name" => $_POST["cccc_name"],
+    "cccc_status" => $_POST["cccc_status"],
+    "cccc_updated_at" => CURRENT_DATE_TIME,
+    "cccc_updated_by" => LOGIN_UserId,
+    "cccc_purpose" => $_POST["cccc_purpose"],
+    "cccc_desc" => $_POST["cccc_desc"],
+    "cccc_code" => $_POST["cccc_code"],
+    "cccc_shortname" => $_POST["cccc_shortname"]
+  ];
+
+  //check duplicates values
+  $Check = CHECK("SELECT cccc_name FROM config_credentials_categories WHERE cccc_name='" . $_POST["cccc_name"] . "' AND cccc_id!='$cccc_id'");
+  if ($Check == null) {
+    $Response = UPDATE("config_credentials_categories", $config_credentials_categories, "cccc_id='$cccc_id'");
+    $Error = "Unable to update credential categories";
+  } else {
+    $Response = false;
+    $Error = "Credential categories already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Credential categories updated successfully!",
+    "false" => $Error
+  ]);
+
+  //update credentals categories status
+} elseif (isset($_POST["UpdateCredentialCategoriesStatus"])) {
+  $cccc_id = SECURE($_POST["cccc_id"], "d");
+  $cccc_status = SECURE($_POST["UpdateCredentialCategoriesStatus"], "d");
+
+  //update credentals categories status in database table 'config_credentials_categories'
+  if ($cccc_status == 1) {
+    $status = 2;
+  } else {
+    $status = 1;
+  }
+
+  //update credentals categories status in database table 'config_credentials_categories'
+  $Response = UPDATE_SQL("UPDATE config_credentials_categories SET cccc_status='$status' WHERE cccc_id='$cccc_id'");
+  RequestHandler($Response, [
+    "true" => "Credential Categories status updated successfully!",
+    "false" => "Unable to update credential categories status at the moment!"
+  ]);
+
+  //create meeting types records
+} elseif (isset($_POST["SaveMeetingTypeRecords"])) {
+  $config_meeting_types = [
+    "cmt_name" => $_POST["cmt_name"],
+    "cmt_status" => $_POST["cmt_status"],
+    "cmt_created_at" => CURRENT_DATE_TIME,
+    "cmt_created_by" => LOGIN_UserId,
+    "cmt_updated_at" => CURRENT_DATE_TIME,
+    "cmt_updated_by" => LOGIN_UserId,
+    "cmt_purpose" => $_POST["cmt_purpose"],
+    "cmt_desc" => $_POST["cmt_desc"],
+    "cmt_code" => $_POST["cmt_code"],
+    "cmt_shortname" => $_POST["cmt_shortname"]
+  ];
+
+  //check duplicates values
+  $Check = CHECK("SELECT cmt_name FROM config_meeting_types WHERE cmt_name='" . $_POST['cmt_name'] . "'");
+  if ($Check == null) {
+    $Response = INSERT("config_meeting_types", $config_meeting_types);
+    $Error = "Unable to save meeting types";
+  } else {
+    $Response = false;
+    $Error = "Meeting types already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Meeting types saved successfully!",
+    "false" => $Error
+  ]);
+
+  //update meeting types $cmt_id
+} elseif (isset($_POST["UpdateMeetingTypeRecords"])) {
+  $cmt_id = SECURE($_POST["cmt_id"], "d");
+  $config_meeting_types = [
+    "cmt_name" => $_POST["cmt_name"],
+    "cmt_status" => $_POST["cmt_status"],
+    "cmt_updated_at" => CURRENT_DATE_TIME,
+    "cmt_updated_by" => LOGIN_UserId,
+    "cmt_purpose" => $_POST["cmt_purpose"],
+    "cmt_desc" => $_POST["cmt_desc"],
+    "cmt_code" => $_POST["cmt_code"],
+    "cmt_shortname" => $_POST["cmt_shortname"]
+  ];
+
+  //check duplicates values
+  $Check = CHECK("SELECT cmt_name FROM config_meeting_types WHERE cmt_name='" . $_POST["cmt_name"] . "' AND cmt_id!='$cmt_id'");
+  if ($Check == null) {
+    $Response = UPDATE("config_meeting_types", $config_meeting_types, "cmt_id='$cmt_id'");
+    $Error = "Unable to update meeting types";
+  } else {
+    $Response = false;
+    $Error = "Meeting types already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Meeting types updated successfully!",
+    "false" => $Error
+  ]);
+
+  //update meeting types status
+} elseif (isset($_POST["UpdateMeetingTypeStatus"])) {
+  $cmt_id = SECURE($_POST["cmt_id"], "d");
+  $cmt_status = SECURE($_POST["UpdateMeetingTypeStatus"], "d");
+
+  //update meeting types status in database table 'config_meeting_types'
+  if ($cmt_status == 1) {
+    $status = 2;
+  } else {
+    $status = 1;
+  }
+
+  //update meeting types status in database table 'config_meeting_types'
+  $Response = UPDATE_SQL("UPDATE config_meeting_types SET cmt_status='$status' WHERE cmt_id='$cmt_id'");
+  RequestHandler($Response, [
+    "true" => "Meeting Types status updated successfully!",
+    "false" => "Unable to update meeting types status at the moment!"
+  ]);
+
+  //create note and remark type
+} elseif (isset($_POST["SaveNoteRemarkTypeRecords"])) {
+  $config_note_remarks_types = [
+    "cnrt_name" => $_POST["cnrt_name"],
+    "cnrt_status" => $_POST["cnrt_status"],
+    "cnrt_created_at" => CURRENT_DATE_TIME,
+    "cnrt_created_by" => LOGIN_UserId,
+    "cnrt_updated_at" => CURRENT_DATE_TIME,
+    "cnrt_updated_by" => LOGIN_UserId,
+    "cnrt_purpose" => $_POST["cnrt_purpose"],
+    "cnrt_desc" => $_POST["cnrt_desc"],
+    "cnrt_code" => $_POST["cnrt_code"],
+    "cnrt_shortname" => $_POST["cnrt_shortname"]
+  ];
+
+  //check duplicates values
+  $Check = CHECK("SELECT cnrt_name FROM config_note_remarks_types WHERE cnrt_name='" . $_POST['cnrt_name'] . "'");
+  if ($Check == null) {
+    $Response = INSERT("config_note_remarks_types", $config_note_remarks_types);
+    $Error = "Unable to save note and remark type";
+  } else {
+    $Response = false;
+    $Error = "Note and remark type already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Note and remark type saved successfully!",
+    "false" => $Error
+  ]);
+
+  //update note and remark type $cnrt_id
+} elseif (isset($_POST["UpdateNoteAndRemarksRecords"])) {
+  $cnrt_id = SECURE($_POST["cnrt_id"], "d");
+  $config_note_remarks_types = [
+    "cnrt_name" => $_POST["cnrt_name"],
+    "cnrt_status" => $_POST["cnrt_status"],
+    "cnrt_updated_at" => CURRENT_DATE_TIME,
+    "cnrt_updated_by" => LOGIN_UserId,
+    "cnrt_purpose" => $_POST["cnrt_purpose"],
+    "cnrt_desc" => $_POST["cnrt_desc"],
+    "cnrt_code" => $_POST["cnrt_code"],
+    "cnrt_shortname" => $_POST["cnrt_shortname"]
+  ];
+
+  //check duplicates values
+  $Check = CHECK("SELECT cnrt_name FROM config_note_remarks_types WHERE cnrt_name='" . $_POST["cnrt_name"] . "' AND cnrt_id!='$cnrt_id'");
+  if ($Check == null) {
+    $Response = UPDATE("config_note_remarks_types", $config_note_remarks_types, "cnrt_id='$cnrt_id'");
+    $Error = "Unable to update note and remark type";
+  } else {
+    $Response = false;
+    $Error = "Note and remark type already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Note and remark type updated successfully!",
+    "false" => $Error
+  ]);
+
+  //update note and remark type status
+} elseif (isset($_POST["UpdateNoteAndRemarkStatus"])) {
+  $cnrt_id = SECURE($_POST["cnrt_id"], "d");
+  $cnrt_status = SECURE($_POST["UpdateNoteAndRemarkStatus"], "d");
+
+  //update note and remark type status in database table 'config_note_remarks_types'
+  if ($cnrt_status == 1) {
+    $status = 2;
+  } else {
+    $status = 1;
+  }
+
+  //update note and remark type status in database table 'config_note_remarks_types'
+  $Response = UPDATE_SQL("UPDATE config_note_remarks_types SET cnrt_status='$status' WHERE cnrt_id='$cnrt_id'");
+  RequestHandler($Response, [
+    "true" => "Note and Remark type status updated successfully!",
+    "false" => "Unable to update note and remark type status at the moment!"
+  ]);
+
+  //create reminder type records crt_
+} elseif (isset($_POST["SaveReminderTypeRecords"])) {
+  $config_reminder_types = [
+    "crt_name" => $_POST["crt_name"],
+    "crt_status" => $_POST["crt_status"],
+    "crt_created_at" => CURRENT_DATE_TIME,
+    "crt_created_by" => LOGIN_UserId,
+    "crt_updated_at" => CURRENT_DATE_TIME,
+    "crt_updated_by" => LOGIN_UserId,
+    "crt_purpose" => $_POST["crt_purpose"],
+    "crt_desc" => $_POST["crt_desc"],
+    "crt_code" => $_POST["crt_code"],
+    "crt_shortname" => $_POST["crt_shortname"]
+  ];
+
+  //check duplicates values
+  $Check = CHECK("SELECT crt_name FROM config_reminder_types WHERE crt_name='" . $_POST['crt_name'] . "'");
+  if ($Check == null) {
+    $Response = INSERT("config_reminder_types", $config_reminder_types);
+    $Error = "Unable to save reminder type";
+  } else {
+    $Response = false;
+    $Error = "Reminder type already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Reminder type saved successfully!",
+    "false" => $Error
+  ]);
+
+  //update reminder type $crt_id
+} elseif (isset($_POST["UpdateReminderTypeRecords"])) {
+  $crt_id = SECURE($_POST["crt_id"], "d");
+  $config_reminder_types = [
+    "crt_name" => $_POST["crt_name"],
+    "crt_status" => $_POST["crt_status"],
+    "crt_updated_at" => CURRENT_DATE_TIME,
+    "crt_updated_by" => LOGIN_UserId,
+    "crt_purpose" => $_POST["crt_purpose"],
+    "crt_desc" => $_POST["crt_desc"],
+    "crt_code" => $_POST["crt_code"],
+    "crt_shortname" => $_POST["crt_shortname"]
+  ];
+
+  //check duplicates values
+  $Check = CHECK("SELECT crt_name FROM config_reminder_types WHERE crt_name='" . $_POST["crt_name"] . "' AND crt_id!='$crt_id'");
+  if ($Check == null) {
+    $Response = UPDATE("config_reminder_types", $config_reminder_types, "crt_id='$crt_id'");
+    $Error = "Unable to update reminder type";
+  } else {
+    $Response = false;
+    $Error = "Reminder type already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Reminder type updated successfully!",
+    "false" => $Error
+  ]);
+
+  //update reminder type status
+} elseif (isset($_POST["UpdateReminderTypeStatus"])) {
+  $crt_id = SECURE($_POST["crt_id"], "d");
+  $crt_status = SECURE($_POST["UpdateReminderTypeStatus"], "d");
+
+  //update reminder type status in database table 'config_reminder_types'
+  if ($crt_status == 1) {
+    $status = 2;
+  } else {
+    $status = 1;
+  }
+
+  //update reminder type status in database table 'config_reminder_types'
+  $Response = UPDATE_SQL("UPDATE config_reminder_types SET crt_status='$status' WHERE crt_id='$crt_id'");
+  RequestHandler($Response, [
+    "true" => "Reminder type status updated successfully!",
+    "false" => "Unable to update reminder type status at the moment!"
+  ]);
+
+  //create youtube video category name cyvt
+} elseif (isset($_POST['SaveYoutubeVideoCategoryVideo'])) {
+  $config_youtube_video_types = [
+    "cyvt_name" => $_POST['cyvt_name'],
+    "cyvt_status" => $_POST['cyvt_status'],
+    "cyvt_created_at" => CURRENT_DATE_TIME,
+    "cyvt_created_by" => LOGIN_UserId,
+    "cyvt_updated_at" => CURRENT_DATE_TIME,
+    "cyvt_updated_by" => LOGIN_UserId,
+    "cyvt_purpose" => $_POST['cyvt_purpose'],
+    "cyvt_desc" => $_POST['cyvt_desc'],
+    "cyvt_code" => $_POST['cyvt_code'],
+    "cyvt_shortname" => $_POST['cyvt_shortname']
+  ];
+
+  //check duplicates values
+  $Check = CHECK("SELECT cyvt_name FROM config_youtube_video_types WHERE cyvt_name='" . $_POST['cyvt_name'] . "'");
+  if ($Check == null) {
+    $Response = INSERT("config_youtube_video_types", $config_youtube_video_types);
+    $Error = "Unable to save YouTube video category name";
+  } else {
+    $Response = false;
+    $Error = "YouTube video category name already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "YouTube video category name saved successfully!",
+    "false" => $Error
+  ]);
+
+  //update youtube video category name $cyvt_id   
+} elseif (isset($_POST["UpdateYoutubeVideoCategoryVideo"])) {
+  $cyvt_id = SECURE($_POST["cyvt_id"], "d");
+  $config_youtube_video_types = [
+    "cyvt_name" => $_POST["cyvt_name"],
+    "cyvt_status" => $_POST["cyvt_status"],
+    "cyvt_updated_at" => CURRENT_DATE_TIME,
+    "cyvt_updated_by" => LOGIN_UserId,
+    "cyvt_purpose" => $_POST["cyvt_purpose"],
+    "cyvt_desc" => $_POST["cyvt_desc"],
+    "cyvt_code" => $_POST["cyvt_code"],
+    "cyvt_shortname" => $_POST["cyvt_shortname"],
+  ];
+
+  //check duplicates values
+  $Check = CHECK("SELECT cyvt_name FROM config_youtube_video_types WHERE cyvt_name='" . $_POST["cyvt_name"] . "' AND cyvt_id!='$cyvt_id'");
+  if ($Check == null) {
+    $Response = UPDATE("config_youtube_video_types", $config_youtube_video_types, "cyvt_id='$cyvt_id'");
+    $Error = "Unable to update YouTube video category name";
+  } else {
+    $Response = false;
+    $Error = "YouTube video category name already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "YouTube video category name updated successfully!",
+    "false" => $Error
+  ]);
+
+  //update youtube video category name status
+} elseif (isset($_POST["UpdateYoutubeVideoCategoryStatus"])) {
+  $cyvt_id = SECURE($_POST["cyvt_id"], "d");
+  $cyvt_status = SECURE($_POST["UpdateYoutubeVideoCategoryStatus"], "d");
+
+  //update youtube video category name status in database table 'config_youtube_video_types'
+  if ($cyvt_status == 1) {
+    $status = 2;
+  } else {
+    $status = 1;
+  }
+
+  //update youtube video category name status in database table 'config_youtube_video_types'
+  $Response = UPDATE_SQL("UPDATE config_youtube_video_types SET cyvt_status='$status' WHERE cyvt_id='$cyvt_id'");
+  RequestHandler($Response, [
+    "true" => "YouTube video category name status updated successfully!",
+    "false" => "Unable to update YouTube video category name status at the moment!"
+  ]);
+
+  //update event types
+} elseif (isset($_POST['SaveEventTypeRecords'])) {
+  $config_events_types = [
+    "cent_name" => $_POST["cent_name"],
+    "cent_status" => $_POST["cent_status"],
+    "cent_created_at" => CURRENT_DATE_TIME,
+    "cent_created_by" => LOGIN_UserId,
+    "cent_updated_at" => CURRENT_DATE_TIME,
+    "cent_updated_by" => LOGIN_UserId,
+    "cent_purpose" => $_POST["cent_purpose"],
+    "cent_desc" => $_POST["cent_desc"],
+    "cent_code" => $_POST["cent_code"],
+    "cent_shortname" => $_POST["cent_shortname"]
+  ];
+
+  //check duplicates values
+  $Check = CHECK("SELECT cent_name FROM config_events_types WHERE cent_name='" . $_POST['cent_name'] . "'");
+  if ($Check == null) {
+    $Response = INSERT("config_events_types", $config_events_types);
+    $Error = "Unable to save event type";
+  } else {
+    $Response = false;
+    $Error = "Event type already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Event type saved successfully!",
+    "false" => $Error
+  ]);
+
+  //update event types $cent_id
+} elseif (isset($_POST['UpdateEventTypeRecords'])) {
+  $cent_id = SECURE($_POST["cent_id"], "d");
+  $config_events_types = [
+    "cent_name" => $_POST["cent_name"],
+    "cent_status" => $_POST["cent_status"],
+    "cent_updated_at" => CURRENT_DATE_TIME,
+    "cent_updated_by" => LOGIN_UserId,
+    "cent_purpose" => $_POST["cent_purpose"],
+    "cent_desc" => $_POST["cent_desc"],
+    "cent_code" => $_POST["cent_code"],
+    "cent_shortname" => $_POST["cent_shortname"]
+  ];
+
+  //check duplicates values
+  $Check = CHECK("SELECT cent_name FROM config_events_types WHERE cent_name='" . $_POST["cent_name"] . "' AND cent_id!='$cent_id'");
+  if ($Check == null) {
+    $Response = UPDATE("config_events_types", $config_events_types, "cent_id='$cent_id'");
+    $Error = "Unable to update event type";
+  } else {
+    $Response = false;
+    $Error = "Event type already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Event type updated successfully!",
+    "false" => $Error
+  ]);
+
+  //update event types status
+} elseif (isset($_POST["UpdateEventsTypeRecordsStatus"])) {
+  $cent_id = SECURE($_POST["cent_id"], "d");
+  $cent_status = SECURE($_POST["UpdateEventsTypeRecordsStatus"], "d");
+
+  //update event types status in database table 'config_events_types'
+  if ($cent_status == 1) {
+    $status = 2;
+  } else {
+    $status = 1;
+  }
+
+  //update event types status in database table 'config_events_types'
+  $Response = UPDATE_SQL("UPDATE config_events_types SET cent_status='$status' WHERE cent_id='$cent_id'");
+  RequestHandler($Response, [
+    "true" => "Event type status updated successfully!",
+    "false" => "Unable to update event type status at the moment!"
+  ]);
+
+  //create type of audit records
+} elseif (isset($_POST['SaveAuditTypeRecords'])) {
+  $config_audit_types = [
+    "cadt_name" => $_POST["cadt_name"],
+    "cadt_status" => $_POST["cadt_status"],
+    "cadt_created_at" => CURRENT_DATE_TIME,
+    "cadt_created_by" => LOGIN_UserId,
+    "cadt_updated_at" => CURRENT_DATE_TIME,
+    "cadt_updated_by" => LOGIN_UserId,
+    "cadt_purpose" => $_POST["cadt_purpose"],
+    "cadt_desc" => $_POST["cadt_desc"],
+    "cadt_code" => $_POST["cadt_code"],
+    "cadt_shortname" => $_POST["cadt_shortname"],
+  ];
+
+  //check duplicates values
+  $Check = CHECK("SELECT cadt_name FROM config_audit_types WHERE cadt_name='" . $_POST['cadt_name'] . "'");
+  if ($Check == null) {
+    $Response = INSERT("config_audit_types", $config_audit_types);
+    $Error = "Unable to save audit type";
+  } else {
+    $Response = false;
+    $Error = "Audit type already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Audit type saved successfully!",
+    "false" => $Error
+  ]);
+
+  //update type of audit records $cadt_id
+} elseif (isset($_POST["UpdateAuditTypeRecords"])) {
+  $cadt_id = SECURE($_POST["cadt_id"], "d");
+  $config_audit_types = [
+    "cadt_name" => $_POST["cadt_name"],
+    "cadt_status" => $_POST["cadt_status"],
+    "cadt_updated_at" => CURRENT_DATE_TIME,
+    "cadt_updated_by" => LOGIN_UserId,
+    "cadt_purpose" => $_POST["cadt_purpose"],
+    "cadt_desc" => $_POST["cadt_desc"],
+    "cadt_code" => $_POST["cadt_code"],
+    "cadt_shortname" => $_POST["cadt_shortname"]
+  ];
+
+  //check duplicates values
+  $Check = CHECK("SELECT cadt_name FROM config_audit_types WHERE cadt_name='" . $_POST["cadt_name"] . "' AND cadt_id!='$cadt_id'");
+  if ($Check == null) {
+    $Response = UPDATE("config_audit_types", $config_audit_types, "cadt_id='$cadt_id'");
+    $Error = "Unable to update audit type";
+  } else {
+    $Response = false;
+    $Error = "Audit type already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "Audit type updated successfully!",
+    "false" => $Error
+  ]);
+
+  //update type of audit records status
+} elseif (isset($_POST["UpdateAuditTypeRecordsStatus"])) {
+  $cadt_id = SECURE($_POST["cadt_id"], "d");
+  $cadt_status = SECURE($_POST["UpdateAuditTypeRecordsStatus"], "d");
+
+  //update type of audit records status in database table 'config_audit_types'
+  if ($cadt_status == 1) {
+    $status = 2;
+  } else {
+    $status = 1;
+  }
+
+  //update type of audit records status in database table 'config_audit_types'
+  $Response = UPDATE_SQL("UPDATE config_audit_types SET cadt_status='$status' WHERE cadt_id='$cadt_id'");
+  RequestHandler($Response, [
+    "true" => "Audit type status updated successfully!",
+    "false" => "Unable to update audit type status at the moment!"
+  ]);
+
+  //create TDS Rate records
+} elseif (isset($_POST["AddTDSRateRecords"])) {
+
+  $config_tds_rates_slabs = [
+    "ctrs_name" => $_POST["ctrs_name"],
+    "ctrs_code" => $_POST["ctrs_code"],
+    "ctrs_nature_of_payments" => $_POST["ctrs_nature_of_payments"],
+    "ctrs_purpose" => $_POST["ctrs_purpose"],
+    "ctrs_threshold_limit" => $_POST["ctrs_threshold_limit"],
+    "ctrs_rates" => $_POST["ctrs_rates"],
+    "ctrs_applicable_to" => $_POST["ctrs_applicable_to"],
+    "ctrs_deductor" => $_POST["ctrs_deductor"],
+    "ctrs_finanical_year_id" => $_POST["ctrs_finanical_year_id"],
+    "ctrs_detailed_desc" => $_POST["ctrs_detailed_desc"],
+    "ctrs_status" => $_POST["ctrs_status"],
+    "ctrs_created_by" => LOGIN_UserId,
+    "ctrs_created_at" => CURRENT_DATE_TIME,
+    "ctrs_updated_by" => LOGIN_UserId,
+    "ctrs_updated_at" => CURRENT_DATE_TIME,
+  ];
+
+  //check duplicates values
+  $Check = CHECK("SELECT ctrs_name FROM config_tds_rates_slabs WHERE ctrs_name='" . $_POST['ctrs_name'] . "'");
+  if ($Check == null) {
+    $Response = INSERT("config_tds_rates_slabs", $config_tds_rates_slabs);
+    $Error = "Unable to save TDS rate";
+  } else {
+    $Response = false;
+    $Error = "TDS rate already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "TDS rate saved successfully!",
+    "false" => $Error
+  ]);
+
+  //update TDS Rate records $ctrs_id
+} elseif (isset($_POST["UpdateTDSRateRecords"])) {
+  $ctrs_id = SECURE($_POST["ctrs_id"], "d");
+
+  $config_tds_rates_slabs = [
+    "ctrs_name" => $_POST["ctrs_name"],
+    "ctrs_code" => $_POST["ctrs_code"],
+    "ctrs_nature_of_payments" => $_POST["ctrs_nature_of_payments"],
+    "ctrs_purpose" => $_POST["ctrs_purpose"],
+    "ctrs_threshold_limit" => $_POST["ctrs_threshold_limit"],
+    "ctrs_rates" => $_POST["ctrs_rates"],
+    "ctrs_applicable_to" => $_POST["ctrs_applicable_to"],
+    "ctrs_deductor" => $_POST["ctrs_deductor"],
+    "ctrs_finanical_year_id" => $_POST["ctrs_finanical_year_id"],
+    "ctrs_detailed_desc" => $_POST["ctrs_detailed_desc"],
+    "ctrs_status" => $_POST["ctrs_status"],
+    "ctrs_updated_by" => LOGIN_UserId,
+    "ctrs_updated_at" => CURRENT_DATE_TIME,
+  ];
+
+  //check duplicates values
+  $Check = CHECK("SELECT ctrs_name FROM config_tds_rates_slabs WHERE ctrs_name='" . $_POST["ctrs_name"] . "' AND ctrs_id!='$ctrs_id'");
+  if ($Check == null) {
+    $Response = UPDATE("config_tds_rates_slabs", $config_tds_rates_slabs, "ctrs_id='$ctrs_id'");
+    $Error = "Unable to update TDS rate";
+  } else {
+    $Response = false;
+    $Error = "TDS rate already exists";
+  }
+  RequestHandler($Response, [
+    "true" => "TDS rate updated successfully!",
+    "false" => $Error
+  ]);
+
+  //update TDS Rate records status
+} elseif (isset($_POST["UpdateTDSRateStatus"])) {
+  $ctrs_id = SECURE($_POST["ctrs_id"], "d");
+  $ctrs_status = SECURE($_POST["UpdateTDSRateStatus"], "d");
+
+  //update TDS Rate records status in database table 'config_tds_rates_slabs'
+  if ($ctrs_status == 1) {
+    $status = 2;
+  } else {
+    $status = 1;
+  }
+
+  //update TDS Rate records status in database table 'config_tds_rates_slabs'
+  $Response = UPDATE_SQL("UPDATE config_tds_rates_slabs SET ctrs_status='$status' WHERE ctrs_id='$ctrs_id'");
+  RequestHandler($Response, [
+    "true" => "TDS rate status updated successfully!",
+    "false" => "Unable to update TDS rate status at the moment!"
   ]);
 }

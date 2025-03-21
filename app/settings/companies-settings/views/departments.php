@@ -16,9 +16,9 @@
         $Start = START_FROM;
         $EndLimit = DEFAULT_RECORD_LISTING;
         if (isset($_GET['search_data'])) {
-            $RecordsSQL = "SELECT * FROM config_company_department WHERE ccd_name LIKE '%" . $_GET['search_data'] . "%' ORDER BY ccd_id DESC";
+            $RecordsSQL = "SELECT * FROM config_department WHERE ccd_name LIKE '%" . $_GET['search_data'] . "%' ORDER BY ccd_id DESC";
         } else {
-            $RecordsSQL = "SELECT * FROM config_company_department ORDER BY ccd_id DESC";
+            $RecordsSQL = "SELECT * FROM config_department ORDER BY ccd_id DESC";
         }
         $RecordsProcessesSQL = SET_SQL($RecordsSQL . " limit $Start, $EndLimit", true);
         if ($RecordsProcessesSQL != null) {

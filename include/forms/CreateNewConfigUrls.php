@@ -1,9 +1,9 @@
-<section class="pop-section hidden" id="AddNewUrl">
+<section class="pop-section hidden" id="AddNewRecords">
     <div class="action-window">
         <div class='container'>
             <div class='row'>
                 <div class='col-md-12'>
-                    <h4 class='app-heading'>Add New Social Icon & Url</h4>
+                    <h4 class='app-heading'>Add New Url Category</h4>
                 </div>
             </div>
             <form class="row" action="<?php echo CONTROLLER("SystemController/ConfigController.php"); ?>" method="POST">
@@ -27,13 +27,17 @@
                                 <?php echo InputOptions(ALL_FONT_ICONS, ""); ?>
                             </select>
                         </div>
+                        <div class="form-group col-md-12">
+                            <label>Purpose</label>
+                            <input type="text" required name="cut_purpose" class="form-control">
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-md-12 text-right">
                     <hr>
                     <button type="submit" name="SaveConfigUrlRecords" class="btn btn-md btn-success"><i class="fa fa-check"></i> Save Details</button>
-                    <a href="#" onclick="Databar('AddNewUrl')" class="btn btn-md btn-default">Cancel</a>
+                    <a href="#" onclick="Databar('AddNewRecords')" class="btn btn-md btn-default">Cancel</a>
                 </div>
             </form>
         </div>

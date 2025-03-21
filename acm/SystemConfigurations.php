@@ -6,7 +6,7 @@ define("STORAGE_URL", DOMAIN . "/storage");
 define("STORAGE_URL_D", DOMAIN . "/storage/default");
 define("STORAGE_URL_U", DOMAIN . "/storage/users");
 define("AUTH_URL", DOMAIN . "/auth");
-define("CONTROLLER", DOMAIN . "/handler/ModuleController.php");
+define("CONTROLLER", DOMAIN . "/handler");
 define("ASSETS_URL", DOMAIN . "/assets");
 
 //Company Profile
@@ -111,7 +111,11 @@ define("EMP_CODE",  CONFIG("EMP_CODE"));
 
 //message variables
 define("CONTROL_NOTIFICATION", CONFIG("CONTROL_NOTIFICATION"));
-define("CONTROL_MSG_DISPLAY_TIME", CONFIG("CONTROL_MSG_DISPLAY_TIME"));
+if (CONTROL_WORK_ENV == "PROD") {
+    define("CONTROL_MSG_DISPLAY_TIME", CONFIG("CONTROL_MSG_DISPLAY_TIME"));
+} else {
+    define("CONTROL_MSG_DISPLAY_TIME", 60000); // 1 minute
+}
 define("CONTROL_NOTIFICATION_SOUND", CONFIG("CONTROL_NOTIFICATION_SOUND"));
 
 define("AUTO_GENERATED_REF_NO", DATE("d/m/y/") . rand(000000, 999999));
